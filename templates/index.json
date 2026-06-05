@@ -416,22 +416,22 @@
         "heading_wTjCiL": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "How to Pick the Right Perfume Online",
             "heading_size": "h1"
           }
         },
         "text_gjL39Y": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Start by identifying what kind of scents you enjoy. Fresh, floral, woody, sweet, or spicy. Then look at what inspired each of Elyscent's perfumes. If you have smelled the original and liked it, our version is a reliable starting point. Reading our customer reviews also helps. And if you are still unsure, the Tester Box is the smartest first buy.</p>",
             "text_style": "body"
           }
         },
         "button_CjAEen": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Try Our Tester Box",
+            "button_link": "shopify://collections",
             "button_style_secondary": false
           }
         }
