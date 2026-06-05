@@ -109,9 +109,9 @@
         </span>
         {% if show_save_amount and product.compare_at_price > product.price %}
           {% assign save_amount = product.compare_at_price | minus: product.price %}
-            {% comment %} <span class="save-price">
+            <span class="save-price">
               Save {{ save_amount | money }}
-            </span> {% endcomment %}
+            </span>
         {% endif %}
       </div>
       {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
