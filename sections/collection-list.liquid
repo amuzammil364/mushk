@@ -86,6 +86,7 @@
               columns: columns,
               placeholder_image: placeholder_image
               card_heading_size: section.settings.card_heading_size
+              card_heading_uppercase: section.settings.card_heading_uppercase
             %}
           </li>
         {%- endfor -%}
@@ -245,6 +246,12 @@
       "min": 0,
       "max": 100,
       "step": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "card_heading_uppercase",
+      "label": "Heading Uppercase",
+      "default": false
     },
     {
       "type": "header",
