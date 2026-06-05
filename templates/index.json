@@ -1,0 +1,425 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "csm_slideshow_k4QcWk": {
+      "type": "csm-slideshow",
+      "blocks": {
+        "slide_BniFyx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-1.webp"
+          }
+        },
+        "slide_kDfVGb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-royal-oud-banner.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slide_BniFyx",
+        "slide_kDfVGb"
+      ],
+      "name": "CSM Slideshow",
+      "settings": {}
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "perfume-bundles",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 50,
+        "heading_uppercase": true,
+        "products_to_show": 4,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 1,
+        "border_left_width": 0,
+        "title": "Perfume Bundles",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_custom_view_all": true,
+        "view_all_button_text": "Shop All Bundle Deals",
+        "view_all_button_url": "shopify://collections/oud",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "show_save_amount": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_6VwdaL": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "new-arrivals",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 50,
+        "heading_uppercase": true,
+        "products_to_show": 4,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 0,
+        "border_left_width": 0,
+        "title": "New Arrival",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_custom_view_all": true,
+        "view_all_button_text": "Explore New Arrivals",
+        "view_all_button_url": "shopify://collections/new-arrivals",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "show_save_amount": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_KRhtLg": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "banner_link": "shopify://collections/oud",
+        "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-best-of-three-banner.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "featured_collection_jmU4wd": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 50,
+        "heading_uppercase": true,
+        "products_to_show": 4,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 0,
+        "border_left_width": 0,
+        "title": "Best Seller Perfumes",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_custom_view_all": true,
+        "view_all_button_text": "Shop Best Sellers Now",
+        "view_all_button_url": "shopify://collections/best-sellers",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "show_save_amount": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_iLQpHQ": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "banner_link": "shopify://collections/oud",
+        "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-perfect-duo-banner.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "featured_collection_CYbaiM": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-perfumes-for-women",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 50,
+        "heading_uppercase": true,
+        "products_to_show": 4,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 1,
+        "border_left_width": 0,
+        "title": "Best Perfumes for Women in Pakistan",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_custom_view_all": true,
+        "view_all_button_text": "Shop Women's Perfumes",
+        "view_all_button_url": "shopify://collections/best-perfumes-for-women",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "show_save_amount": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_inH7xM": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "perfume-brands-for-men",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 50,
+        "heading_uppercase": true,
+        "products_to_show": 4,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 1,
+        "border_left_width": 0,
+        "title": "Perfume Brands for Men in Pakistan",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_custom_view_all": true,
+        "view_all_button_text": "Browse All Men's Perfumes",
+        "view_all_button_url": "shopify://collections/perfume-brands-for-men",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "show_save_amount": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_kKGq3w": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "unisex-perfumes",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 50,
+        "heading_uppercase": true,
+        "products_to_show": 4,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 1,
+        "border_left_width": 0,
+        "title": "Unisex Perfumes in Pakistan",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_custom_view_all": true,
+        "view_all_button_text": "Buy Unisex Perfumes",
+        "view_all_button_url": "shopify://collections/unisex-perfumes",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "show_save_amount": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_im8fRb": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "oud",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 50,
+        "heading_uppercase": true,
+        "products_to_show": 4,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 1,
+        "border_left_width": 0,
+        "title": "Oud Perfumes in Pakistan",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_custom_view_all": true,
+        "view_all_button_text": "Explore The Oud Collection",
+        "view_all_button_url": "shopify://collections/oud",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "show_save_amount": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_BR9jtq": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_FXCgXQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "best-perfumes-for-women"
+          }
+        },
+        "featured_collection_tVG8qK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "perfume-brands-for-men"
+          }
+        },
+        "featured_collection_CdDU4B": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-arrivals"
+          }
+        },
+        "featured_collection_ULtUat": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "unisex-perfumes"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_FXCgXQ",
+        "featured_collection_tVG8qK",
+        "featured_collection_CdDU4B",
+        "featured_collection_ULtUat"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop the Best Perfumes in Pakistan",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "heading_letter_spacing": 1,
+        "heading_top_spacing": 0,
+        "heading_bottom_spacing": 30,
+        "heading_uppercase": true,
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "csm_slideshow_k4QcWk",
+    "featured_collection",
+    "featured_collection_6VwdaL",
+    "image_banner_KRhtLg",
+    "featured_collection_jmU4wd",
+    "image_banner_iLQpHQ",
+    "featured_collection_CYbaiM",
+    "featured_collection_inH7xM",
+    "featured_collection_kKGq3w",
+    "featured_collection_im8fRb",
+    "collection_list_BR9jtq"
+  ]
+}

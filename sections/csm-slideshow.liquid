@@ -1,0 +1,100 @@
+{{ 'flickity.min.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .csm-flickity-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .csm-flickity-slider .carousel-cell {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .csm-flickity-slider img {
+    width: 100%;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .csm-flickity-slider .flickity-viewport {
+    cursor: grab;
+  }
+
+  .csm-flickity-slider .flickity-viewport:active {
+    cursor: grabbing;
+  }
+
+  .flickity-button {
+    display: none !important;
+  }
+
+  .flickity-page-dots {
+    bottom: 0;
+    line-height: 0;
+  }
+
+  .flickity-page-dots .dot {
+    width: 80px;
+    height: 6px;
+    opacity: 0.4;
+    border-radius: 0;
+    background: #fff !important;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    opacity: 1;
+  }
+</style>
+
+<div class="csm-flickity-slider"
+  data-flickity='{
+    "wrapAround": true,
+    "autoPlay": 3000,
+    "pauseAutoPlayOnHover": true,
+    "prevNextButtons": false,
+    "pageDots": true,
+    "draggable": true,
+    "contain": true
+  }'
+>
+  {% for block in section.blocks %}
+    <div class="carousel-cell">
+      {% if block.settings.image != blank %}
+        <img src="{{ block.settings.image | image_url: width: 2000 }}" alt="Slide Image">
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<script
+  src="{{ 'flickity.pkgd.min.js' | asset_url }}"
+  defer
+></script>
+
+{% schema %}
+{
+  "name": "CSM Slideshow",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "CSM Slideshow"
+    }
+  ]
+}
+{% endschema %}
