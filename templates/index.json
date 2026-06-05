@@ -417,7 +417,9 @@
           "type": "heading",
           "settings": {
             "heading": "How to Pick the Right Perfume Online",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "heading_uppercase": true,
+            "heading_letter_spacing": 0
           }
         },
         "text_gjL39Y": {

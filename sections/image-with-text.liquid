@@ -69,6 +69,7 @@
                 {%- when 'heading' -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                    style="letter-spacing: {{ section.settings.heading_letter_spacing }}px;{% if section.settings.heading_uppercase %}text-transform: uppercase;{% endif %}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading }}
