@@ -398,6 +398,7 @@
         "heading_top_spacing": 0,
         "heading_bottom_spacing": 30,
         "heading_uppercase": true,
+        "card_heading_size": 16,
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "",
