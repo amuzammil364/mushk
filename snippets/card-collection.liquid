@@ -119,7 +119,13 @@
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading" style="font-size: {{ card_heading_size }}px; {% if card_heading_uppercase %}{% else text-transform: captialize; %}text-transform: uppercase;{% endif %}">
+          <h3 class="card__heading"
+  style="font-size: {{ card_heading_size }}px;
+  {% if card_heading_uppercase %}
+    text-transform: uppercase;
+  {% else %}
+    text-transform: capitalize;
+  {% endif %}">
             <a
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
