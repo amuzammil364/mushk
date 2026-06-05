@@ -398,7 +398,8 @@
         "heading_top_spacing": 0,
         "heading_bottom_spacing": 30,
         "heading_uppercase": true,
-        "card_heading_size": 16,
+        "card_heading_size": 20,
+        "card_heading_uppercase": true,
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "",
@@ -406,6 +407,54 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_PMcWXh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wTjCiL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_gjL39Y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CjAEen": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wTjCiL",
+        "text_gjL39Y",
+        "button_CjAEen"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/testerbox1.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
@@ -421,6 +470,7 @@
     "featured_collection_inH7xM",
     "featured_collection_kKGq3w",
     "featured_collection_im8fRb",
-    "collection_list_BR9jtq"
+    "collection_list_BR9jtq",
+    "image_with_text_PMcWXh"
   ]
 }
