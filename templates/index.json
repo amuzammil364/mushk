@@ -425,7 +425,7 @@
         "text_gjL39Y": {
           "type": "text",
           "settings": {
-            "text": "<p>Start by identifying what kind of scents you enjoy. Fresh, floral, woody, sweet, or spicy. Then look at what inspired each of Elyscent's perfumes. If you have smelled the original and liked it, our version is a reliable starting point. Reading our customer reviews also helps. And if you are still unsure, the Tester Box is the smartest first buy.</p>",
+            "text": "<p>Start by identifying what kind of scents you enjoy. Fresh, floral, woody, sweet, or spicy. Then look at what inspired each of Mushk perfumes. If you have smelled the original and liked it, our version is a reliable starting point. Reading our customer reviews also helps. And if you are still unsure, the Tester Box is the smartest first buy.</p>",
             "text_style": "body"
           }
         },
@@ -459,6 +459,56 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_Gq4WTr": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DpNH4f": {
+          "type": "heading",
+          "settings": {
+            "heading": "Best Perfume in Pakistan at a Price You’ll Love",
+            "heading_size": "h2",
+            "heading_uppercase": true,
+            "heading_letter_spacing": 1
+          }
+        },
+        "text_A3mpiM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Muhsk, we give you expensive designer fragrances without the price tag. Whether you<br/>want branded perfumes for men in Pakistan, asoft floral for her, or a deep oud for evenings, we<br/>have it all at a price that makes sense.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_nKGK48": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Our Full Collection",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DpNH4f",
+        "text_A3mpiM",
+        "button_nKGK48"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/salsa-spirit-bottle-with-box.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -473,6 +523,7 @@
     "featured_collection_kKGq3w",
     "featured_collection_im8fRb",
     "collection_list_BR9jtq",
-    "image_with_text_PMcWXh"
+    "image_with_text_PMcWXh",
+    "image_with_text_Gq4WTr"
   ]
 }
