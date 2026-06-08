@@ -29,7 +29,14 @@
             </p>
           {% endif %}
           {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}"
+            style="
+            letter-spacing: {{ section.settings.heading_letter_spacing }}px;
+            margin-top: {{ section.settings.heading_top_spacing }}px;
+            margin-bottom: {{ section.settings.heading_bottom_spacing }}px;
+            {% if section.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
+            "
+            >
               {{ section.settings.heading }}
             </h2>
           {%- else -%}
@@ -173,6 +180,42 @@
         }
       ],
       "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing",
+      "label": "Heading Letter Spacing",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_top_spacing",
+      "label": "Heading Top Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_bottom_spacing",
+      "label": "Heading Bottom Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_uppercase",
+      "label": "Heading Uppercase Heading",
+      "default": false
     },
     {
       "type": "header",
