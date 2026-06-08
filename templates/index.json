@@ -548,13 +548,33 @@
             "row_content": "<p>Top branded perfumes for men in Pakistan at Mushk include <span style=\"text-decoration:underline\">Salsa Spirit</span>, inspired by Creed Aventus, <span style=\"text-decoration:underline\">Wild Essence</span>, inspired by Sauvage Dior, <span style=\"text-decoration:underline\">Zarak,</span>inspired by Azzaro Wanted, and <span style=\"text-decoration:underline\">Apex,</span>inspired by Dunhill Desire.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_bbTKry": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How should I apply perfume to make it last longer?",
+            "icon": "none",
+            "row_content": "<p>Apply to pulse points like your wrists, neck, and behind your ears. Do not rub your wrists together after applying. Apply right after a shower for best absorption.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yQVa9h": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the difference between EDP and EDT?",
+            "icon": "none",
+            "row_content": "<p>EDP has more fragrance oil and lasts longer on the skin. EDT has less oil and fades faster. Most Mushk perfumes are EDP level.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_Tzddr6",
         "collapsible_row_cb8nrG",
         "collapsible_row_B49nEd",
-        "collapsible_row_LG8HTj"
+        "collapsible_row_LG8HTj",
+        "collapsible_row_bbTKry",
+        "collapsible_row_yQVa9h"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
