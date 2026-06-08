@@ -40,13 +40,22 @@
             "heading": "Get in Touch",
             "menu": "footer"
           }
+        },
+        "text_axmKJc": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "full_width": true
+          }
         }
       },
       "block_order": [
         "brand_information_P8Eaay",
         "link_list_yEGWqR",
         "link_list_88FjTz",
-        "link_list_zhQX8p"
+        "link_list_zhQX8p",
+        "text_axmKJc"
       ],
       "settings": {
         "color_scheme": "scheme-4",
