@@ -101,7 +101,7 @@
 }
 
 .collapsible-content summary:hover {
-  background: rgba(var(--color-foreground));
+  background: rgba(var(--color-foreground), 1);
 }
 
 .collapsible-content summary:hover .accordion__title {
