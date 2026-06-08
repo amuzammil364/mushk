@@ -678,32 +678,46 @@
             "title": "Gulshan KDA Outlet",
             "text": "<p>A219, Block 3, KDA Market (Near Flourish Salon), Karachi</p>",
             "link_label": "Get Direction",
-            "link": ""
+            "link": "",
+            "multicolumn_top_spacing": 20,
+            "multicolumn_left_spacing": 20,
+            "multicolumn_right_spacing": 20,
+            "multicolumn_bottom_spacing": 20
           }
         },
-        "column_48z84N": {
+        "column_hJEkbM": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-ocean-mall-branch.webp",
+            "title": "Ocean Mall outlet",
+            "text": "<p>Shop A219, 2nd Floor, Karachi</p>",
+            "link_label": "Get Direction",
+            "link": "",
+            "multicolumn_top_spacing": 20,
+            "multicolumn_left_spacing": 20,
+            "multicolumn_right_spacing": 20,
+            "multicolumn_bottom_spacing": 20
           }
         },
-        "column_mhLmqb": {
+        "column_zXrPeq": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-gulshan-e-iqbal-kda-branch.webp",
+            "title": "Gulshan KDA Outlet",
+            "text": "<p>A219, Block 3, KDA Market (Near Flourish Salon), Karachi</p>",
+            "link_label": "Get Direction",
+            "link": "",
+            "multicolumn_top_spacing": 20,
+            "multicolumn_left_spacing": 20,
+            "multicolumn_right_spacing": 20,
+            "multicolumn_bottom_spacing": 20
           }
         }
       },
       "block_order": [
         "column_chXaRe",
-        "column_48z84N",
-        "column_mhLmqb"
+        "column_hJEkbM",
+        "column_zXrPeq"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
