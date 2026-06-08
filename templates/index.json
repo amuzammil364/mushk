@@ -667,6 +667,61 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "multicolumn_Dt76KF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_chXaRe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-gulshan-e-iqbal-kda-branch.webp",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "ddd",
+            "link": ""
+          }
+        },
+        "column_48z84N": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mhLmqb": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_chXaRe",
+        "column_48z84N",
+        "column_mhLmqb"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -685,6 +740,7 @@
     "image_with_text_Gq4WTr",
     "collapsible_content_XpDPY4",
     "seo_JQhhie",
-    "rich_text_qexMNb"
+    "rich_text_qexMNb",
+    "multicolumn_Dt76KF"
   ]
 }
