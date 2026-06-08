@@ -11,9 +11,11 @@
             </div>
             <div class="csm-seo-gradient-overlay"></div>
         </div>
-        <button class="button button--primary" type="button" id="SEO-Toggle-{{ section.id }}">
-            Explore More
-        </button>
+        <div class="csm-seo-button-wrapper">
+            <button class="button button--primary" type="button" id="SEO-Toggle-{{ section.id }}">
+                Explore More
+            </button>
+        </div>
     </div>
 </section>
 
@@ -71,6 +73,10 @@
         pointer-events: none;
         z-index: 1;
         display: block !important;
+    }
+
+    .csm-seo-button-wrapper{
+        margin-top: 20px;
     }
 
 </style>
