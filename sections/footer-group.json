@@ -24,14 +24,14 @@
           "type": "link_list",
           "settings": {
             "heading": "Support",
-            "menu": "footer"
+            "menu": "footer-support-menu"
           }
         },
         "link_list_88FjTz": {
           "type": "link_list",
           "settings": {
             "heading": "Quick Links",
-            "menu": "footer"
+            "menu": "footer-quick-links"
           }
         },
         "column_TVFcEc": {
