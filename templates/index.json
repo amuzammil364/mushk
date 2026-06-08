@@ -566,6 +566,15 @@
             "row_content": "<p>EDP has more fragrance oil and lasts longer on the skin. EDT has less oil and fades faster. Most Mushk perfumes are EDP level.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_X3rHhp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do Mushk perfumes work well in Pakistan's hot weather?",
+            "icon": "none",
+            "row_content": "<p>Yes. Fresh and aquatic scents work great for hot days. Woody and oud scents perform better in cooler months or evenings.</p><p>Our full range covers both needs.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -574,7 +583,8 @@
         "collapsible_row_B49nEd",
         "collapsible_row_LG8HTj",
         "collapsible_row_bbTKry",
-        "collapsible_row_yQVa9h"
+        "collapsible_row_yQVa9h",
+        "collapsible_row_X3rHhp"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
