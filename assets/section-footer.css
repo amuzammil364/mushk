@@ -316,6 +316,10 @@
   margin-bottom: 4rem;
 }
 
+.footer-block__details-content p strong{
+  font-weight: bold;
+}
+
 @media screen and (min-width: 750px) {
   .footer-block__details-content {
     margin-bottom: 0;
