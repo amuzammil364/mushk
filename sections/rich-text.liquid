@@ -23,10 +23,10 @@
             {%- when 'heading' -%}
               <h2
                 style="
-                letter-spacing: {{ section.settings.heading_letter_spacing }}px;
-                margin-top: {{ section.settings.heading_top_spacing }}px;
-                margin-bottom: {{ section.settings.heading_bottom_spacing }}px;
-                {% if section.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
+                letter-spacing: {{ block.settings.heading_letter_spacing }}px;
+                margin-top: {{ block.settings.heading_top_spacing }}px;
+                margin-bottom: {{ block.settings.heading_bottom_spacing }}px;
+                {% if block.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
                 "
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
