@@ -19,10 +19,34 @@
           "settings": {
             "show_social": true
           }
+        },
+        "link_list_yEGWqR": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_88FjTz": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_zhQX8p": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
         }
       },
       "block_order": [
-        "brand_information_P8Eaay"
+        "brand_information_P8Eaay",
+        "link_list_yEGWqR",
+        "link_list_88FjTz",
+        "link_list_zhQX8p"
       ],
       "settings": {
         "color_scheme": "scheme-4",
