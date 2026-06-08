@@ -521,10 +521,20 @@
             "row_content": "<p>The best perfumes for <span style=\"text-decoration:underline\">men in Pakistan </span>last long, project well, and suit warm weather. At Mushk, top picks include Salsa Spirit, Wild Essence, Zarak, Apex, and Royal Oud, all inspired by iconic designer fragrances and priced under Rs. 2000.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_cb8nrG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the best perfumes in Pakistan for men?",
+            "icon": "none",
+            "row_content": "<p>The best perfumes for <span style=\"text-decoration:underline\">men in Pakistan </span>last long, project well, and suit warm weather. At Mushk, top picks include Salsa Spirit, Wild Essence, Zarak, Apex, and Royal Oud, all inspired by iconic designer fragrances and priced under Rs. 2000.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
-        "collapsible_row_Tzddr6"
+        "collapsible_row_Tzddr6",
+        "collapsible_row_cb8nrG"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
