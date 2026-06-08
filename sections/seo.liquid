@@ -51,9 +51,9 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const sectionId = 'csm-seo-content-{{ section.id }}';
-    const wrapper = document.getElementById('csm-seo-wrapper-' + {{ section.id }});
+    const wrapper = document.getElementById('csm-seo-wrapper-{{ section.id }}');
     const container = wrapper.querySelector('.csm-seo-content-container');
-    const toggleBtn = document.getElementById('SEO-Toggle-' + {{ section.id }});
+    const toggleBtn = document.getElementById('SEO-Toggle-{{ section.id }}');
     
     const labelShow = 'Explore More';
     const labelHide = 'Show Less';
