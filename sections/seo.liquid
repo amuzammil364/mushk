@@ -1,4 +1,4 @@
-<section class="csm-seo-content-section color-{{ section.settings.color_scheme }}">
+<section class="csm-seo-content-section-{{ section.id }} color-{{ section.settings.color_scheme }}">
     <div class="csm-page-width">
         {% if section.settings.heading != blank %}
             <h2 class="csm-seo-content-heading">
@@ -19,14 +19,14 @@
     </div>
 </section>
 
-<style>
+{%- style -%}
 
-    .csm-seo-content-section{
+    .csm-seo-content-section-{{ section.id }}{
         padding-top: {{section.settings.padding_top }}px;
         padding-bottom: {{section.settings.padding_bottom }}px;
     }
 
-    .csm-seo-content-heading{
+    .csm-seo-content-section-{{ section.id }} .csm-seo-content-heading{
         text-align: {{ section.settings.heading_alignment }};
         letter-spacing: {{section.settings.heading_letter_spacing }}px;
         margin-top: {{ section.settings.heading_top_spacing }}px;
@@ -34,17 +34,17 @@
         text-transform: {% if section.settings.heading_uppercase %}uppercase;{% endif %}
     }
 
-    .csm-seo-content-container{
+    .csm-seo-content-section-{{ section.id }} .csm-seo-content-container{
         text-align: {{section.settings.content_alignment }};
         color: rgb(var(--color-foreground));
         margin-top: -18px;
     }
 
-    .csm-seo-content-container strong{
+    .csm-seo-content-section-{{ section.id }} .csm-seo-content-container strong{
         font-weight: 700;
     }
 
-    .csm-page-width{
+    .csm-seo-content-section-{{ section.id }} .csm-page-width{
         text-align: {{section.settings.content_alignment }};
         margin: 0 auto;
         padding-right: 1.5rem;
@@ -52,18 +52,18 @@
         max-width: 86rem;
     }
 
-    .csm-seo-wrapper{
+    .csm-seo-content-section-{{ section.id }} .csm-seo-wrapper{
         position: relative;
         overflow: hidden;
         transition: max-height 0.6s ease-in-out;
         max-height: 350px;
     }
 
-    .csm-seo-wrapper.is-open .csm-seo-gradient-overlay{
+    .csm-seo-content-section-{{ section.id }} .csm-seo-wrapper.is-open .csm-seo-gradient-overlay{
         display: none !important;
     } 
 
-    .csm-seo-gradient-overlay {
+    .csm-seo-content-section-{{ section.id }} .csm-seo-gradient-overlay {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -76,11 +76,11 @@
         display: block !important;
     }
 
-    .csm-seo-button-wrapper{
+    .csm-seo-content-section-{{ section.id }} .csm-seo-button-wrapper{
         margin-top: 40px;
     }
 
-</style>
+{%- endstyle -%}
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
