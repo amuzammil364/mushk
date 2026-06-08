@@ -20,6 +20,9 @@
     .csm-seo-content-heading{
         text-align: {{ section.settings.heading_alignment }};
         letter-spacing: {{section.settings.heading_letter_spacing }}px;
+        margin-top: {{ section.settings.heading_top_spacing }}px;
+        margin-bottom: {{section.settings.heading_bottom_spacing }}px;
+        text-transform: {% if section.settings.heading_uppercase %}uppercase;{% endif %}
     }
 </style>
 
