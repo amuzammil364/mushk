@@ -124,7 +124,13 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info">
+              <div class="multicolumn-card__info"
+              style="
+              padding-left: {{ block.settings.multicolumn_left_spacing }}px;
+              padding-right: {{ block.settings.multicolumn_right_spacing }}px;
+              padding-bottom: {{ block.settings.multicolumn_bottom_spacing }}px;
+              "
+              >
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
