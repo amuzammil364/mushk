@@ -30,6 +30,11 @@
         margin-bottom: {{section.settings.heading_bottom_spacing }}px;
         text-transform: {% if section.settings.heading_uppercase %}uppercase;{% endif %}
     }
+
+    .csm-seo-content-container{
+        text-align: {{section.settings.content_alignment }};
+    }
+
 </style>
 
 {% schema %}
@@ -101,6 +106,17 @@
       "type": "richtext",
       "id": "content",
       "label": "Content"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "label": "Content Alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
     },
     {
       "type": "header",
