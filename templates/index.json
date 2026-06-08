@@ -530,11 +530,31 @@
             "row_content": "<p>Mushk is one of the best perfume brands in Pakistan, offering designer-inspired fragrances at affordable prices. Known for high-quality, long-lasting scents, Elyscents has a variety of options, from fresh citrus to smoky oud, perfect for Pakistan’s weather.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_B49nEd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I find affordable perfumes in Pakistan that last?",
+            "icon": "none",
+            "row_content": "<p>Mushk is one of the best places to find affordable perfumes in Pakistan that genuinely last. Our fragrances are formulated at high concentration levels to give you real longevity at a fair price.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LG8HTj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the best branded perfumes for men in Pakistan?",
+            "icon": "none",
+            "row_content": "<p>Top branded perfumes for men in Pakistan at Mushk include <span style=\"text-decoration:underline\">Salsa Spirit</span>, inspired by Creed Aventus, <span style=\"text-decoration:underline\">Wild Essence</span>, inspired by Sauvage Dior, <span style=\"text-decoration:underline\">Zarak,</span>inspired by Azzaro Wanted, and <span style=\"text-decoration:underline\">Apex,</span>inspired by Dunhill Desire.<br/><br/></p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_Tzddr6",
-        "collapsible_row_cb8nrG"
+        "collapsible_row_cb8nrG",
+        "collapsible_row_B49nEd",
+        "collapsible_row_LG8HTj"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
