@@ -1,18 +1,20 @@
 <section class="csm-seo-content-section color-{{ section.settings.color_scheme }}">
     <div class="page-width">
-        {% if section.settings.heading != blank %}
-            <h2 class="csm-seo-content-heading">
-                {{ section.settings.heading }}
-            </h2>
-        {% endif %}
+        <div class="csm-seo-wrapper" id="csm-seo-wrapper-{{ section.id }}">
+            {% if section.settings.heading != blank %}
+                <h2 class="csm-seo-content-heading">
+                    {{ section.settings.heading }}
+                </h2>
+            {% endif %}
 
-        <div class="csm-seo-content-container" id="csm-seo-content-{{ section.id }}">
-            {{ section.settings.content }}
+            <div class="csm-seo-content-container" id="csm-seo-content-{{ section.id }}">
+                {{ section.settings.content }}
+            </div>
+
+            <button class="button button--primary" type="button" id="SEO-Toggle-{{ section.id }}">
+                Explore More
+            </button>
         </div>
-
-        <button class="button button--primary" type="button">
-            Explore More
-        </button>
     </div>
 </section>
 
@@ -45,6 +47,39 @@
     }
 
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionId = 'csm-seo-content-{{ section.id }}';
+    const wrapper = document.getElementById('csm-seo-wrapper-' + sectionId);
+    const container = wrapper.querySelector('.csm-seo-content-container');
+    const toggleBtn = document.getElementById('SEO-Toggle-' + sectionId);
+    
+    const labelShow = 'Explore More';
+    const labelHide = 'Show Less';
+    const initialHeight = 350;
+
+    if (toggleBtn && wrapper) {
+      toggleBtn.addEventListener('click', function() {
+        const isOpen = wrapper.classList.contains('is-open');
+        
+        if (!isOpen) {
+          const fullHeight = container.scrollHeight;
+          
+          wrapper.style.maxHeight = fullHeight + "px";
+          wrapper.classList.add('is-open');
+          this.textContent = labelHide;
+        } else {
+          wrapper.style.maxHeight = initialHeight + "px";
+          wrapper.classList.remove('is-open');
+          this.textContent = labelShow;
+          
+          wrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    }
+  });
+</script>
 
 {% schema %}
 {
