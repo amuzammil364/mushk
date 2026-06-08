@@ -1,5 +1,5 @@
 <section class="csm-seo-content-section color-{{ section.settings.color_scheme }}">
-    <div class="page-width">
+    <div class="csm-page-width">
         <div class="csm-seo-wrapper" id="csm-seo-wrapper-{{ section.id }}">
             {% if section.settings.heading != blank %}
                 <h2 class="csm-seo-content-heading">
@@ -42,8 +42,12 @@
         font-weight: 700;
     }
 
-    .page-width{
+    .csm-page-width{
         text-align: {{section.settings.content_alignment }};
+        margin: 0 auto;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        max-width: 80rem;
     }
 
     .csm-seo-wrapper{
