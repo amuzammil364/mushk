@@ -23,21 +23,21 @@
         "link_list_yEGWqR": {
           "type": "link_list",
           "settings": {
-            "heading": "Support",
+            "heading": "SUPPORT",
             "menu": "footer-support-menu"
           }
         },
         "link_list_88FjTz": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick Links",
+            "heading": "QUICK LINKS",
             "menu": "footer-quick-links"
           }
         },
         "column_TVFcEc": {
           "type": "column",
           "settings": {
-            "heading": "Get in Touch",
+            "heading": "GET IN TOUCH",
             "content": "<p><strong>Customer Support </strong>Mon – Sat: 10 AM – 10 PM , Sun 2 PM - 10 PM<br/><br/><strong>Contact</strong></p><p>WhatsApp: 0301 2546333<br/>Email: helloelyscents@gmail.com</p>",
             "full_width": false
           }
