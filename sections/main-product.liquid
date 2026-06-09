@@ -214,6 +214,18 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+              {%- when 'usp' -%}
+                <div class="product__usp">
+                  {% if block.settings.icon != blank %}
+                    {{
+                      block.settings.icon
+                      | image_url: width: 50
+                      | image_tag
+                    }}
+                  {% endif %}
+
+                  <span>{{ block.settings.text }}</span>
+                </div>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
