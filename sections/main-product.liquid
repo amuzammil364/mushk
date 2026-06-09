@@ -234,7 +234,7 @@
                     </div>
                   {% else %}
                     <details class="product-accordion">
-                      <summary>Description</summary>
+                      <summary>Description <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" /></summary>
 
                       <div class="product-accordion__content rte">
                         {{ product.description }}
@@ -250,7 +250,7 @@
                     </div>
                   {% else %}
                     <details class="product-accordion">
-                      <summary>{{ block.settings.label }}</summary>
+                      <summary>{{ block.settings.label }} <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" /></summary>
 
                       <div class="product-accordion__content rte">
                         {{ block.settings.text }}
