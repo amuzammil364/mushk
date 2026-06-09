@@ -293,12 +293,12 @@
                   {% assign phone = block.settings.phone %}
                   {% assign product_link = shop.url | append: product.url %}
 
-                  {% comment %} {% capture message %}
+                  {% capture message %}
                   {{block.settings.message }}
 
                   {{ product.title }}
                   {{ product_link }}
-                  {% endcapture %} {% endcomment %}
+                  {% endcapture %}
 
                   {% assign whatsapp_message = message | strip | url_encode %}
 
