@@ -1528,6 +1528,7 @@ a.product__text {
   border-left: 1px solid #c5c5c5;
   border-right: 1px solid #c5c5c5;
   margin: 0 !important;
+  margin-bottom: 8px;
 }
 
 .product-accordion summary{
