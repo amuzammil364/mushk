@@ -31,6 +31,13 @@
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
 
+    #ProductInfo-{{ section.id }} .product__title{
+      letter-spacing: {{section.settings.heading_letter_spacing }}px;
+      margin-top: {{ section.settings.heading_top_spacing }}px;
+      margin-bottom: {{ section.settings.heading_bottom_spacing }}px;
+      {% if section.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
+    }
+
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
