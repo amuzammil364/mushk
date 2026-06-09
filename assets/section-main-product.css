@@ -1545,7 +1545,7 @@ a.product__text {
   content: "";
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 16px;
   width: 14px;
   height: 14px;
   transform: translateY(-50%) rotate(0deg);
