@@ -293,14 +293,14 @@
                   {% assign phone = block.settings.phone %}
                   {% assign product_link = shop.url | append: product.url %}
 
-{% capture message %}
-Hi, I'm interested in this product:
+                  {% capture message %}
+                  {{block.settings.message }}
 
-{{ product.title }}
-{{ product_link }}
-{% endcapture %}
+                  {{ product.title }}
+                  {{ product_link }}
+                  {% endcapture %}
 
-{% assign whatsapp_message = message | strip | url_encode %}
+                  {% assign whatsapp_message = message | strip | url_encode %}
 
                   <a 
                     href="https://wa.me/{{ phone }}?text={{ whatsapp_message }}" 
