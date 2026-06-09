@@ -1563,7 +1563,7 @@ a.product__text {
   right: 16px;
   width: 14px;
   height: 14px;
-  transition: 0.4s;
+  transition: 0.2s;
   transform: translateY(-50%) scaleY(1);
 }
 
