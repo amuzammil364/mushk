@@ -288,6 +288,12 @@ a.product__text {
   display: none;
 }
 
+.product__usp{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 @media screen and (min-width: 750px) {
   .product__info-container {
     max-width: 60rem;
