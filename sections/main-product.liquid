@@ -56,13 +56,20 @@
   {%- endstyle -%}
 
   <script>
-    document.querySelectorAll(".product-accordion").forEach((details) => {
-      const content = details.querySelector(".product-accordion__content");
+  document.querySelectorAll(".product-accordion").forEach((item) => {
+    const header = item.querySelector(".product-accordion__header");
+    const content = item.querySelector(".product-accordion__content");
 
-      details.addEventListener("click", () => {
-        content.classList.toggle("is-open");
-      });
+    header.addEventListener("click", () => {
+      item.classList.toggle("is-open");
+
+      if (item.classList.contains("is-open")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = "0px";
+      }
     });
+  });
   </script>
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -243,7 +250,7 @@
                     </div>
                   {% else %}
                     <div class="product-accordion">
-                      <div>Description
+                      <div class="product-accordion__header">Description
 
                       {%- if block.settings.icon != blank -%}
                         <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" />
@@ -263,17 +270,17 @@
                       {{ block.settings.text }}
                     </div>
                   {% else %}
-                    <details class="product-accordion">
-                      <summary>{{ block.settings.label }} 
+                    <div class="product-accordion">
+                      <div class="product-accordion__header">{{ block.settings.label }} 
                       {%- if block.settings.icon != blank -%}  
                         <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" />
                         {% endif %}
-                    </summary>
+                      </div>
 
                       <div class="product-accordion__content rte">
                         {{ block.settings.text }}
                       </div>
-                    </details>
+                    </div>
                   {% endif %}
                 {%- endif -%}
               {%- when 'whatsapp_button' -%}
