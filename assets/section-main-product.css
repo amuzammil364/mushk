@@ -1524,7 +1524,8 @@ a.product__text {
 }
 
 .product-accordion{
-  border: 1px solid #c5c5c5;
+  border-color: #c5c5c5;
+  border-top-width: 1px solid;
   margin: 0 !important;
 }
 
