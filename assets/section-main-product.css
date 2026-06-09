@@ -1555,7 +1555,7 @@ a.product__text {
   transform: translateY(-50%) rotate(-180deg);
 }
 
-.product-accordion .product-accordion__content{
+.product-accordion__content{
   padding: 0 20px;
   padding-bottom: 20px;
   overflow: hidden;
@@ -1568,7 +1568,7 @@ a.product__text {
     transform 0.3s ease;
 }
 
-.product-accordion[open] .product-accordion__content {
+.product-accordion__content.is-open {
   opacity: 1;
   transform: translateY(0);
   max-height: 500px;
