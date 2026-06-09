@@ -242,6 +242,22 @@
                     </details>
                   {% endif %}
                 {%- endif -%}
+              {%- when 'shipping_info' -%}
+                {%- if block.settings.text != blank -%}
+                  {% if block.settings.display_style == 'simple' %}
+                    <div class="product__shipping-info rte quick-add-hidden" {{ block.shopify_attributes }}>
+                      {{ block.settings.text }}
+                    </div>
+                  {% else %}
+                    <details class="product-accordion">
+                      <summary>{{ block.settings.label }}</summary>
+
+                      <div class="product-accordion__content rte">
+                        {{ block.settings.text }}
+                      </div>
+                    </details>
+                  {% endif %}
+                {%- endif -%}
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -806,6 +822,24 @@
           "id": "text",
           "label": "Text",
           "default": "14 Days Easy Return"
+        }
+      ]
+    },
+    {
+      "type": "shipping_info",
+      "name": "Shipping Information",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Option Label",
+          "default": "Shipping Information"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Shipping Text",
+          "default": "<p>We deliver within 2–5 business days across Pakistan.</p>"
         }
       ]
     },
