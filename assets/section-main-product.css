@@ -1539,6 +1539,7 @@ a.product__text {
   padding: 10px;
   letter-spacing: 2px;
   position: relative;
+  cursor: pointer;
 }
 
 .product-accordion .product-accordion__header img{
