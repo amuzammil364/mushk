@@ -1524,6 +1524,7 @@ a.product__text {
 
 .product-accordion{
   border: 1px solid #c5c5c5;
+  margin: 0 !important;
 }
 
 .product-accordion summary{
@@ -1537,6 +1538,7 @@ a.product__text {
 
 .product-accordion .product-accordion__content{
   padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (forced-colors: active) {
