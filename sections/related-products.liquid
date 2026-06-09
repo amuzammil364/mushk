@@ -46,7 +46,8 @@
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
               skip_styles: skip_card_product_styles,
-              quick_add: section.settings.quick_add
+              quick_add: section.settings.quick_add,
+              show_save_amount: section.settings.show_save_amount
             %}
           </li>
           {%- assign skip_card_product_styles = true -%}
@@ -246,6 +247,13 @@
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_save_amount",
+      "label": "t:sections.main-collection-product-grid.settings.show_save_amount.label",
+      "info": "t:sections.main-collection-product-grid.settings.show_save_amount.info",
+      "default": true
     },
     {
       "type": "header",
