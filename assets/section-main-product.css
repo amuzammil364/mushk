@@ -1534,6 +1534,7 @@ a.product__text {
   color: #000;
   font-size: 1.6rem;
   padding: 10px;
+  letter-spacing: 2px;
 }
 
 .product-accordion .product-accordion__content{
