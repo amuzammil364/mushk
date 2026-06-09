@@ -55,6 +55,42 @@
     }
   {%- endstyle -%}
 
+  <script>
+    document.querySelectorAll(".product-accordion").forEach((details) => {
+      const content = details.querySelector(".product-accordion__content");
+
+      details.addEventListener("toggle", () => {
+        if (details.open) {
+          // OPEN
+          content.style.maxHeight = "0px";
+          content.style.opacity = "0";
+          content.style.transform = "translateY(10px)";
+
+          requestAnimationFrame(() => {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.opacity = "1";
+            content.style.transform = "translateY(0)";
+          });
+
+        } else {
+          // CLOSE
+          content.style.maxHeight = content.scrollHeight + "px";
+
+          requestAnimationFrame(() => {
+            content.style.maxHeight = "0px";
+            content.style.opacity = "0";
+            content.style.transform = "translateY(10px)";
+          });
+        }
+      });
+
+      content.addEventListener("transitionend", () => {
+        if (details.open) {
+          content.style.maxHeight = "none"; // allow natural height after open
+        }
+      });
+    });
+  </script>
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
