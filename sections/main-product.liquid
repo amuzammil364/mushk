@@ -59,7 +59,7 @@
     document.querySelectorAll(".product-accordion").forEach((details) => {
       const content = details.querySelector(".product-accordion__content");
 
-      details.addEventListener("toggle", () => {
+      details.addEventListener("click", () => {
         if (details.open) {
           content.classList.add("is-open");
         } else {
