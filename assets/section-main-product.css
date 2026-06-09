@@ -1558,6 +1558,20 @@ a.product__text {
 .product-accordion .product-accordion__content{
   padding: 0 20px;
   padding-bottom: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  max-height: 0;
+  transition: 
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.product-accordion[open] .product-accordion__content {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
 }
 
 .product-accordion .product-accordion__content h1,
