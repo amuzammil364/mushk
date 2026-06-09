@@ -1200,7 +1200,7 @@ a.product__text {
 .product__inventory {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 18px;
   margin-top: 0;
 }
 
