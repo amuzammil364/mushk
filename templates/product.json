@@ -59,7 +59,9 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+            "display_style": "simple"
+          }
         },
         "share": {
           "type": "share",
