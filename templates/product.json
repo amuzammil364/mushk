@@ -60,6 +60,7 @@
         "whatsapp_button_cVqVyR": {
           "type": "whatsapp_button",
           "settings": {
+            "icon": "shopify://shop_images/whatsapp-icon.png",
             "label": "Order on WhatsApp",
             "phone": "923032157357",
             "message": "Hello, I want to know more about this product."
