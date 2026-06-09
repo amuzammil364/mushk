@@ -127,7 +127,8 @@
                     product: product,
                     use_variant: true,
                     show_badges: true,
-                    price_class: 'price--large'
+                    price_class: 'price--large',
+                    show_save_amount: show_save_amount
                   -%}
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
@@ -2322,6 +2323,12 @@
       "id": "heading_uppercase",
       "label": "Heading Uppercase Heading",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_save_amount",
+      "label": "Show Save Amount",
+      "default": true
     },
     {
       "type": "header",
