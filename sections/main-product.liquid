@@ -38,6 +38,10 @@
       {% if section.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
     }
 
+    #ProductInfo-{{ section.id }} .shopify-app-block{
+      margin-bottom: 0 !important;
+    }
+
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
