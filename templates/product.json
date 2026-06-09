@@ -164,8 +164,8 @@
         "show_rating": true,
         "quick_add": "standard",
         "show_save_amount": true,
-        "padding_top": 36,
-        "padding_bottom": 28
+        "padding_top": 12,
+        "padding_bottom": 72
       }
     }
   },
