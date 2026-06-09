@@ -1557,7 +1557,6 @@ a.product__text {
 
 .product-accordion .product-accordion__content{
   padding: 0 20px;
-  padding-bottom: 20px;
   overflow: hidden;
   opacity: 0;
   transform: translateY(10px);
