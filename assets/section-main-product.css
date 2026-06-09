@@ -1530,7 +1530,7 @@ a.product__text {
   margin-bottom: 8px;
 }
 
-.product-accordion summary{
+.product-accordion .product-accordion__header{
   width: 100%;
   text-align: center;
   text-transform: uppercase;
