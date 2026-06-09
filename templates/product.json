@@ -38,6 +38,7 @@
         "usp_cAEDBG": {
           "type": "usp",
           "settings": {
+            "icon": "shopify://shop_images/icons8-world-50.png",
             "text": "14 Days Easy Return"
           }
         },
