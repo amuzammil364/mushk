@@ -80,6 +80,7 @@
         "heading_top_spacing": 0,
         "heading_bottom_spacing": 0,
         "heading_uppercase": true,
+        "show_save_amount": true,
         "padding_top": 36,
         "padding_bottom": 12
       }
