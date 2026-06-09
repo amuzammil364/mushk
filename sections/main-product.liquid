@@ -25,6 +25,25 @@
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
 
+  <script>
+  document.querySelectorAll(".product-accordion").forEach((item) => {
+    const header = item.querySelector(".product-accordion__header");
+    const content = item.querySelector(".product-accordion__content");
+
+    console.log("Item: ", item);
+
+    header.addEventListener("click", () => {
+      item.classList.toggle("is-open");
+
+      if (item.classList.contains("is-open")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = "0px";
+      }
+    });
+  });
+  </script>
+
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -54,25 +73,6 @@
       }
     }
   {%- endstyle -%}
-
-  <script>
-  document.querySelectorAll(".product-accordion").forEach((item) => {
-    const header = item.querySelector(".product-accordion__header");
-    const content = item.querySelector(".product-accordion__content");
-
-    console.log("Item: ", item);
-
-    header.addEventListener("click", () => {
-      item.classList.toggle("is-open");
-
-      if (item.classList.contains("is-open")) {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } else {
-        content.style.maxHeight = "0px";
-      }
-    });
-  });
-  </script>
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
