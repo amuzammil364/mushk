@@ -228,17 +228,20 @@
                 </div>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
-                  </div>
-                {%- endif -%}
-                <details class="product-accordion">
-                  <summary>Description</summary>
+                  {% if block.settings.display_style == 'simple' %}
+                    <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                      {{ product.description }}
+                    </div>
+                  {% else %}
+                    <details class="product-accordion">
+                      <summary>Description</summary>
 
-                  <div class="product-accordion__content rte">
-                    {{ product.description }}
-                  </div>
-                </details>
+                      <div class="product-accordion__content rte">
+                        {{ product.description }}
+                      </div>
+                    </details>
+                  {% endif %}
+                {%- endif -%}
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
