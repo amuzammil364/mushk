@@ -293,12 +293,12 @@
                   {% assign phone = block.settings.phone %}
                   {% assign product_link = shop.url | append: product.url %}
 
-                  {% capture message %}
+                  {% comment %} {% capture message %}
                   {{block.settings.message }}
 
                   {{ product.title }}
                   {{ product_link }}
-                  {% endcapture %}
+                  {% endcapture %} {% endcomment %}
 
                   {% assign whatsapp_message = message | strip | url_encode %}
 
@@ -942,10 +942,10 @@
           "default": "923001234567"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "message",
           "label": "Default Message",
-          "default": "Hello, I want to know more about this product."
+          "default": "<p>Hello, I want to know more about this product.</p>"
         }
       ]
     },
