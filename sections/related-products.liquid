@@ -77,6 +77,52 @@
       "label": "t:sections.related-products.settings.heading.label"
     },
     {
+      "type": "color",
+      "id": "section_border_color",
+      "label": "Border Color",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "range",
+      "id": "border_top_width",
+      "label": "Top Border",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_right_width",
+      "label": "Right Border",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_bottom_width",
+      "label": "Bottom Border",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_left_width",
+      "label": "Left Border",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -103,6 +149,53 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading Alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing",
+      "label": "Heading Letter Spacing",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_top_spacing",
+      "label": "Heading Top Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_bottom_spacing",
+      "label": "Heading Bottom Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_uppercase",
+      "label": "Heading Uppercase Heading",
+      "default": false
     },
     {
       "type": "range",
