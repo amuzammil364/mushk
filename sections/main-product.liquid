@@ -121,6 +121,18 @@
                     </h2>
                   </a>
                 </div>
+              {% when 'usp' %}
+                <div class="product__usp">
+                  {% if block.settings.icon != blank %}
+                    {{
+                      block.settings.icon
+                      | image_url: width: 50
+                      | image_tag
+                    }}
+                  {% endif %}
+
+                  <span>{{ block.settings.text }}</span>
+                </div>
               {%- when 'price' -%}
                 {% assign badge_status = true %}
 
