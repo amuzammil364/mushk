@@ -1515,6 +1515,11 @@ a.product__text {
   letter-spacing: .3rem;
   font-size: 1.3rem;
   opacity: 1 !important;
+  gap: 14px;
+}
+
+.product__whatsapp-button a img{
+  width: 20px;
 }
 
 @media screen and (forced-colors: active) {
