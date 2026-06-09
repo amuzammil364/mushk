@@ -477,18 +477,6 @@
                     </volume-pricing>
                   {%- endif -%}
                 </div>
-              {%- when 'usp' -%}
-                <div class="product__usp">
-                  {% if block.settings.icon != blank %}
-                    {{
-                      block.settings.icon
-                      | image_url: width: 50
-                      | image_tag
-                    }}
-                  {% endif %}
-
-                  <span>{{ block.settings.text }}</span>
-                </div>
               {%- when 'popup' -%}
                 <modal-opener
                   class="product-popup-modal__opener quick-add-hidden"
