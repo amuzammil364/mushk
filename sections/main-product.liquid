@@ -291,7 +291,10 @@
                 <div class="product__whatsapp-button">
 
                   {% assign phone = block.settings.phone %}
-                  {% assign message = block.settings.message | url_encode %}
+                  {% assign message = "Hi, I'm interested in this product:"
+                  | append: "\n\n" | append: product.title
+                  | append: "\n" | append: shop.url | append: product.url
+                  | url_encode %}
 
                   <a 
                     href="https://wa.me/{{ phone }}?text={{ message }}" 
