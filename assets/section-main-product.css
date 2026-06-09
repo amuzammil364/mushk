@@ -1577,7 +1577,7 @@ a.product__text {
   transform: translateY(30px);
   max-height: 0;
   transition: 
-    max-height 0.4s ease,
+    max-height 0.8s ease,
     opacity 0.3s ease,
     transform 0.3s ease;
 }
