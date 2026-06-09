@@ -70,18 +70,6 @@
             "label": "Shipping Information",
             "text": "<ul><li><strong>What are the Delivery charges?<br/></strong>The delivery charges are Rs 200<br/></li><li><strong>When will my order be delivered?<br/></strong>Delivery Timings:<br/>For Karachi - 2-3 working days.<br/>Outside Karachi - 3-5 working days.</li></ul>"
           }
-        },
-        "ask_question_H7qKrm": {
-          "type": "ask_question",
-          "settings": {
-            "label": "Ask a Question"
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -94,9 +82,7 @@
         "inventory_7zFFkD",
         "buy_buttons",
         "description",
-        "shipping_info_QPdw3k",
-        "ask_question_H7qKrm",
-        "share"
+        "shipping_info_QPdw3k"
       ],
       "settings": {
         "enable_sticky_info": true,
