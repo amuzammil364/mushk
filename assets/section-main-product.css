@@ -1522,6 +1522,10 @@ a.product__text {
   width: 26px;
 }
 
+.product-accordion{
+  border: 1px solid #c5c5c5;
+}
+
 @media screen and (forced-colors: active) {
   .recipient-fields > hr {
     border-top: 0.1rem solid rgb(var(--color-background));
