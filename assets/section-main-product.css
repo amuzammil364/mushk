@@ -294,6 +294,11 @@ a.product__text {
   gap: 14px;
 }
 
+.product__usp img{
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (min-width: 750px) {
   .product__info-container {
     max-width: 60rem;
