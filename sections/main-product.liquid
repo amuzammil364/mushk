@@ -122,11 +122,17 @@
                   </a>
                 </div>
               {%- when 'price' -%}
+                {% assign badge_status = true %}
+
+                {% if section.settings.show_save_amount %}
+                  {% assign badge_status = false %}
+                {% endif %}
+
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
                     product: product,
                     use_variant: true,
-                    show_badges: false,
+                    show_badges: badge_status,
                     price_class: 'price--large',
                     show_save_amount: {{section.settings.show_save_amount}}
                   -%}
