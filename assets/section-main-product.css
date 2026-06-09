@@ -1541,7 +1541,7 @@ a.product__text {
   position: relative;
 }
 
-.product-accordion summary img{
+.product-accordion .product-accordion__header img{
   content: "";
   position: absolute;
   top: 50%;
@@ -1551,7 +1551,7 @@ a.product__text {
   transform: translateY(-50%) rotate(0deg);
 }
 
-.product-accordion[open] summary img {
+.product-accordion.is-open .product-accordion__header img {
   transform: translateY(-50%) rotate(-180deg);
 }
 
