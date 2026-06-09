@@ -990,7 +990,25 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+          {
+          "type": "select",
+          "id": "display_style",
+          "label": "Display style",
+          "options": [
+            {
+              "value": "simple",
+              "label": "Simple"
+            },
+            {
+              "value": "collapsible",
+              "label": "Collapsible"
+            }
+          ],
+          "default": "collapsible"
+        },
+      ]
     },
     {
       "type": "share",
