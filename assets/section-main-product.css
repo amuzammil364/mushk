@@ -1526,6 +1526,19 @@ a.product__text {
   border: 1px solid #c5c5c5;
 }
 
+.product-accordion summary{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+.product-accordion .product-accordion__content{
+  border-top: 1px solid #c5c5c5;
+}
+
 @media screen and (forced-colors: active) {
   .recipient-fields > hr {
     border-top: 0.1rem solid rgb(var(--color-background));
