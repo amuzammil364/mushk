@@ -1204,6 +1204,7 @@ a.product__text {
   align-items: center;
   gap: 18px;
   margin-top: 0;
+  margin-left: 4px;
 }
 
 .product__inventory .svg-wrapper,
