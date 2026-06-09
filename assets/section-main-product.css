@@ -1539,11 +1539,14 @@ a.product__text {
   position: relative;
 }
 
-.product-accordion summary::after{
+.product-accordion summary img{
   content: "";
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
 }
 
 .product-accordion .product-accordion__content{
