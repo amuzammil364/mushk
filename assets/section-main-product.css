@@ -1225,17 +1225,6 @@ a.product__text {
 
 .product__inventory .icon-inventory-status circle:first-of-type {
   opacity: .3;
-  animation: inventory-pulse 2s linear infinite;
-}
-
-@keyframes inventory-pulse{
-  0%{
-    opacity: .5;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2.5);
-  }
 }
 
 /* Icon with text */
