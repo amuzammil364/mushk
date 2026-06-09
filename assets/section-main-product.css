@@ -1546,7 +1546,11 @@ a.product__text {
   right: 10px;
   width: 14px;
   height: 14px;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.product-accordion[open] summary img {
+  transform: translateY(-50%) rotate(-90deg);
 }
 
 .product-accordion .product-accordion__content{
