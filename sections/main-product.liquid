@@ -269,18 +269,18 @@
                       {{ product.description }}
                     </div>
                   {% else %}
-                    <details class="product-accordion">
-                      <summary>Description
+                    <div class="product-accordion">
+                      <div>Description
 
                       {%- if block.settings.icon != blank -%}
                         <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" />
                         {% endif %}
-                      </summary>
+                      </div>
 
                       <div class="product-accordion__content rte">
                         {{ product.description }}
                       </div>
-                    </details>
+                    </div>
                   {% endif %}
                 {%- endif -%}
               {%- when 'shipping_info' -%}
