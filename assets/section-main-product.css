@@ -291,7 +291,7 @@ a.product__text {
 .product__usp{
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 }
 
 .product__usp img{
