@@ -258,6 +258,27 @@
                     </details>
                   {% endif %}
                 {%- endif -%}
+              {%- when 'ask_question' -%}
+                <div class="product__ask-question">
+
+                  {% if block.settings.label != blank %}
+                    <h4>{{ block.settings.label }}</h4>
+                  {% endif %}
+
+                  {% form 'contact' %}
+                    <input type="hidden" name="form_type" value="contact">
+                    <div class="field">
+                      <input type="text" name="contact[name]" placeholder="Your Name" required>
+                    </div>
+                    <div class="field">
+                      <input type="email" name="contact[email]" placeholder="Your Email" required>
+                    </div>
+                    <div class="field">
+                      <textarea name="contact[body]" placeholder="Your Question" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                  {% endform %}
+                </div>
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
