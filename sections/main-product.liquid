@@ -60,12 +60,7 @@
       const content = details.querySelector(".product-accordion__content");
 
       details.addEventListener("click", () => {
-        if (details.open) {
-          content.classList.add("is-open");
-        } else {
-          // CLOSE
-          content.classList.remove("is-open");
-        }
+        content.classList.toggle("is-open");
       });
     });
   </script>
