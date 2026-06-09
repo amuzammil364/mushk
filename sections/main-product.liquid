@@ -234,7 +234,12 @@
                     </div>
                   {% else %}
                     <details class="product-accordion">
-                      <summary>Description <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" /></summary>
+                      <summary>Description
+
+                      {%- if block.settings.icon != blank -%}
+                        <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" />
+                        {% endif %}
+                      </summary>
 
                       <div class="product-accordion__content rte">
                         {{ product.description }}
@@ -250,7 +255,11 @@
                     </div>
                   {% else %}
                     <details class="product-accordion">
-                      <summary>{{ block.settings.label }} <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" /></summary>
+                      <summary>{{ block.settings.label }} 
+                      {%- if block.settings.icon != blank -%}  
+                        <img src="{{ block.settings.icon | image_url }}" alt="Angle Icon" />
+                        {% endif %}
+                    </summary>
 
                       <div class="product-accordion__content rte">
                         {{ block.settings.text }}
@@ -269,7 +278,9 @@
                     target="_blank"
                     class="whatsapp-btn"
                   >
-                    <img src="{{ block.settings.icon | image_url }}" alt="Whatsapp Icon" />
+                    {%- if block.settings.icon != blank -%}
+                      <img src="{{ block.settings.icon | image_url }}" alt="Whatsapp Icon" />
+                      {% endif %}
                     {{ block.settings.label }}
                   </a>
 
