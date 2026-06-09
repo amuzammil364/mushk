@@ -1202,7 +1202,7 @@ a.product__text {
 .product__inventory {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   margin-top: 0;
   margin-left: 4px;
 }
