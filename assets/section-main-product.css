@@ -1508,6 +1508,7 @@ a.product__text {
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
+  letter-spacing: .3rem;
 }
 
 @media screen and (forced-colors: active) {
