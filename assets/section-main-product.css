@@ -1550,7 +1550,7 @@ a.product__text {
 }
 
 .product-accordion[open] summary img {
-  transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-180deg);
 }
 
 .product-accordion .product-accordion__content{
