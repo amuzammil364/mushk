@@ -1496,6 +1496,13 @@ a.product__text {
   text-transform: capitalize;
 }
 
+.product__whatsapp-button a{
+  display: inline-block;
+  width: 100%;
+  background-color: #25D366;
+  color: #ffffff;
+}
+
 @media screen and (forced-colors: active) {
   .recipient-fields > hr {
     border-top: 0.1rem solid rgb(var(--color-background));
