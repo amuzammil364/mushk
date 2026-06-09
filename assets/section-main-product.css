@@ -95,6 +95,7 @@ product-info {
   font-family: inherit;
   min-height: 4.6rem;
   text-transform: uppercase;
+  letter-spacing: .3rem;
 }
 
 .shopify-payment-button__button [role='button'].focused {
