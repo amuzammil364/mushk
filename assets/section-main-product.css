@@ -1535,6 +1535,7 @@ a.product__text {
   font-size: 1.6rem;
   padding: 10px;
   letter-spacing: 2px;
+  position: relative;
 }
 
 .product-accordion .product-accordion__content{
