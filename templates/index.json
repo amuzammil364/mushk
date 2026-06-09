@@ -465,6 +465,46 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_gmLCfa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hrrMwY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mushk Customer Reviews",
+            "heading_size": "h2",
+            "heading_letter_spacing": 1,
+            "heading_top_spacing": 0,
+            "heading_bottom_spacing": 0,
+            "heading_uppercase": true
+          }
+        },
+        "text_hwQ86a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mushk has a rating of 4.78 out of 5 from over 313 verified reviews. Real people, real purchases, real feedback. We do not edit or filter our reviews.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hrrMwY",
+        "text_hwQ86a"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "section_border_color": "#e5e5e5",
+        "border_top_width": 0,
+        "border_right_width": 0,
+        "border_bottom_width": 0,
+        "border_left_width": 0,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "178101781148943d22": {
       "type": "apps",
       "blocks": {
@@ -798,6 +838,7 @@
     "featured_collection_im8fRb",
     "collection_list_BR9jtq",
     "image_with_text_PMcWXh",
+    "rich_text_gmLCfa",
     "178101781148943d22",
     "image_with_text_Gq4WTr",
     "collapsible_content_XpDPY4",
