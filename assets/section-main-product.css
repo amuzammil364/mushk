@@ -1539,6 +1539,13 @@ a.product__text {
   position: relative;
 }
 
+.product-accordion summary::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
 .product-accordion .product-accordion__content{
   padding: 0 20px;
   padding-bottom: 20px;
