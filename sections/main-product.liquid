@@ -61,32 +61,10 @@
 
       details.addEventListener("toggle", () => {
         if (details.open) {
-          // OPEN
-          content.style.maxHeight = "0px";
-          content.style.opacity = "0";
-          content.style.transform = "translateY(10px)";
-
-          requestAnimationFrame(() => {
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.style.opacity = "1";
-            content.style.transform = "translateY(0)";
-          });
-
+          content.classList.add("is-open");
         } else {
           // CLOSE
-          content.style.maxHeight = content.scrollHeight + "px";
-
-          requestAnimationFrame(() => {
-            content.style.maxHeight = "0px";
-            content.style.opacity = "0";
-            content.style.transform = "translateY(10px)";
-          });
-        }
-      });
-
-      content.addEventListener("transitionend", () => {
-        if (details.open) {
-          content.style.maxHeight = "none"; // allow natural height after open
+          content.classList.remove("is-open");
         }
       });
     });
