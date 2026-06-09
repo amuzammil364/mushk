@@ -94,6 +94,7 @@ product-info {
 .shopify-payment-button__button {
   font-family: inherit;
   min-height: 4.6rem;
+  text-transform: uppercase;
 }
 
 .shopify-payment-button__button [role='button'].focused {
