@@ -63,6 +63,13 @@
             "display_style": "collapsible"
           }
         },
+        "shipping_info_QPdw3k": {
+          "type": "shipping_info",
+          "settings": {
+            "label": "Shipping Information",
+            "text": "<p>We deliver within 2–5 business days across Pakistan.</p>"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -80,6 +87,7 @@
         "inventory_7zFFkD",
         "buy_buttons",
         "description",
+        "shipping_info_QPdw3k",
         "share"
       ],
       "settings": {
