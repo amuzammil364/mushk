@@ -16,12 +16,6 @@
           "type": "title",
           "settings": {}
         },
-        "usp_cAEDBG": {
-          "type": "usp",
-          "settings": {
-            "text": "14 Days Easy Return"
-          }
-        },
         "judge_me_reviews_preview_badge_b9hKj9": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -40,6 +34,12 @@
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
+        },
+        "usp_cAEDBG": {
+          "type": "usp",
+          "settings": {
+            "text": "14 Days Easy Return"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -61,11 +61,11 @@
       },
       "block_order": [
         "title",
-        "usp_cAEDBG",
         "judge_me_reviews_preview_badge_b9hKj9",
         "price",
         "variant_picker",
         "quantity_selector",
+        "usp_cAEDBG",
         "buy_buttons",
         "description",
         "share"
