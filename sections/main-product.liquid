@@ -26,22 +26,24 @@
   {%- endif -%}
 
   <script>
-  document.querySelectorAll(".product-accordion").forEach((item) => {
-    const header = item.querySelector(".product-accordion__header");
-    const content = item.querySelector(".product-accordion__content");
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".product-accordion").forEach((item) => {
+        const header = item.querySelector(".product-accordion__header");
+        const content = item.querySelector(".product-accordion__content");
 
-    console.log("Item: ", item);
+        console.log("Item: ", item);
 
-    header.addEventListener("click", () => {
-      item.classList.toggle("is-open");
+        header.addEventListener("click", () => {
+          item.classList.toggle("is-open");
 
-      if (item.classList.contains("is-open")) {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } else {
-        content.style.maxHeight = "0px";
-      }
+          if (item.classList.contains("is-open")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = "0px";
+          }
+        });
+      });
     });
-  });
   </script>
 
   {%- style -%}
