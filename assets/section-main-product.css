@@ -1558,6 +1558,16 @@ a.product__text {
   padding-bottom: 20px;
 }
 
+.product-accordion .product-accordion__content h1,
+.product-accordion .product-accordion__content h2,
+.product-accordion .product-accordion__content h3,
+.product-accordion .product-accordion__content h4,
+.product-accordion .product-accordion__content h5,
+.product-accordion .product-accordion__content h6{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 @media screen and (forced-colors: active) {
   .recipient-fields > hr {
     border-top: 0.1rem solid rgb(var(--color-background));
