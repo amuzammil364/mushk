@@ -15,13 +15,21 @@
         "slide_BniFyx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner-1.webp"
+            "image": "shopify://shop_images/banner-1.webp",
+            "heading": "Black Noir",
+            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections"
           }
         },
         "slide_kDfVGb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-royal-oud-banner.webp"
+            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-royal-oud-banner.webp",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
