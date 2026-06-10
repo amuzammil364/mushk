@@ -30,8 +30,12 @@
             "text_top_spacing": 0,
             "text_bottom_spacing": 36,
             "desktop_padding_top": 160,
+            "desktop_padding_left": 160,
+            "desktop_padding_right": 160,
             "desktop_padding_bottom": 160,
             "mobile_padding_top": 100,
+            "mobile_padding_left": 20,
+            "mobile_padding_right": 20,
             "mobile_padding_bottom": 100
           }
         },
@@ -53,8 +57,12 @@
             "text_top_spacing": 0,
             "text_bottom_spacing": 36,
             "desktop_padding_top": 160,
+            "desktop_padding_left": 80,
+            "desktop_padding_right": 80,
             "desktop_padding_bottom": 160,
             "mobile_padding_top": 100,
+            "mobile_padding_left": 20,
+            "mobile_padding_right": 20,
             "mobile_padding_bottom": 100
           }
         }
