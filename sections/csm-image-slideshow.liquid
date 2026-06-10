@@ -1,0 +1,63 @@
+{{ 'flickity.min.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .csm-image-flickity-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .csm-image-flickity-slider .csm-image-carousel-cell {
+    width: 100%;
+    margin-right: 0;
+  }
+</style>
+
+<div class="csm-image-flickity-slider">
+  {% for block in section.blocks %}
+    <div class="csm-image-carousel-cell">
+    </div>
+  {% endfor %}
+</div>
+
+<script
+  src="{{ 'flickity.pkgd.min.js' | asset_url }}"
+  defer
+></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  new Flickity('.csm-image-flickity-slider', {
+    wrapAround: true,
+    autoPlay: 3000,
+    pauseAutoPlayOnHover: true,
+    prevNextButtons: false,
+    pageDots: true,
+    draggable: true
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "CSM Image Slideshow",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "CSM Image Slideshow"
+    }
+  ]
+}
+{% endschema %}
