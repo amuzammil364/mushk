@@ -16,6 +16,10 @@
     padding-right: 12%;
   }
 
+  .csm-slide__content{
+    text-align: {{section.settings.section_desktop_alignment}};
+  }
+
   .csm-slide__content h2{
     color: rgb(var(--color-foreground)); 
   }
@@ -73,6 +77,13 @@
     .csm-flickity-slider .carousel-cell{
       padding-left: 5rem;
       padding-right: 5rem;
+    }
+  }
+
+  @media (max-width: 465px){
+    .csm-slide__content{
+      max-width: 100%;
+      text-align: {{section.settings.section_mobile_alignment}};
     }
   }
 </style>
@@ -164,6 +175,28 @@ document.addEventListener('DOMContentLoaded', function () {
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "section_desktop_alignment",
+      "label": "Alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_mobile_alignment",
+      "label": "Alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
     },
   ],
   "blocks": [
