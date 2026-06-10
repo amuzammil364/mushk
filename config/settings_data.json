@@ -141,6 +141,50 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "marquee-bar": {
+        "type": "marquee-bar",
+        "blocks": {
+          "item_YgkBdC": {
+            "type": "item",
+            "settings": {
+              "heading": "BLACK FRIDAY :10% OFF STOREWIDE",
+              "link": ""
+            }
+          },
+          "item_kkCHKi": {
+            "type": "item",
+            "settings": {
+              "heading": "BLACK FRIDAY :10% OFF STOREWIDE",
+              "link": ""
+            }
+          },
+          "item_YFAHQk": {
+            "type": "item",
+            "settings": {
+              "heading": "BLACK FRIDAY :10% OFF STOREWIDE",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "item_YgkBdC",
+          "item_kkCHKi",
+          "item_YFAHQk"
+        ],
+        "settings": {
+          "enable_marquee": true,
+          "bg_color": "#000000",
+          "subtitle_uppercase": false,
+          "text_size": "medium",
+          "letter_spacing": 3,
+          "text_color": "#ffffff",
+          "text_hover_color": "#ffffff",
+          "marquee_speed": "medium",
+          "padding_top": 8,
+          "padding_bottom": 8,
+          "custom_class": ""
+        }
       }
     },
     "content_for_index": [],
