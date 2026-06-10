@@ -117,7 +117,7 @@
       ],
       "name": "CSM Image Slideshow",
       "settings": {
-        "navigation_style": "dots",
+        "navigation_style": "arrows",
         "mobile_height": 550
       }
     },
