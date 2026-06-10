@@ -17,13 +17,6 @@
     justify-content: {{section.settings.section_desktop_alignment}};
   }
 
-  .csm-slide__content{
-    display: flex;
-    flex-direction: column;
-    align-items: {{section.settings.section_desktop_alignment}};
-    text-align: {{section.settings.section_desktop_alignment}};
-  }
-
   .csm-slide__content h2{
     color: rgb(var(--color-foreground)); 
   }
@@ -86,8 +79,6 @@
   @media (max-width: 465px){
     .csm-slide__content{
       max-width: 100% !important;
-      align-items: {{section.settings.section_mobile_alignment}};
-      text-align: {{section.settings.section_mobile_alignment}};
     }
   }
 </style>
@@ -144,6 +135,10 @@
         #carousel-cell-{{ block.id }} .csm-slide__content{
           max-width: {{ block.settings.max_width }}px;
           width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: {{block.settings.block_desktop_alignment}};
+          text-align: {{block.settings.block_desktop_alignment}};
         }
 
         @media screen and (max-width: 768px) {
@@ -152,6 +147,13 @@
             padding-right: {{block.settings.mobile_padding_right }}px;
             padding-left: {{block.settings.mobile_padding_left }}px;
             padding-bottom: {{ block.settings.mobile_padding_bottom }}px;
+          }
+        }
+
+        @media (max-width: 465px){
+          #carousel-cell-{{ block.id }} .csm-slide__content{
+            align-items: {{section.settings.block_mobile_alignment}};
+            text-align: {{section.settings.block_mobile_alignment}};
           }
         }
       </style>
@@ -215,6 +217,28 @@ document.addEventListener('DOMContentLoaded', function () {
       "type": "slide",
       "name": "Slide",
       "settings": [
+        {
+          "type": "select",
+          "id": "block_desktop_alignment",
+          "label": "Desktop Alignment",
+          "default": "left",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "block_mobile_alignment",
+          "label": "Mobile Alignment",
+          "default": "left",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ]
+        },
         {
           "type": "range",
           "id": "max_width",
