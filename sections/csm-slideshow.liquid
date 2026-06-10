@@ -52,11 +52,12 @@
 <div class="csm-flickity-slider">
   {% for block in section.blocks %}
     <div class="carousel-cell" id="carousel-cell-{{ block.id }}" style="
-      background-image: {% if block.settings.overlay_gradient != blank %}
+    background-image:
+    {% if block.settings.overlay_gradient != blank %}
       {{ block.settings.overlay_gradient }},
-    {% endif %},
+    {% endif %}
       url('{{ block.settings.image | image_url: width: 2000 }}');
-      ">
+  ">
       <div class="csm-slide__content">
         {% if block.settings.heading != blank %}
           <h2>{{ block.settings.heading }}</h2>
