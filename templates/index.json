@@ -46,7 +46,7 @@
           "settings": {
             "block_desktop_alignment": "left",
             "block_mobile_alignment": "center",
-            "max_width": 480,
+            "max_width": 520,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-2-wo-content.webp",
             "heading": "Jasly Jasvia",
