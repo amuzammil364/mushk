@@ -17,7 +17,9 @@
   }
 
   .csm-slide__content{
-    text-align: {{section.settings.section_desktop_alignment}};
+    display: flex;
+    flex-direction: column;
+    align-items: {{section.settings.section_desktop_alignment}};
   }
 
   .csm-slide__content h2{
@@ -83,7 +85,7 @@
   @media (max-width: 465px){
     .csm-slide__content{
       max-width: 100% !important;
-      text-align: {{section.settings.section_mobile_alignment}};
+      align-items: {{section.settings.section_mobile_alignment}};
     }
   }
 </style>
