@@ -29,8 +29,8 @@
             "heading_bottom_spacing": 14,
             "text_top_spacing": 0,
             "text_bottom_spacing": 36,
-            "desktop_padding_top": 150,
-            "desktop_padding_bottom": 150,
+            "desktop_padding_top": 160,
+            "desktop_padding_bottom": 160,
             "mobile_padding_top": 100,
             "mobile_padding_bottom": 100
           }
@@ -52,8 +52,8 @@
             "heading_bottom_spacing": 14,
             "text_top_spacing": 0,
             "text_bottom_spacing": 36,
-            "desktop_padding_top": 150,
-            "desktop_padding_bottom": 150,
+            "desktop_padding_top": 160,
+            "desktop_padding_bottom": 160,
             "mobile_padding_top": 100,
             "mobile_padding_bottom": 100
           }
