@@ -6,6 +6,27 @@
         max-width: 100% !important;
       }
     </style>
+      <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".container:not(header .container):not(footer .container):not(.hero-section .container)");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+});
+</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
