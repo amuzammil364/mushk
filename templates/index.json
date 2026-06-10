@@ -88,13 +88,15 @@
         "slide_7Xewqw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner-1-wo-content.webp"
+            "image": "shopify://shop_images/banner-1-wo-content.webp",
+            "mobile_image": "shopify://shop_images/mobile-banner-1-wo-content.webp"
           }
         },
         "slide_iTfkAn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner-2-wo-content.webp"
+            "image": "shopify://shop_images/banner-2-wo-content.webp",
+            "mobile_image": "shopify://shop_images/mobile-banner-2-wo-content.webp"
           }
         }
       },
@@ -103,7 +105,10 @@
         "slide_iTfkAn"
       ],
       "name": "CSM Image Slideshow",
-      "settings": {}
+      "settings": {
+        "navigation_style": "dots",
+        "mobile_height": 400
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
