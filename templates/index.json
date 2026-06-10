@@ -31,8 +31,8 @@
             "text_bottom_spacing": 36,
             "desktop_padding_top": 140,
             "desktop_padding_bottom": 128,
-            "mobile_padding_top": 60,
-            "mobile_padding_bottom": 60
+            "mobile_padding_top": 100,
+            "mobile_padding_bottom": 100
           }
         },
         "slide_kDfVGb": {
@@ -54,8 +54,8 @@
             "text_bottom_spacing": 36,
             "desktop_padding_top": 140,
             "desktop_padding_bottom": 128,
-            "mobile_padding_top": 60,
-            "mobile_padding_bottom": 60
+            "mobile_padding_top": 100,
+            "mobile_padding_bottom": 100
           }
         }
       },
