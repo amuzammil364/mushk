@@ -42,7 +42,7 @@
 
 <div class="csm-image-flickity-slider">
   {% for block in section.blocks %}
-    <div class="csm-image-carousel-cell">
+    <a class="csm-image-carousel-cell" href="{{ block.settings.link }}">
         {% if block.settings.image != blank %}
             <img
                 class="desktop-img"
@@ -63,7 +63,7 @@
             >
             {% endif %}
         {% endif %}
-    </div>
+    </a>
   {% endfor %}
 </div>
 
@@ -126,6 +126,11 @@ document.addEventListener('DOMContentLoaded', function () {
       "type": "slide",
       "name": "Slide",
       "settings": [
+        {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+        },
         {
             "type": "image_picker",
             "id": "image",
