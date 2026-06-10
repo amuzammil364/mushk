@@ -148,21 +148,21 @@
           "item_YgkBdC": {
             "type": "item",
             "settings": {
-              "heading": "BLACK FRIDAY :10% OFF STOREWIDE",
+              "heading": "Use Code : MUSHKS20 on Checkout",
               "link": ""
             }
           },
           "item_kkCHKi": {
             "type": "item",
             "settings": {
-              "heading": "BLACK FRIDAY :10% OFF STOREWIDE",
+              "heading": "Free Shipping on Orders above Rs.1000",
               "link": ""
             }
           },
           "item_YFAHQk": {
             "type": "item",
             "settings": {
-              "heading": "BLACK FRIDAY :10% OFF STOREWIDE",
+              "heading": "Black Friday :10% off Storewide",
               "link": ""
             }
           }
@@ -175,9 +175,9 @@
         "settings": {
           "enable_marquee": true,
           "bg_color": "#000000",
-          "subtitle_uppercase": false,
+          "subtitle_uppercase": true,
           "text_size": "medium",
-          "letter_spacing": 3,
+          "letter_spacing": 1,
           "text_color": "#ffffff",
           "text_hover_color": "#ffffff",
           "marquee_speed": "medium",
