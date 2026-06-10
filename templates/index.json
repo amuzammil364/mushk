@@ -15,7 +15,7 @@
         "slide_BniFyx": {
           "type": "slide",
           "settings": {
-            "max_width": 600,
+            "max_width": 400,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-1-wo-content.webp",
             "heading": "Black Noir",
@@ -38,7 +38,7 @@
         "slide_kDfVGb": {
           "type": "slide",
           "settings": {
-            "max_width": 600,
+            "max_width": 400,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-2-wo-content.webp",
             "heading": "Jasly",
