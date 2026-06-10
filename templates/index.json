@@ -88,6 +88,7 @@
         "slide_7Xewqw": {
           "type": "slide",
           "settings": {
+            "link": "shopify://collections",
             "image": "shopify://shop_images/banner-1-wo-content.webp",
             "mobile_image": "shopify://shop_images/mobile-banner-1-wo-content.webp"
           }
@@ -95,6 +96,7 @@
         "slide_iTfkAn": {
           "type": "slide",
           "settings": {
+            "link": "shopify://collections",
             "image": "shopify://shop_images/banner-2-wo-content.webp",
             "mobile_image": "shopify://shop_images/mobile-banner-2-wo-content.webp"
           }
