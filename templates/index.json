@@ -15,6 +15,8 @@
         "slide_BniFyx": {
           "type": "slide",
           "settings": {
+            "block_desktop_alignment": "right",
+            "block_mobile_alignment": "left",
             "max_width": 480,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-1-wo-content.webp",
@@ -42,6 +44,8 @@
         "slide_kDfVGb": {
           "type": "slide",
           "settings": {
+            "block_desktop_alignment": "left",
+            "block_mobile_alignment": "left",
             "max_width": 480,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-2-wo-content.webp",
@@ -74,7 +78,7 @@
       "name": "CSM Slideshow",
       "settings": {
         "color_scheme": "scheme-4",
-        "section_desktop_alignment": "left",
+        "section_desktop_alignment": "right",
         "section_mobile_alignment": "center"
       }
     },
