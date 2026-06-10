@@ -15,14 +15,14 @@
         "slide_BniFyx": {
           "type": "slide",
           "settings": {
-            "max_width": 400,
+            "max_width": 480,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-1-wo-content.webp",
             "heading": "Black Noir",
             "text": "A Bold and mysterious fragrance that exudes confidence and sophistication",
             "button_label": "Shop Now",
             "button_link": "shopify://collections",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "heading_letter_spacing": 1,
             "heading_uppercase": true,
             "heading_top_spacing": 0,
@@ -38,14 +38,14 @@
         "slide_kDfVGb": {
           "type": "slide",
           "settings": {
-            "max_width": 400,
+            "max_width": 480,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-2-wo-content.webp",
             "heading": "Jasly",
             "text": "A Bold and mysterious fragrance that exudes confidence and sophistication",
             "button_label": "Shop Now",
             "button_link": "shopify://collections",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "heading_letter_spacing": 1,
             "heading_uppercase": true,
             "heading_top_spacing": 0,
