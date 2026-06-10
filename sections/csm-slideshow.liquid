@@ -56,7 +56,7 @@
   }'
 >
   {% for block in section.blocks %}
-    <div class="carousel-cell" style="
+    <div class="carousel-cell" id="carousel-cell-{{ block.id }}" style="
       background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
       url('{{ block.settings.image | image_url: width: 2000 }}');
       ">
@@ -76,6 +76,12 @@
         {% endif %}
       </div>
     </div>
+    <style>
+      #carousel-cell-{{ block.id }}{
+        padding-top: {{block.settings.desktop_padding_top }}px;
+        padding-top: {{block.settings.desktop_padding_top }}px;
+      }
+    </style>
   {% endfor %}
 </div>
 
@@ -123,6 +129,30 @@
           "type": "url",
           "id": "button_link",
           "label": "Button link"
+        },
+        {
+          "type": "header",
+          "content": "Padding",
+        },
+        {
+          "type": "range",
+          "id": "desktop_padding_top",
+          "min": 0,
+          "max": 150,
+          "step": 2,
+          "unit": "px",
+          "label": "Desktop Padding top",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "desktop_padding_bottom",
+          "min": 0,
+          "max": 150,
+          "step": 2,
+          "unit": "px",
+          "label": "Desktop Padding bottom",
+          "default": 0
         }
       ]
     }
