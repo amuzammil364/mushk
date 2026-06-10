@@ -6,6 +6,10 @@
     overflow: hidden;
   }
 
+  .csm-container{
+    max-width: var(--page-width);
+  }
+
   .csm-flickity-slider .carousel-cell {
     width: 100%;
     margin-right: 0;
@@ -94,7 +98,7 @@
         url('{{ block.settings.image | image_url: width: 2000 }}');
     "
     >
-      <div class="page-width">
+      <div class="csm-container">
         <div class="csm-slide__content">
           {% if block.settings.heading != blank %}
             <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
