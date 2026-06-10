@@ -15,6 +15,9 @@
 <div class="csm-image-flickity-slider">
   {% for block in section.blocks %}
     <div class="csm-image-carousel-cell">
+        {%- if block.settings.image != blank -%}
+            <img src="{{ block.settings.image | image_url: width: 2000 }}" alt="Banner Slide Image" />
+            {% endif %}
     </div>
   {% endfor %}
 </div>
