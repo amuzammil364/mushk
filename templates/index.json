@@ -100,11 +100,20 @@
             "image": "shopify://shop_images/banner-2-wo-content.webp",
             "mobile_image": "shopify://shop_images/mobile-banner-2-wo-content.webp"
           }
+        },
+        "slide_gR6969": {
+          "type": "slide",
+          "settings": {
+            "link": "shopify://collections",
+            "image": "shopify://shop_images/banner-1-wo-content.webp",
+            "mobile_image": "shopify://shop_images/mobile-banner-1-wo-content.webp"
+          }
         }
       },
       "block_order": [
         "slide_7Xewqw",
-        "slide_iTfkAn"
+        "slide_iTfkAn",
+        "slide_gR6969"
       ],
       "name": "CSM Image Slideshow",
       "settings": {
