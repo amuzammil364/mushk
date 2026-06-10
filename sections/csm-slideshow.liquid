@@ -125,6 +125,8 @@
       <style>
         #carousel-cell-{{ block.id }}{
           padding-top: {{block.settings.desktop_padding_top }}px;
+          padding-right: {{block.settings.desktop_padding_right }}px;
+          padding-left: {{block.settings.desktop_padding_left }}px;
           padding-bottom: {{block.settings.desktop_padding_bottom }}px;
         }
 
@@ -360,6 +362,26 @@ document.addEventListener('DOMContentLoaded', function () {
           "step": 10,
           "unit": "px",
           "label": "Desktop Padding Top",
+          "default": 80
+        },
+        {
+          "type": "range",
+          "id": "desktop_padding_left",
+          "min": 80,
+          "max": 1000,
+          "step": 10,
+          "unit": "px",
+          "label": "Desktop Padding Left",
+          "default": 80
+        },
+        {
+          "type": "range",
+          "id": "desktop_padding_right",
+          "min": 80,
+          "max": 1000,
+          "step": 10,
+          "unit": "px",
+          "label": "Desktop Padding Right",
           "default": 80
         },
         {
