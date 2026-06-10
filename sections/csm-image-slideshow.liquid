@@ -1,24 +1,28 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .csm-image-flickity-slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
+    .csm-image-flickity-slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
 
-  .csm-image-flickity-slider .csm-image-carousel-cell {
-    width: 100%;
-    margin-right: 0;
-  }
+    .csm-image-flickity-slider .csm-image-carousel-cell {
+        width: 100%;
+        margin-right: 0;
+    }
 
-  .csm-image-flickity-slider .csm-image-carousel-cell img{
-    width: 100%;
-    display: block;
-  }
+    .csm-image-flickity-slider .csm-image-carousel-cell img{
+        width: 100%;
+        display: block;
+    }
 
     .mobile-img {
         display: none !important;
+    }
+
+    .csm-image-flickity-slider .flickity-button{
+        display: block !important;
     }
 
     @media (max-width: 465px) {
