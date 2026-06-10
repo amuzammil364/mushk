@@ -109,7 +109,7 @@
       "name": "CSM Image Slideshow",
       "settings": {
         "navigation_style": "arrows",
-        "mobile_height": 400
+        "mobile_height": 600
       }
     },
     "featured_collection": {
