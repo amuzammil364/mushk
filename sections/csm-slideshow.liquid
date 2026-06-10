@@ -44,16 +44,7 @@
   }
 </style>
 
-<div class="csm-flickity-slider"
-  data-flickity='{
-    "wrapAround": true,
-    "autoPlay": 3000,
-    "pauseAutoPlayOnHover": true,
-    "prevNextButtons": false,
-    "pageDots": true,
-    "draggable": true
-  }'
->
+<div class="csm-flickity-slider">
   {% for block in section.blocks %}
     <div class="carousel-cell" id="carousel-cell-{{ block.id }}" style="
       background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -88,6 +79,18 @@
   src="{{ 'flickity.pkgd.min.js' | asset_url }}"
   defer
 ></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  new Flickity('.csm-flickity-slider', {
+    wrapAround: true,
+    autoPlay: 3000,
+    pauseAutoPlayOnHover: true,
+    prevNextButtons: false,
+    pageDots: true,
+    draggable: true
+  });
+});
+</script>
 
 {% schema %}
 {
