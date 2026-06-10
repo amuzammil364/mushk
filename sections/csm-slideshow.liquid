@@ -108,6 +108,11 @@
           margin-bottom: {{block.settings.heading_bottom_spacing }}px;
         }
 
+        #carousel-cell-{{ block.id }} p{
+          margin-top: {{block.settings.text_top_spacing }}px;
+          margin-bottom: {{block.settings.text_bottom_spacing }}px;
+        }
+
         #carousel-cell-{{ block.id }} .csm-slide__content{
           max-width: {{ block.settings.max_width }}px;
         }
@@ -260,6 +265,30 @@ document.addEventListener('DOMContentLoaded', function () {
           "type": "range",
           "id": "heading_bottom_spacing",
           "label": "Heading Bottom Spacing",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "header",
+          "content": "Text",
+        },
+        {
+          "type": "range",
+          "id": "text_top_spacing",
+          "label": "Text Top Spacing",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "text_bottom_spacing",
+          "label": "Text Bottom Spacing",
           "min": 0,
           "max": 100,
           "step": 2,
