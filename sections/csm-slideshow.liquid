@@ -16,7 +16,6 @@
   }
 
   .csm-slide__content {
-    max-width: 600px;
     padding-left: 12%;
   }
 
@@ -91,6 +90,10 @@
           {% if block.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
         }
 
+        #carousel-cell-{{ block.id }} .csm-slide__content{
+          max-width: {{ block.settings.max_width }}px;
+        }
+
         @media screen and (max-width: 768px) {
           #carousel-cell-{{ block.id }} {
             padding-top: {{ block.settings.mobile_padding_top }}px;
@@ -136,6 +139,16 @@ document.addEventListener('DOMContentLoaded', function () {
       "type": "slide",
       "name": "Slide",
       "settings": [
+        {
+          "type": "range",
+          "id": "max_width",
+          "label": "Max Width",
+          "min": 100,
+          "max": 1000,
+          "step": 10,
+          "default": 700,
+          "unit": "px"
+        },
         {
           "type": "color_background",
           "id": "overlay_gradient",
