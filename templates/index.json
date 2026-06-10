@@ -19,7 +19,7 @@
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-1-wo-content.webp",
             "heading": "Black Noir",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "text": "A Bold and mysterious fragrance that exudes confidence and sophistication",
             "button_label": "Shop Now",
             "button_link": "shopify://collections",
             "heading_size": "h1",
@@ -42,7 +42,7 @@
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-2-wo-content.webp",
             "heading": "Jasly",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "text": "A Bold and mysterious fragrance that exudes confidence and sophistication",
             "button_label": "Shop Now",
             "button_link": "shopify://collections",
             "heading_size": "h1",
@@ -65,7 +65,9 @@
       ],
       "name": "CSM Slideshow",
       "settings": {
-        "color_scheme": "scheme-4"
+        "color_scheme": "scheme-4",
+        "section_desktop_alignment": "left",
+        "section_mobile_alignment": "center"
       }
     },
     "featured_collection": {
