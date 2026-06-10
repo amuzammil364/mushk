@@ -9,10 +9,9 @@
   .csm-flickity-slider .carousel-cell {
     width: 100%;
     margin-right: 0;
-    {% comment %} background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; {% endcomment %}
-    background-color: #000;
+    background-size: cover;
   }
 
   .csm-slide__content {
@@ -69,17 +68,17 @@
   }
 </style>
 
-{% comment %} style="
-    background-image:
-    {% if block.settings.overlay_gradient != blank %}
-      {{ block.settings.overlay_gradient }},
-    {% endif %}
-      url('{{ block.settings.image | image_url: width: 2000 }}');
-  " {% endcomment %}
-
 <div class="csm-flickity-slider color-{{ section.settings.color_scheme }}">
   {% for block in section.blocks %}
-    <div class="carousel-cell" id="carousel-cell-{{ block.id }}">
+    <div class="carousel-cell" id="carousel-cell-{{ block.id }}"
+    style="
+      background-image:
+      {% if block.settings.overlay_gradient != blank %}
+        {{ block.settings.overlay_gradient }},
+      {% endif %}
+        url('{{ block.settings.image | image_url: width: 2000 }}');
+    "
+    >
       <div class="csm-slide__content">
         {% if block.settings.heading != blank %}
           <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
