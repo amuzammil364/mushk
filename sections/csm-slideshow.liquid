@@ -6,11 +6,6 @@
     overflow: hidden;
   }
 
-  .csm-container{
-    max-width: var(--page-width);
-    margin: 0 auto;
-  }
-
   .csm-flickity-slider .carousel-cell {
     width: 100%;
     margin-right: 0;
@@ -99,22 +94,20 @@
         url('{{ block.settings.image | image_url: width: 2000 }}');
     "
     >
-      <div class="csm-container">
-        <div class="csm-slide__content">
-          {% if block.settings.heading != blank %}
-            <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
-          {% endif %}
+      <div class="csm-slide__content">
+        {% if block.settings.heading != blank %}
+          <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
+        {% endif %}
 
-          {% if block.settings.text != blank %}
-            <p>{{ block.settings.text }}</p>
-          {% endif %}
+        {% if block.settings.text != blank %}
+          <p>{{ block.settings.text }}</p>
+        {% endif %}
 
-          {% if block.settings.button_label != blank %}
-            <a href="{{ block.settings.button_link }}" class="csm-slide__button">
-              {{ block.settings.button_label }}
-            </a>
-          {% endif %}
-        </div>
+        {% if block.settings.button_label != blank %}
+          <a href="{{ block.settings.button_link }}" class="csm-slide__button">
+            {{ block.settings.button_label }}
+          </a>
+        {% endif %}
       </div>
       <style>
         #carousel-cell-{{ block.id }}{
