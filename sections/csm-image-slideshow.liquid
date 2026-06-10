@@ -13,7 +13,31 @@
 
   .csm-image-flickity-slider .csm-image-carousel-cell img{
     width: 100%;
+    display: block;
   }
+
+  .mobile-img {
+    display: none;
+    }
+
+    @media (max-width: 465px) {
+        .desktop-img {
+            display: none;
+        }
+
+        .mobile-img {
+            display: block;
+        }
+
+        .csm-image-carousel-cell {
+            height: {{ section.settings.mobile_height }}px;
+        }
+
+        .csm-image-carousel-cell img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 </style>
 
 <div class="csm-image-flickity-slider">
