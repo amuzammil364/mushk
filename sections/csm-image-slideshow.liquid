@@ -19,9 +19,26 @@
 <div class="csm-image-flickity-slider">
   {% for block in section.blocks %}
     <div class="csm-image-carousel-cell">
-        {%- if block.settings.image != blank -%}
-            <img src="{{ block.settings.image | image_url: width: 2000 }}" alt="Banner Slide Image" />
+        {% if block.settings.image != blank %}
+            <img
+                class="desktop-img"
+                src="{{ block.settings.image | image_url: width: 2000 }}"
+            >
+        {% endif %}
+
+        {% if block.settings.mobile_image != blank %}
+            <img
+                class="mobile-img"
+                src="{{ block.settings.mobile_image | image_url: width: 1000 }}"
+            >
+        {% else %}
+            {% if block.settings.image != blank %}
+            <img
+                class="mobile-img"
+                src="{{ block.settings.image | image_url: width: 1000 }}"
+            >
             {% endif %}
+        {% endif %}
     </div>
   {% endfor %}
 </div>
