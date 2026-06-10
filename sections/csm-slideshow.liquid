@@ -9,13 +9,9 @@
   .csm-flickity-slider .carousel-cell {
     width: 100%;
     margin-right: 0;
-  }
-
-  .csm-flickity-slider img {
-    width: 100%;
-    display: block;
-    user-select: none;
-    pointer-events: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .csm-flickity-slider .flickity-viewport {
@@ -60,10 +56,10 @@
   }'
 >
   {% for block in section.blocks %}
-    <div class="carousel-cell">
-      {% if block.settings.image != blank %}
-        <img src="{{ block.settings.image | image_url: width: 2000 }}" alt="Slide Image">
-      {% endif %}
+    <div class="carousel-cell" style="
+      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url('{{ block.settings.image | image_url: width: 2000 }}');
+      ">
       <div class="csm-slide__content">
         {% if block.settings.heading != blank %}
           <h2>{{ block.settings.heading }}</h2>
@@ -97,6 +93,12 @@
       "type": "slide",
       "name": "Slide",
       "settings": [
+        {
+          "type": "color_background",
+          "id": "overlay_gradient",
+          "label": "Overlay gradient",
+          "default": "linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.2))"
+        },
         {
         "type": "image_picker",
         "id": "image",
