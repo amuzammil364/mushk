@@ -9,12 +9,12 @@
 
 .product .rating-star {
   --letter-spacing: 0.8;
-  --font-size: 2;
+  --font-size: 1.7;
 }
 
 .card-wrapper .rating-star {
   --letter-spacing: .3;
-  --font-size: 1.8;
+  --font-size: 2;
 }
 
 .rating-star {
