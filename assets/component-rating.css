@@ -13,8 +13,8 @@
 }
 
 .card-wrapper .rating-star {
-  --letter-spacing: 0.7;
-  --font-size: 1.4;
+  --letter-spacing: .3;
+  --font-size: 1.8;
 }
 
 .rating-star {
