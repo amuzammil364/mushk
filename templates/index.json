@@ -21,8 +21,11 @@
             "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
             "button_label": "Shop Now",
             "button_link": "shopify://collections",
+            "heading_size": "h1",
             "desktop_padding_top": 128,
-            "desktop_padding_bottom": 128
+            "desktop_padding_bottom": 128,
+            "mobile_padding_top": 60,
+            "mobile_padding_bottom": 60
           }
         },
         "slide_kDfVGb": {
@@ -34,8 +37,11 @@
             "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
             "button_label": "Shop Now",
             "button_link": "shopify://collections",
+            "heading_size": "h1",
             "desktop_padding_top": 128,
-            "desktop_padding_bottom": 128
+            "desktop_padding_bottom": 128,
+            "mobile_padding_top": 60,
+            "mobile_padding_bottom": 60
           }
         }
       },
@@ -44,7 +50,9 @@
         "slide_kDfVGb"
       ],
       "name": "CSM Slideshow",
-      "settings": {}
+      "settings": {
+        "color_scheme": "scheme-4"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
