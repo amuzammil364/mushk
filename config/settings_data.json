@@ -181,8 +181,8 @@
           "text_color": "#ffffff",
           "text_hover_color": "#ffffff",
           "marquee_speed": "medium",
-          "padding_top": 12,
-          "padding_bottom": 12,
+          "padding_top": 10,
+          "padding_bottom": 10,
           "custom_class": ""
         }
       }
