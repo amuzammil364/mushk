@@ -15,7 +15,7 @@
         "slide_BniFyx": {
           "type": "slide",
           "settings": {
-            "block_desktop_alignment": "right",
+            "block_desktop_alignment": "left",
             "block_mobile_alignment": "left",
             "max_width": 480,
             "overlay_gradient": "",
@@ -78,7 +78,7 @@
       "name": "CSM Slideshow",
       "settings": {
         "color_scheme": "scheme-4",
-        "section_desktop_alignment": "right",
+        "section_desktop_alignment": "left",
         "section_mobile_alignment": "center"
       }
     },
