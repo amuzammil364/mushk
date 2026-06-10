@@ -83,6 +83,11 @@
           padding-bottom: {{block.settings.desktop_padding_bottom }}px;
         }
 
+        #carousel-cell-{{ block.id }} h2{
+          letter-spacing: {{block.settings.heading_letter_spacing }}px;
+          {% if block.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
+        }
+
         @media screen and (max-width: 768px) {
           #carousel-cell-{{ block.id }} {
             padding-top: {{ block.settings.mobile_padding_top }}px;
