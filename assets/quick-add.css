@@ -380,9 +380,12 @@ quick-add-modal .product-form__buttons {
   inset: 0;
   transform: translateY(100%);
   opacity: 0;
-  color: #000;
   width: 20px;
   height: 20px;
+}
+
+.quick-add__submit .btn-icon svg{
+  fill: #fff;
 }
 
 .quick-add__submit:hover .btn-text {
