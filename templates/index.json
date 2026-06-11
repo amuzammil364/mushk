@@ -96,13 +96,21 @@
           "type": "review",
           "settings": {
             "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/387110d00a384af29687bb00e4f6a1ec/387110d00a384af29687bb00e4f6a1ec.HD-720p-1.6Mbps-82512160.mp4",
-            "product": "gumaan-yakeen"
+            "product": "justuju-khuwaish"
+          }
+        },
+        "review_68nHNm": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/91cc52beb7e549caad9a4e5cac9be983/91cc52beb7e549caad9a4e5cac9be983.HD-720p-1.6Mbps-82784528.mp4",
+            "product": "manzil"
           }
         }
       },
       "block_order": [
         "review_7gzJmr",
-        "review_PMphBy"
+        "review_PMphBy",
+        "review_68nHNm"
       ],
       "name": "Review Video Slider",
       "settings": {
