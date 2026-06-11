@@ -203,8 +203,8 @@
       "name": "CSM Image Carousel",
       "settings": {
         "navigation_style": "arrows",
-        "desktop_columns": 8,
-        "mobile_columns": 3,
+        "desktop_columns": 3,
+        "mobile_columns": 1,
         "cell_gap": 30
       }
     },
