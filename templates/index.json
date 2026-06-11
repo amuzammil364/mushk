@@ -146,9 +146,9 @@
       ],
       "name": "Review Video Slider",
       "settings": {
-        "navigation_style": "dots",
+        "navigation_style": "arrows",
         "desktop_columns": 4,
-        "mobile_columns": 2,
+        "mobile_columns": 1,
         "cell_gap": 6,
         "title": "Endorsed by Famous Influencers",
         "heading_size": "h2",
