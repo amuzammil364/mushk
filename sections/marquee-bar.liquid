@@ -32,7 +32,11 @@
 .marquee-section {
   width: 100%;
   overflow: hidden;
-  background: {{ section.settings.bg_color }};
+  background: background: {% if section.settings.bg_gradient != blank %}
+    {{ section.settings.bg_gradient }};
+    {% else %}
+      {{ section.settings.bg_color }};
+    {% endif %};
   color: #fff;
   padding-top: {{ section.settings.padding_top }}px;
   padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -40,7 +44,7 @@
 
 .marquee-wrapper {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   width: max-content;
   animation: marqueeScroll var(--duration, 18s) linear infinite;
   margin: 0 !important;
@@ -53,10 +57,9 @@
 .marquee-block {
   display: flex;
   align-items: center;
-  gap: 10px;
   white-space: nowrap;
-  width: calc(100% / 6);
   flex-shrink: 0;
+  width: auto;
 }
 
 .marquee-link {
