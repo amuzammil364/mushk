@@ -154,10 +154,10 @@ document.addEventListener('DOMContentLoaded', function () {
         margin: 0;
         margin-bottom: 2px;
         font-size: 18px;
-
-        white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-content p{
