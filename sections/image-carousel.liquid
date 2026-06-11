@@ -1,6 +1,6 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 
-<div class="csm-image-carousel csm-image-carousel-{{ section.id }} color-{{ section.settings.color_scheme }}">
+<div class="csm-image-carousel csm-image-carousel-{{ section.id }} color-{{ section.settings.color_scheme }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
   {% for block in section.blocks %}
     <div class="csm-image-carousel__cell">
       {% if block.settings.image != blank %}
