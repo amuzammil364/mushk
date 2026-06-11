@@ -163,6 +163,47 @@ document.addEventListener('DOMContentLoaded', function () {
       margin: 0 !important;
     }
 
+    .csm-review-slider-{{ section.id }} .flickity-button{
+        display: block !important;
+        background-color: rgba(var(--color-button),var(--alpha-button-background));
+        color: rgb(var(--color-button-text));
+    }
+
+    .csm-review-slider-{{ section.id }} .flickity-button:active{
+        opacity: 1 !important;
+    }
+
+    .csm-review-slider-{{ section.id }} .flickity-button:focus{
+        box-shadow: none !important;
+    }
+
+    .csm-review-slider-{{ section.id }} .flickity-prev-next-button .flickity-button-icon{
+        left: 50%;
+        top: 50%;
+        width: 40%;
+        height: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .csm-review-slider-{{ section.id }} .flickity-page-dots{
+        bottom: 0 !important;
+        position: relative !important;
+        margin-top: 20px;
+    }
+
+    .csm-review-slider-{{ section.id }} .flickity-page-dots .dot{
+        background: rgba(var(--color-button),var(--alpha-button-background)) !important;
+        margin: 0 4px !important;
+        border-radius: 50px !important;
+        transition: 0.2s;
+        opacity: 0.5 !important;
+    }
+
+    .csm-review-slider-{{ section.id }} .flickity-page-dots .dot.is-selected{
+        width: 30px !important;
+        opacity: 1 !important;
+    }
+
     @media (min-width: 769px) {
       .csm-review-slider-{{ section.id }} .csm-review-slide {
         width: calc(100% / var(--desktop-columns));
