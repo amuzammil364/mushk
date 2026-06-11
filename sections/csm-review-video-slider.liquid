@@ -38,7 +38,7 @@
                     <div class="csm-review-content">
                         {% if product != blank %}
                         <a href="{{ product.url }}">
-                            <h3>{{ product.title }}</h3>
+                            <h3>{{ product.title }} hello hello</h3>
                         </a>
 
                         <p>{{ product.price | money }}</p>
@@ -154,6 +154,10 @@ document.addEventListener('DOMContentLoaded', function () {
         margin: 0;
         margin-bottom: 2px;
         font-size: 18px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-content p{
