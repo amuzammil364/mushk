@@ -1,6 +1,6 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 
-<div class="csm-review-slider csm-review-slider-{{ section.id }}">
+<div class="csm-review-slider csm-review-slider-{{ section.id }} color-{{ section.settings.color_scheme }}">
     <div class="csm-review-slider-container">
         {%- if section.settings.title != blank -%}
             <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="
@@ -226,6 +226,13 @@ document.addEventListener('DOMContentLoaded', function () {
 {
   "name": "Review Video Slider",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    },
     {
         "type": "select",
         "id": "navigation_style",
