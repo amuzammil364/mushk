@@ -110,7 +110,11 @@
 @media (max-width: 480px){
 
   .marquee-section-{{ section.id }} .marquee-block {
-    width: calc(100% / 8);
+    {% if section.settings.equal_width_items %}
+      width: calc(100% / 8);
+    {% else %}
+      width: auto;
+    {% endif %}
   }
 
 }
