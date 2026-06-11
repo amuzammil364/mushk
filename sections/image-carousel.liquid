@@ -1,6 +1,6 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 
-<div class="csm-image-carousel csm-image-carousel-{{ section.id }}">
+<div class="csm-image-carousel csm-image-carousel-{{ section.id }} color-{{ section.settings.color_scheme }}">
   {% for block in section.blocks %}
     <div class="csm-image-carousel__cell">
       {% if block.settings.image != blank %}
@@ -108,6 +108,13 @@ document.addEventListener('DOMContentLoaded', function () {
 {
   "name": "CSM Image Carousel",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-4"
+    },
     {
         "type": "select",
         "id": "navigation_style",
