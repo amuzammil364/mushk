@@ -371,11 +371,11 @@ quick-add-modal .product-form__buttons {
   transition: .20s ease;
 }
 
-.quick-add__submit .btn-text {
+.quick-add__submit.text_icon .btn-text {
   transform: translateY(0);
 }
 
-.quick-add__submit .btn-icon {
+.quick-add__submit.text_icon .btn-icon {
   position: absolute;
   inset: 0;
   display: flex;
@@ -387,17 +387,17 @@ quick-add-modal .product-form__buttons {
   color: rgb(var(--color-button-text));
 }
 
-.quick-add__submit .btn-icon svg{
+.quick-add__submit.text_icon .btn-icon svg{
   fill: transparent;
   animation: cartPulse 1s ease-in-out infinite;
 }
 
-.quick-add__submit:hover .btn-text {
+.quick-add__submit.text_icon:hover .btn-text {
   transform: translateY(150%);
   opacity: 0;
 }
 
-.quick-add__submit:hover .btn-icon {
+.quick-add__submit.text_icon:hover .btn-icon {
   transform: translateY(0);
   opacity: 1;
 }
