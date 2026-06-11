@@ -119,6 +119,13 @@
             "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/f15077a249e240e68fc726ddc90ae02b/f15077a249e240e68fc726ddc90ae02b.HD-720p-1.6Mbps-82512158.mp4",
             "product": "berry-grace"
           }
+        },
+        "review_nQAzND": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/e38610b6b45844899ddb6314e51d42a4/e38610b6b45844899ddb6314e51d42a4.HD-720p-1.6Mbps-82512161.mp4",
+            "product": "dark-raven"
+          }
         }
       },
       "block_order": [
@@ -126,7 +133,8 @@
         "review_PMphBy",
         "review_68nHNm",
         "review_wyyNQN",
-        "review_zh9NcG"
+        "review_zh9NcG",
+        "review_nQAzND"
       ],
       "name": "Review Video Slider",
       "settings": {
