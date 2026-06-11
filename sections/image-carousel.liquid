@@ -40,15 +40,22 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+
+  var isMobile = window.innerWidth < 768;
+
   new Flickity('.csm-image-carousel-{{ section.id }}', {
     cellAlign: 'left',
     contain: true,
     wrapAround: true,
     prevNextButtons: {{ show_arrows }},
     pageDots: {{ show_dots }},
-    groupCells: {{ section.settings.desktop_columns }},
     draggable: true,
+
+    groupCells: isMobile 
+      ? {{ section.settings.mobile_columns }} 
+      : {{ section.settings.desktop_columns }}
   });
+
 });
 </script>
 
