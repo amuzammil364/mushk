@@ -141,7 +141,8 @@
         "navigation_style": "arrows",
         "desktop_columns": 3,
         "mobile_columns": 1,
-        "cell_gap": 20
+        "cell_gap": 20,
+        "border_radius": 10
       }
     },
     "featured_collection": {
