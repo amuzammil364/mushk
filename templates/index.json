@@ -131,7 +131,7 @@
       "name": "Review Video Slider",
       "settings": {
         "navigation_style": "dots",
-        "desktop_columns": 2,
+        "desktop_columns": 4,
         "mobile_columns": 2,
         "cell_gap": 10,
         "title": "Tile",
