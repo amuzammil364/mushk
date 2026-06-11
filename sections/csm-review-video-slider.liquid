@@ -2,6 +2,17 @@
 
 <div class="csm-review-slider csm-review-slider-{{ section.id }}">
     <div class="csm-review-slider-container">
+        {%- if section.settings.title != blank -%}
+            <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="
+            text-align: {{ section.settings.heading_alignment }};
+            letter-spacing: {{ section.settings.heading_letter_spacing }}px;
+            margin-top: {{ section.settings.heading_top_spacing }}px;
+            margin-bottom: {{ section.settings.heading_bottom_spacing }}px;
+            {% if section.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
+            ">
+            {{ section.settings.title }}
+            </h2>
+        {%- endif -%}
         <div class="csm-review-slider-wrapper-{{ section.id }}">
             {% for block in section.blocks %}
                 {% assign product = block.settings.product %}
@@ -50,7 +61,89 @@
 
 {
   "name": "Review Video Slider",
-  "settings": [],
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Tile",
+      "label": "title"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading Alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing",
+      "label": "Heading Letter Spacing",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_top_spacing",
+      "label": "Heading Top Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_bottom_spacing",
+      "label": "Heading Bottom Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_uppercase",
+      "label": "Heading Uppercase Heading",
+      "default": false
+    },
+  ],
   "blocks": [
     {
       "type": "review",
