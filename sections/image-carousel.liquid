@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
         justify-content: center;
         padding: 0 {{ section.settings.cell_gap }}px;
         box-sizing: border-box;
+        border-radius: {{ section.settings.border_radius }}px;
     }
 
     .csm-image-carousel-{{ section.id }} .csm-image-carousel__cell img {
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         max-width: 100%;
         height: auto;
         object-fit: cover;
+        border-radius: {{ section.settings.border_radius }}px;
     }
 
     @media (min-width: 769px) {
@@ -142,7 +144,20 @@ document.addEventListener('DOMContentLoaded', function () {
         "step": 2,
         "default": 10,
         "unit": "px"
-    }
+    },
+    {
+        "type": "header",
+        "content": "Image",
+    },
+    {
+        "type": "range",
+        "id": "border_radius",
+        "label": "Border Radius",
+        "min": 2,
+        "max": 100,
+        "step": 2,
+        "default": 10
+    },
   ],
   "blocks": [
     {
