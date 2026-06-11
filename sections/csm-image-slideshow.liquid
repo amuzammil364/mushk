@@ -1,88 +1,88 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 
 <style>
-    .csm-image-flickity-slider {
+    .csm-image-flickity-slider-{{ section.id }} {
         width: 100%;
         overflow: hidden;
         position: relative;
     }
 
-    .csm-image-flickity-slider .csm-image-carousel-cell {
+    .csm-image-flickity-slider-{{ section.id }} .csm-image-carousel-cell {
         width: 100%;
         margin-right: 0;
     }
 
-    .csm-image-flickity-slider .csm-image-carousel-cell img{
+    .csm-image-flickity-slider-{{ section.id }} .csm-image-carousel-cell img{
         width: 100%;
         display: block;
     }
 
-    .mobile-img {
+    .csm-image-flickity-slider-{{ section.id }} .mobile-img {
         display: none !important;
     }
 
-    .csm-image-flickity-slider .flickity-button{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-button{
         display: block !important;
         background: white !important;
     }
 
-    .csm-image-flickity-slider .flickity-button:active{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-button:active{
         opacity: 1 !important;
     }
 
-    .csm-image-flickity-slider .flickity-button:focus{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-button:focus{
         box-shadow: none !important;
     }
 
-    .csm-image-flickity-slider .flickity-prev-next-button{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-prev-next-button{
         width: 40px !important;
         height: 40px !important;
     }
 
-    .csm-image-flickity-slider .flickity-prev-next-button .flickity-button-icon{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-prev-next-button .flickity-button-icon{
         left: 26%;
         top: 26%;
         width: 46%;
         height: 46%;
     }
 
-    .csm-image-flickity-slider .flickity-page-dots{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-page-dots{
         bottom: 25px !important;
     }
 
-    .csm-image-flickity-slider .flickity-page-dots .dot{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-page-dots .dot{
         margin: 0 4px !important;
         border-radius: 50px !important;
         transition: 0.2s;
         opacity: 0.7 !important;
     }
 
-    .csm-image-flickity-slider .flickity-page-dots .dot.is-selected{
+    .csm-image-flickity-slider-{{ section.id }} .flickity-page-dots .dot.is-selected{
         width: 50px !important;
         opacity: 1 !important;
     }
 
     @media (max-width: 465px) {
-        .desktop-img {
+        .csm-image-flickity-slider-{{ section.id }} .desktop-img {
             display: none !important;
         }
 
-        .mobile-img {
+        .csm-image-flickity-slider-{{ section.id }} .mobile-img {
             display: block !important;
         }
 
-        .csm-image-carousel-cell {
+        .csm-image-flickity-slider-{{ section.id }} .csm-image-carousel-cell {
             height: {{ section.settings.mobile_height }}px;
         }
 
-        .csm-image-carousel-cell img {
+        .csm-image-flickity-slider-{{ section.id }} .csm-image-carousel-cell img {
             height: 100%;
             object-fit: cover;
         }
     }
 </style>
 
-<div class="csm-image-flickity-slider">
+<div class="csm-image-flickity-slider-{{ section.id }}">
   {% for block in section.blocks %}
     <a class="csm-image-carousel-cell" href="{{ block.settings.link }}">
         {% if block.settings.image != blank %}
@@ -119,7 +119,7 @@
 ></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  new Flickity('.csm-image-flickity-slider', {
+  new Flickity('csm-image-flickity-slider-{{ section.id }}', {
     wrapAround: true,
     autoPlay: 3000,
     pauseAutoPlayOnHover: true,
