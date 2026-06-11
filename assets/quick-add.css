@@ -402,6 +402,10 @@ quick-add-modal .product-form__buttons {
   opacity: 1;
 }
 
+.quick-add__submit.loading .btn-icon{
+  display: none;
+}
+
 @keyframes cartPulse {
   0% {
     transform: scale(0.95);
