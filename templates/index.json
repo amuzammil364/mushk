@@ -82,94 +82,6 @@
         "section_mobile_alignment": "center"
       }
     },
-    "marquee_bar_9KhFee": {
-      "type": "marquee-bar",
-      "blocks": {
-        "item_KNqYfF": {
-          "type": "item",
-          "settings": {
-            "heading": "✦ Free of Harmful Chemicals",
-            "link": ""
-          }
-        },
-        "item_zaUDd8": {
-          "type": "item",
-          "settings": {
-            "heading": "💎 Premium Extrait de Parfum",
-            "link": ""
-          }
-        },
-        "item_zAt6pC": {
-          "type": "item",
-          "settings": {
-            "heading": "🕯️ Hand Crafted Candles",
-            "link": ""
-          }
-        },
-        "item_HQcdkx": {
-          "type": "item",
-          "settings": {
-            "heading": "⏳ Long Lasting Fragrance for 12+ Hours",
-            "link": ""
-          }
-        },
-        "item_MagJra": {
-          "type": "item",
-          "settings": {
-            "heading": "🚚 Fast Delivery Across Pakistan",
-            "link": ""
-          }
-        },
-        "item_PC4k9m": {
-          "type": "item",
-          "settings": {
-            "heading": "🏆 Pakistan's Most Loved Fragrance Brand",
-            "link": ""
-          }
-        },
-        "item_ArEfM6": {
-          "type": "item",
-          "settings": {
-            "heading": "🌸 Niche & Designer Inspired Scents",
-            "link": ""
-          }
-        },
-        "item_iEgTGx": {
-          "type": "item",
-          "settings": {
-            "heading": "💯 100% Authentic Luxury Fragrance",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_KNqYfF",
-        "item_zaUDd8",
-        "item_zAt6pC",
-        "item_HQcdkx",
-        "item_MagJra",
-        "item_PC4k9m",
-        "item_ArEfM6",
-        "item_iEgTGx"
-      ],
-      "name": "Marquee Section",
-      "settings": {
-        "enable_marquee": true,
-        "bg_color": "#000000",
-        "bg_gradient": "linear-gradient(94deg, rgba(0, 0, 0, 1) 41%, rgba(255, 174, 70, 1) 100%)",
-        "item_gap": 60,
-        "equal_width_items": false,
-        "subtitle_uppercase": false,
-        "text_size": "large",
-        "letter_spacing": 2,
-        "text_color": "#ffffff",
-        "text_hover_color": "#ffffff",
-        "marquee_speed": "slow",
-        "padding_top": 18,
-        "padding_bottom": 18,
-        "custom_class": ""
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -972,7 +884,6 @@
   },
   "order": [
     "csm_slideshow_k4QcWk",
-    "marquee_bar_9KhFee",
     "featured_collection",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
