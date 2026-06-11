@@ -21,9 +21,9 @@
 
                     <div class="csm-review-video">
                     {% if block.settings.video_url != blank %}
-                        {% comment %} <video playsinline="true" muted="muted" loop="loop" preload="metadata" autoplay>
+                        <video playsinline="true" muted="muted" loop="loop" preload="metadata" autoplay>
                          <source src="{{ block.settings.video_url }}" type="video/mp4">
-                        </video> {% endcomment %}
+                        </video>
                     {% endif %}
                     </div>
 
@@ -108,6 +108,8 @@ document.addEventListener('DOMContentLoaded', function () {
         border-radius: 12px;
         overflow: hidden;
         width: calc(100% / var(--desktop-columns));
+        padding: 0 {{ section.settings.cell_gap }}px;
+        box-sizing: border-box;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-video video {
