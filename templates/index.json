@@ -161,7 +161,7 @@
         "equal_width_items": false,
         "subtitle_uppercase": false,
         "text_size": "large",
-        "letter_spacing": 3,
+        "letter_spacing": 2,
         "text_color": "#FFFFFF",
         "text_hover_color": "#FFFFFF",
         "marquee_speed": "slow",
