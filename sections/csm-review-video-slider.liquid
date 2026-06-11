@@ -21,7 +21,7 @@
 
                     <div class="csm-review-video">
                     {% if block.settings.video_url != blank %}
-                        <video playsinline="true" muted="muted" loop="loop" preload="metadata">
+                        <video playsinline="true" muted="muted" loop="loop" preload="metadata" autoplay>
                          <source src="{{ block.settings.video_url }}" type="video/mp4">
                         </video>
                     {% endif %}
