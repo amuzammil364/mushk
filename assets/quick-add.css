@@ -398,22 +398,19 @@ quick-add-modal .product-form__buttons {
 .quick-add__submit:hover .btn-icon {
   transform: translateY(0);
   opacity: 1;
-  animation: cartBounce 1.2s ease-in-out infinite;
+  animation: cartBounce 0.8s ease-in-out infinite;
 }
 
 @keyframes cartBounce {
   0% {
-    opacity: 0;
     transform: scale(0.5);
   }
 
   70% {
-    opacity: 1;
     transform: scale(1.2);
   }
 
   100% {
-    opacity: 1;
     transform: scale(1);
   }
 }
