@@ -126,6 +126,13 @@
             "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/e38610b6b45844899ddb6314e51d42a4/e38610b6b45844899ddb6314e51d42a4.HD-720p-1.6Mbps-82512161.mp4",
             "product": "dark-raven"
           }
+        },
+        "review_iGbhAA": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/d706e73560724750a45960890d8e0c60/d706e73560724750a45960890d8e0c60.HD-720p-1.6Mbps-82781244.mp4",
+            "product": "dream"
+          }
         }
       },
       "block_order": [
@@ -134,7 +141,8 @@
         "review_68nHNm",
         "review_wyyNQN",
         "review_zh9NcG",
-        "review_nQAzND"
+        "review_nQAzND",
+        "review_iGbhAA"
       ],
       "name": "Review Video Slider",
       "settings": {
