@@ -38,7 +38,7 @@
                     <div class="csm-review-content">
                         {% if product != blank %}
                         <a href="{{ product.url }}">
-                            <h3>{{ product.title }} hello hello</h3>
+                            <h3>{{ product.title }}</h3>
                         </a>
 
                         <p>{{ product.price | money }}</p>
@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     .csm-review-slider-{{ section.id }} .csm-review-slide {
         overflow: hidden;
-        width: calc(100% / var(--desktop-columns));
         padding: 0 {{ section.settings.cell_gap }}px;
         box-sizing: border-box;
     }
@@ -162,6 +161,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     .csm-review-slider-{{ section.id }} .csm-review-content p{
       margin: 0 !important;
+    }
+
+    @media (min-width: 769px) {
+        .csm-review-slider-{{ section.id }} .csm-review-slide {
+            width: calc(100% / var(--desktop-columns));
+        }
+    }
+
+    @media (max-width: 768px) {
+        .csm-review-slider-{{ section.id }} .csm-review-slide {
+            width: calc(100% / var(--mobile-columns));
+        }
     }
 </style>
 
