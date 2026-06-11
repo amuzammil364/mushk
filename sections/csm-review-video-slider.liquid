@@ -57,21 +57,27 @@
     </div>
 </div>
 
+<script
+  src="{{ 'flickity.pkgd.min.js' | asset_url }}"
+  defer
+></script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-  const isMobile = window.innerWidth < 768;
+  var isMobile = window.innerWidth < 768;
 
   new Flickity('.csm-review-slider-wrapper-{{ section.id }}', {
     cellAlign: 'left',
     contain: true,
     wrapAround: true,
-    pageDots: true,
-    prevNextButtons: false,
+    prevNextButtons: {{ show_arrows }},
+    pageDots: {{ show_dots }},
     draggable: true,
+    autoPlay: 4000,
 
-    groupCells: isMobile
-      ? {{ section.settings.mobile_columns }}
+    groupCells: isMobile 
+      ? {{ section.settings.mobile_columns }} 
       : {{ section.settings.desktop_columns }}
   });
 
