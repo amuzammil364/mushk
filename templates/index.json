@@ -146,6 +146,7 @@
       ],
       "name": "Review Video Slider",
       "settings": {
+        "color_scheme": "scheme-1",
         "navigation_style": "arrows",
         "desktop_columns": 4,
         "mobile_columns": 1,
