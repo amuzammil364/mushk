@@ -171,7 +171,7 @@
       "name": "CSM Image Carousel",
       "settings": {
         "navigation_style": "arrows",
-        "desktop_columns": 6,
+        "desktop_columns": 8,
         "mobile_columns": 1
       }
     },
