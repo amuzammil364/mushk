@@ -17,11 +17,13 @@
     {% for block in section.blocks %}
       <li class="marquee-block">
         {% if block.settings.heading != blank %}
-          <a href="{{ block.settings.link }}" class="marquee-link {% if section.settings.subtitle_uppercase %}uppercase{% endif %} size-{{ section.settings.text_size }}">
-            {{ block.settings.heading }}
-          </a>
-        {% else %}
-          <span class="marquee-link {% if section.settings.subtitle_uppercase %}uppercase{% endif %} size-{{ section.settings.text_size }}">{{ block.settings.heading }}</span>
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}" class="marquee-link {% if section.settings.subtitle_uppercase %}uppercase{% endif %} size-{{ section.settings.text_size }}">
+              {{ block.settings.heading }}
+            </a>
+          {%  else %}
+            <span class="marquee-link {% if section.settings.subtitle_uppercase %}uppercase{% endif %} size-{{ section.settings.text_size }}">{{ block.settings.heading }}</span>
+            {% endif %}
         {% endif %}
       </li>
     {% endfor %}
