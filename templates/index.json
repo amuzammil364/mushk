@@ -158,7 +158,7 @@
         "show_vendor": false,
         "show_rating": true,
         "quick_add": "standard",
-        "quick_add_style": "text_icon",
+        "quick_add_style": "text",
         "show_save_amount": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
