@@ -62,7 +62,8 @@ style="
               show_rating: section.settings.show_rating,
               skip_styles: skip_card_product_styles,
               quick_add: section.settings.quick_add,
-              show_save_amount: section.settings.show_save_amount
+              show_save_amount: section.settings.show_save_amount,
+              quick_add_style: section.settings.quick_add_style
             %}
           </li>
           {%- assign skip_card_product_styles = true -%}
@@ -353,6 +354,22 @@ style="
         {
           "value": "bulk",
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "quick_add_style",
+      "label": "Quick Add Button Style",
+      "default": "text_icon",
+      "options": [
+        {
+          "value": "text",
+          "label": "Text Only"
+        },
+        {
+          "value": "text_icon",
+          "label": "Text + Icon"
         }
       ]
     },
