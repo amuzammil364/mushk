@@ -204,7 +204,8 @@
       "settings": {
         "navigation_style": "arrows",
         "desktop_columns": 8,
-        "mobile_columns": 3
+        "mobile_columns": 3,
+        "cell_gap": 30
       }
     },
     "featured_collection": {
