@@ -359,15 +359,38 @@ quick-add-modal .product-form__buttons {
   padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
-.quick-add__submit .btn-icon svg {
-  width: 20px;
-  height: 20px;
+.quick-add__submit .btn-text,
+.quick-add__submit .btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .35s ease;
 }
 
-.quick-add__submit .btn-icon{
-  color: #fff;
+.quick-add__submit .btn-text {
+  transform: translateY(0);
+}
+
+.quick-add__submit .btn-icon {
+  position: absolute;
+  inset: 0;
+  transform: translateY(100%) scale(.5);
+  opacity: 0;
+  color: #000;
+}
+
+.quick-add__submit:hover .btn-text {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.quick-add__submit:hover .btn-icon {
+  transform: translateY(0) scale(1);
+  opacity: 1;
 }
 
 quick-add-modal .product-media-container.constrain-height {
