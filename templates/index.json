@@ -105,12 +105,36 @@
             "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
             "link": ""
           }
+        },
+        "image_TxfYdX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
+            "link": ""
+          }
+        },
+        "image_BDrADA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elyscents-best-luxury-perfumes-in-pakistan-north-walk-kiosk.webp",
+            "link": ""
+          }
+        },
+        "image_JWq94w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "image_nUxeei",
         "image_tjNdCX",
-        "image_cjhKBC"
+        "image_cjhKBC",
+        "image_TxfYdX",
+        "image_BDrADA",
+        "image_JWq94w"
       ],
       "name": "CSM Image Carousel",
       "settings": {
