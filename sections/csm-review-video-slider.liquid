@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <style>
     .csm-review-slider-{{ section.id }}{
+        --desktop-columns: {{ section.settings.desktop_columns }};
+        --mobile-columns: {{ section.settings.mobile_columns }};
         padding-top: {{section.settings.padding_top }}px;
         padding-bottom: {{section.settings.padding_bottom }}px;
         width: 100%;
