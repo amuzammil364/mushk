@@ -388,6 +388,7 @@ quick-add-modal .product-form__buttons {
 
 .quick-add__submit .btn-icon svg{
   fill: transparent;
+  animation: cartBounce 0.8s ease-in-out infinite;
 }
 
 .quick-add__submit:hover .btn-text {
@@ -398,20 +399,19 @@ quick-add-modal .product-form__buttons {
 .quick-add__submit:hover .btn-icon {
   transform: translateY(0);
   opacity: 1;
-  animation: cartBounce 0.8s ease-in-out infinite;
 }
 
 @keyframes cartBounce {
   0% {
-    transform: translateY(0) scale(0.5);
+    transform: scale(0.5);
   }
 
   70% {
-    transform: translateY(0) scale(1.2);
+    transform: scale(1.2);
   }
 
   100% {
-    transform: translateY(0) scale(1);
+    transform: scale(1);
   }
 }
 
