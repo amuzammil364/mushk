@@ -123,6 +123,11 @@ document.addEventListener('DOMContentLoaded', function () {
         opacity: 0.7 !important;
     }
 
+    .csm-image-carousel-{{ section.id }} .flickity-page-dots .dot.is-selected{
+        width: 50px !important;
+        opacity: 1 !important;
+    }
+
     @media (min-width: 769px) {
         .csm-image-carousel-{{ section.id }} .csm-image-carousel__cell {
             width: calc(100% / var(--desktop-columns));
