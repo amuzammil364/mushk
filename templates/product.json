@@ -163,6 +163,7 @@
         "show_vendor": false,
         "show_rating": true,
         "quick_add": "standard",
+        "quick_add_style": "text_icon",
         "show_save_amount": true,
         "padding_top": 12,
         "padding_bottom": 72
