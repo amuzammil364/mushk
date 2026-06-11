@@ -1,47 +1,49 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 
 <div class="csm-review-slider csm-review-slider-{{ section.id }}">
+    <div class="csm-review-slider-container">
+        <div class="csm-review-slider-wrapper-{{ section.id }}">
+            {% for block in section.blocks %}
+                {% assign product = block.settings.product %}
 
-  {% for block in section.blocks %}
-    {% assign product = block.settings.product %}
+                <div class="csm-review-slide">
 
-    <div class="csm-review-slide">
+                    <div class="csm-review-video">
+                    {% if block.settings.video_url != blank %}
+                        <video controls playsinline>
+                        <source src="{{ block.settings.video_url }}" type="video/mp4">
+                        </video>
+                    {% endif %}
+                    </div>
 
-      <div class="csm-review-video">
-        {% if block.settings.video_url != blank %}
-          <video controls playsinline>
-            <source src="{{ block.settings.video_url }}" type="video/mp4">
-          </video>
-        {% endif %}
-      </div>
+                    <div class="csm-review-bottom">
 
-      <div class="csm-review-bottom">
+                    {% if product != blank %}
+                        <a href="{{ product.url }}" class="csm-review-product">
+                        <img src="{{ product.featured_image | image_url: width: 200 }}" alt="">
+                        </a>
+                    {% endif %}
 
-        {% if product != blank %}
-          <a href="{{ product.url }}" class="csm-review-product">
-            <img src="{{ product.featured_image | image_url: width: 200 }}" alt="">
-          </a>
-        {% endif %}
+                    <div class="csm-review-content">
+                        {% if product != blank %}
+                        <a href="{{ product.url }}">
+                            <h3>{{ product.title }}</h3>
+                        </a>
 
-        <div class="csm-review-content">
-          {% if product != blank %}
-            <a href="{{ product.url }}">
-              <h3>{{ product.title }}</h3>
-            </a>
+                        <p>{{ product.price | money }}</p>
+                        {% endif %}
 
-            <p>{{ product.price | money }}</p>
-          {% endif %}
+                        {% if block.settings.text != blank %}
+                        <span class="review-text">{{ block.settings.text }}</span>
+                        {% endif %}
+                    </div>
 
-          {% if block.settings.text != blank %}
-            <span class="review-text">{{ block.settings.text }}</span>
-          {% endif %}
+                    </div>
+
+                </div>
+            {% endfor %}
         </div>
-
-      </div>
-
     </div>
-  {% endfor %}
-
 </div>
 
 {%  schema %}
