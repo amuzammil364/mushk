@@ -105,12 +105,36 @@
             "image": "shopify://shop_images/mobile-banner-2-wo-content.webp",
             "link": ""
           }
+        },
+        "image_QRjBrx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
+            "link": ""
+          }
+        },
+        "image_RXFdV3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-banner-2-wo-content.webp",
+            "link": ""
+          }
+        },
+        "image_TzpKiW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "image_tjNdCX",
         "image_cjhKBC",
-        "image_A6WXCF"
+        "image_A6WXCF",
+        "image_QRjBrx",
+        "image_RXFdV3",
+        "image_TzpKiW"
       ],
       "name": "CSM Image Carousel",
       "settings": {
