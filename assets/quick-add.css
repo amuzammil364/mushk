@@ -364,11 +364,10 @@ quick-add-modal .product-form__buttons {
 .quick-add__submit .btn-icon svg {
   width: 20px;
   height: 20px;
-  fill: #fff;
 }
 
-.quick-add__submit .btn-icon svg path {
-  fill: #fff;
+.quick-add__submit .btn-icon{
+  color: #fff;
 }
 
 quick-add-modal .product-media-container.constrain-height {
