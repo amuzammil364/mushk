@@ -368,7 +368,7 @@ quick-add-modal .product-form__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .35s ease;
+  transition: .25s ease;
 }
 
 .quick-add__submit .btn-text {
@@ -383,7 +383,7 @@ quick-add-modal .product-form__buttons {
   justify-content: center;
   transform: translateY(100%) scale(1);
   opacity: 0;
-  transition: .35s ease;
+  transition: .25s ease;
 }
 
 .quick-add__submit .btn-icon svg{
