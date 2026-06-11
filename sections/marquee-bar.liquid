@@ -44,7 +44,7 @@
 
 .marquee-wrapper {
   display: flex;
-  gap: 20px;
+  gap: {{ section.settings.item_gap }}px;
   width: max-content;
   animation: marqueeScroll var(--duration, 18s) linear infinite;
   margin: 0 !important;
@@ -140,6 +140,16 @@
       "id": "equal_width_items",
       "label": "Equal Width Items",
       "default": false
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "label": "Item Gap",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 40,
+      "unit": "px"
     },
     {
       "type": "checkbox",
