@@ -133,7 +133,7 @@
         "navigation_style": "dots",
         "desktop_columns": 4,
         "mobile_columns": 2,
-        "cell_gap": 10,
+        "cell_gap": 6,
         "title": "Endorsed by Famous Influencers",
         "heading_size": "h2",
         "heading_alignment": "center",
