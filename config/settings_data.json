@@ -175,6 +175,8 @@
         "settings": {
           "enable_marquee": true,
           "bg_color": "#000000",
+          "bg_gradient": "",
+          "equal_width_items": true,
           "subtitle_uppercase": true,
           "text_size": "small",
           "letter_spacing": 3,
