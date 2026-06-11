@@ -112,13 +112,21 @@
             "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/73b661cf1cd24d078ebd479aa11faae6/73b661cf1cd24d078ebd479aa11faae6.HD-1080p-2.5Mbps-82749548.mp4",
             "product": "mystic-pulse"
           }
+        },
+        "review_zh9NcG": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/f15077a249e240e68fc726ddc90ae02b/f15077a249e240e68fc726ddc90ae02b.HD-720p-1.6Mbps-82512158.mp4",
+            "product": "berry-grace"
+          }
         }
       },
       "block_order": [
         "review_7gzJmr",
         "review_PMphBy",
         "review_68nHNm",
-        "review_wyyNQN"
+        "review_wyyNQN",
+        "review_zh9NcG"
       ],
       "name": "Review Video Slider",
       "settings": {
