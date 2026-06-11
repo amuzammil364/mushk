@@ -138,11 +138,14 @@
       ],
       "name": "CSM Image Carousel",
       "settings": {
+        "color_scheme": "scheme-b905d9e8-2b42-47e8-8947-46f949f4c557",
         "navigation_style": "arrows",
         "desktop_columns": 3,
         "mobile_columns": 1,
         "cell_gap": 20,
-        "border_radius": 10
+        "border_radius": 10,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection": {
