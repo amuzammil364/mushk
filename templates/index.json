@@ -98,11 +98,19 @@
             "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
             "link": ""
           }
+        },
+        "image_A6WXCF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-banner-2-wo-content.webp",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "image_tjNdCX",
-        "image_cjhKBC"
+        "image_cjhKBC",
+        "image_A6WXCF"
       ],
       "name": "CSM Image Carousel",
       "settings": {
