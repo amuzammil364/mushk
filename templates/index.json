@@ -105,12 +105,20 @@
             "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/91cc52beb7e549caad9a4e5cac9be983/91cc52beb7e549caad9a4e5cac9be983.HD-720p-1.6Mbps-82784528.mp4",
             "product": "manzil"
           }
+        },
+        "review_wyyNQN": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/73b661cf1cd24d078ebd479aa11faae6/73b661cf1cd24d078ebd479aa11faae6.HD-1080p-2.5Mbps-82749548.mp4",
+            "product": "mystic-pulse"
+          }
         }
       },
       "block_order": [
         "review_7gzJmr",
         "review_PMphBy",
-        "review_68nHNm"
+        "review_68nHNm",
+        "review_wyyNQN"
       ],
       "name": "Review Video Slider",
       "settings": {
