@@ -1,6 +1,6 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 
-{% comment %} <div class="csm-review-slider csm-review-slider-{{ section.id }}">
+<div class="csm-review-slider csm-review-slider-{{ section.id }}">
     <div class="csm-review-slider-container">
         {%- if section.settings.title != blank -%}
             <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="
@@ -13,11 +13,7 @@
             {{ section.settings.title }}
             </h2>
         {%- endif -%}
-        
-    </div>
-</div> {% endcomment %}
-
-<div class="csm-review-slider-wrapper-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="csm-review-slider-wrapper-{{ section.id }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             {% for block in section.blocks %}
                 {% assign product = block.settings.product %}
 
@@ -58,6 +54,8 @@
                 </div>
             {% endfor %}
         </div>
+    </div>
+</div>
 
 {% assign show_arrows = false %}
 {% assign show_dots = true %}
