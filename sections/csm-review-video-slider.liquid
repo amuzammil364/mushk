@@ -57,6 +57,17 @@
     </div>
 </div>
 
+{% assign show_arrows = false %}
+{% assign show_dots = true %}
+
+{% if section.settings.navigation_style == 'arrows' %}
+  {% assign show_arrows = true %}
+  {% assign show_dots = false %}
+{% elsif section.settings.navigation_style == 'none' %}
+  {% assign show_arrows = false %}
+  {% assign show_dots = false %}
+{% endif %}
+
 <script
   src="{{ 'flickity.pkgd.min.js' | asset_url }}"
   defer
