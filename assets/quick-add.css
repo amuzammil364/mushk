@@ -380,8 +380,7 @@ quick-add-modal .product-form__buttons {
   inset: 0;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  transform: translateY(100%);
+  transform: translateY(100%) translateX(-50%);
   opacity: 0;
   width: 20px;
   height: 20px;
