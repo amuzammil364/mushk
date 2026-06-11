@@ -97,11 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <style>
     .csm-review-slider-{{ section.id }}{
-        --desktop-columns: {{ section.settings.desktop_columns }};
-        --mobile-columns: {{ section.settings.mobile_columns }};
-        padding-top: {{section.settings.padding_top }}px;
-        padding-bottom: {{section.settings.padding_bottom }}px;
-        width: 100%;
+      --desktop-columns: {{ section.settings.desktop_columns }};
+      --mobile-columns: {{ section.settings.mobile_columns }};
+      padding-top: {{section.settings.padding_top }}px;
+      padding-bottom: {{section.settings.padding_bottom }}px;
+      width: 100%;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-slider-container{
@@ -116,25 +116,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-slide {
-        overflow: hidden;
-        padding: 0 {{ section.settings.cell_gap }}px;
-        box-sizing: border-box;
+      overflow: hidden;
+      padding: 0 {{ section.settings.cell_gap }}px;
+      box-sizing: border-box;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-video video {
-        width: 100%;
-        display: block;
-        aspect-ratio: 9/16;
+      width: 100%;
+      display: block;
+      aspect-ratio: 9/16;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-bottom {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px;
-        background-color: #efefef;
-        border: 1px solid #cecece;
-        margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background-color: #efefef;
+      border: 1px solid #cecece;
+      margin-top: 10px;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-bottom a{
@@ -143,20 +143,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-product img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        object-fit: cover;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-content h3 {
-        margin: 0;
-        margin-bottom: 2px;
-        font-size: 18px;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
+      margin: 0;
+      margin-bottom: 2px;
+      font-size: 18px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
 
     .csm-review-slider-{{ section.id }} .csm-review-content p{
@@ -164,19 +164,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     @media (min-width: 769px) {
-        .csm-review-slider-{{ section.id }} .csm-review-slide {
-            width: calc(100% / var(--desktop-columns));
-        }
+      .csm-review-slider-{{ section.id }} .csm-review-slide {
+        width: calc(100% / var(--desktop-columns));
+      }
     }
 
     @media (max-width: 768px) {
-        .csm-review-slider-{{ section.id }} .csm-review-slide {
-            width: calc(100% / var(--mobile-columns));
-        }
+      .csm-review-slider-{{ section.id }} .csm-review-slide {
+        width: calc(100% / var(--mobile-columns));
+      }
 
-        .csm-review-slider-{{ section.id }} .csm-review-slider-container{
-          padding: 0 1.5rem;
-        }
+      .csm-review-slider-{{ section.id }} .csm-review-slider-container{
+        padding: 0 1.5rem;
+      }
     }
 </style>
 
