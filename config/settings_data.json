@@ -165,44 +165,12 @@
               "heading": "Black Friday :10% off Storewide",
               "link": ""
             }
-          },
-          "item_fTcME7": {
-            "type": "item",
-            "settings": {
-              "heading": "Black Friday :10% off Storewide",
-              "link": ""
-            }
-          },
-          "item_HLJwJr": {
-            "type": "item",
-            "settings": {
-              "heading": "Black Friday :10% off Storewide",
-              "link": ""
-            }
-          },
-          "item_X6EU3j": {
-            "type": "item",
-            "settings": {
-              "heading": "Black Friday :10% off Storewide",
-              "link": ""
-            }
-          },
-          "item_TzPeHa": {
-            "type": "item",
-            "settings": {
-              "heading": "Black Friday :10% off Storewide",
-              "link": ""
-            }
           }
         },
         "block_order": [
           "item_YgkBdC",
           "item_kkCHKi",
-          "item_YFAHQk",
-          "item_fTcME7",
-          "item_HLJwJr",
-          "item_X6EU3j",
-          "item_TzPeHa"
+          "item_YFAHQk"
         ],
         "settings": {
           "enable_marquee": true,
