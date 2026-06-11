@@ -378,12 +378,12 @@ quick-add-modal .product-form__buttons {
 .quick-add__submit .btn-icon {
   position: absolute;
   inset: 0;
-  top: 50%;
-  left: 50%;
-  transform: translateY(100%) translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%) scale(1);
   opacity: 0;
-  width: 20px;
-  height: 20px;
+  transition: .35s ease;
 }
 
 .quick-add__submit .btn-icon svg{
