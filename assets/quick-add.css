@@ -384,8 +384,6 @@ quick-add-modal .product-form__buttons {
   transform: translateY(100%) scale(1);
   opacity: 0;
   transition: .35s ease;
-  width: 24px;
-  height: 24px;
 }
 
 .quick-add__submit .btn-icon svg{
