@@ -82,96 +82,6 @@
         "section_mobile_alignment": "center"
       }
     },
-    "image_carousel_wnya6k": {
-      "type": "image-carousel",
-      "blocks": {
-        "image_tjNdCX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-2-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_cjhKBC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_A6WXCF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-2-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_QRjBrx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_RXFdV3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-2-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_TzpKiW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_3aKnem": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_mwncE3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-2-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        },
-        "image_AtMEMz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
-            "link": "shopify://collections"
-          }
-        }
-      },
-      "block_order": [
-        "image_tjNdCX",
-        "image_cjhKBC",
-        "image_A6WXCF",
-        "image_QRjBrx",
-        "image_RXFdV3",
-        "image_TzpKiW",
-        "image_3aKnem",
-        "image_mwncE3",
-        "image_AtMEMz"
-      ],
-      "name": "CSM Image Carousel",
-      "settings": {
-        "color_scheme": "scheme-b905d9e8-2b42-47e8-8947-46f949f4c557",
-        "navigation_style": "dots",
-        "desktop_columns": 3,
-        "mobile_columns": 1,
-        "cell_gap": 20,
-        "border_radius": 10,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -974,7 +884,6 @@
   },
   "order": [
     "csm_slideshow_k4QcWk",
-    "image_carousel_wnya6k",
     "featured_collection",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
