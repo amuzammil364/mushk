@@ -163,7 +163,7 @@
       "name": "CSM Image Carousel",
       "settings": {
         "color_scheme": "scheme-b905d9e8-2b42-47e8-8947-46f949f4c557",
-        "navigation_style": "dots",
+        "navigation_style": "none",
         "desktop_columns": 3,
         "mobile_columns": 1,
         "cell_gap": 20,
