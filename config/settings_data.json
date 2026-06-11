@@ -148,22 +148,22 @@
           "item_YgkBdC": {
             "type": "item",
             "settings": {
-              "heading": "🏆 Use Code : MUSHKS20 on Checkout",
-              "link": ""
+              "heading": "Use Code : MUSHKS20 on Checkout",
+              "link": "shopify://collections"
             }
           },
           "item_kkCHKi": {
             "type": "item",
             "settings": {
               "heading": "Free Shipping on Orders above Rs.1000",
-              "link": ""
+              "link": "shopify://collections"
             }
           },
           "item_YFAHQk": {
             "type": "item",
             "settings": {
               "heading": "Black Friday :10% off Storewide",
-              "link": ""
+              "link": "shopify://collections"
             }
           }
         },
@@ -176,6 +176,7 @@
           "enable_marquee": true,
           "bg_color": "#000000",
           "bg_gradient": "",
+          "item_gap": 40,
           "equal_width_items": true,
           "subtitle_uppercase": true,
           "text_size": "small",
