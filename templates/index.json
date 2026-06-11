@@ -91,20 +91,50 @@
             "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/c90a30a6b8f544ff9b5fe7e0eb12e0ea/c90a30a6b8f544ff9b5fe7e0eb12e0ea.HD-720p-1.6Mbps-82512157.mp4",
             "product": "gumaan-yakeen"
           }
+        },
+        "review_TrGKGa": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/c90a30a6b8f544ff9b5fe7e0eb12e0ea/c90a30a6b8f544ff9b5fe7e0eb12e0ea.HD-720p-1.6Mbps-82512157.mp4",
+            "product": "gumaan-yakeen"
+          }
+        },
+        "review_mETBYC": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/c90a30a6b8f544ff9b5fe7e0eb12e0ea/c90a30a6b8f544ff9b5fe7e0eb12e0ea.HD-720p-1.6Mbps-82512157.mp4",
+            "product": "gumaan-yakeen"
+          }
+        },
+        "review_MKhNjK": {
+          "type": "review",
+          "settings": {
+            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/c90a30a6b8f544ff9b5fe7e0eb12e0ea/c90a30a6b8f544ff9b5fe7e0eb12e0ea.HD-720p-1.6Mbps-82512157.mp4",
+            "product": "gumaan-yakeen"
+          }
         }
       },
       "block_order": [
-        "review_7gzJmr"
+        "review_7gzJmr",
+        "review_TrGKGa",
+        "review_mETBYC",
+        "review_MKhNjK"
       ],
       "name": "Review Video Slider",
       "settings": {
+        "navigation_style": "dots",
+        "desktop_columns": 4,
+        "mobile_columns": 2,
+        "cell_gap": 10,
         "title": "Tile",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_letter_spacing": 0,
         "heading_top_spacing": 0,
         "heading_bottom_spacing": 0,
-        "heading_uppercase": false
+        "heading_uppercase": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection": {
