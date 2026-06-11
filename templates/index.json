@@ -82,86 +82,6 @@
         "section_mobile_alignment": "center"
       }
     },
-    "csm_review_video_slider_mDUH4K": {
-      "type": "csm-review-video-slider",
-      "blocks": {
-        "review_7gzJmr": {
-          "type": "review",
-          "settings": {
-            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/c90a30a6b8f544ff9b5fe7e0eb12e0ea/c90a30a6b8f544ff9b5fe7e0eb12e0ea.HD-720p-1.6Mbps-82512157.mp4",
-            "product": "gumaan-yakeen"
-          }
-        },
-        "review_PMphBy": {
-          "type": "review",
-          "settings": {
-            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/387110d00a384af29687bb00e4f6a1ec/387110d00a384af29687bb00e4f6a1ec.HD-720p-1.6Mbps-82512160.mp4",
-            "product": "justuju-khuwaish"
-          }
-        },
-        "review_68nHNm": {
-          "type": "review",
-          "settings": {
-            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/91cc52beb7e549caad9a4e5cac9be983/91cc52beb7e549caad9a4e5cac9be983.HD-720p-1.6Mbps-82784528.mp4",
-            "product": "manzil"
-          }
-        },
-        "review_wyyNQN": {
-          "type": "review",
-          "settings": {
-            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/73b661cf1cd24d078ebd479aa11faae6/73b661cf1cd24d078ebd479aa11faae6.HD-1080p-2.5Mbps-82749548.mp4",
-            "product": "mystic-pulse"
-          }
-        },
-        "review_zh9NcG": {
-          "type": "review",
-          "settings": {
-            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/f15077a249e240e68fc726ddc90ae02b/f15077a249e240e68fc726ddc90ae02b.HD-720p-1.6Mbps-82512158.mp4",
-            "product": "berry-grace"
-          }
-        },
-        "review_nQAzND": {
-          "type": "review",
-          "settings": {
-            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/e38610b6b45844899ddb6314e51d42a4/e38610b6b45844899ddb6314e51d42a4.HD-720p-1.6Mbps-82512161.mp4",
-            "product": "dark-raven"
-          }
-        },
-        "review_iGbhAA": {
-          "type": "review",
-          "settings": {
-            "video_url": "https://buyrawaha.com/cdn/shop/videos/c/vp/d706e73560724750a45960890d8e0c60/d706e73560724750a45960890d8e0c60.HD-720p-1.6Mbps-82781244.mp4",
-            "product": "dream"
-          }
-        }
-      },
-      "block_order": [
-        "review_7gzJmr",
-        "review_PMphBy",
-        "review_68nHNm",
-        "review_wyyNQN",
-        "review_zh9NcG",
-        "review_nQAzND",
-        "review_iGbhAA"
-      ],
-      "name": "Review Video Slider",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "navigation_style": "arrows",
-        "desktop_columns": 4,
-        "mobile_columns": 1,
-        "cell_gap": 6,
-        "title": "Endorsed by Famous Influencers",
-        "heading_size": "h2",
-        "heading_alignment": "center",
-        "heading_letter_spacing": 1,
-        "heading_top_spacing": 0,
-        "heading_bottom_spacing": 60,
-        "heading_uppercase": true,
-        "padding_top": 80,
-        "padding_bottom": 72
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -964,7 +884,6 @@
   },
   "order": [
     "csm_slideshow_k4QcWk",
-    "csm_review_video_slider_mDUH4K",
     "featured_collection",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
