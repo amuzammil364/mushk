@@ -96,6 +96,14 @@ document.addEventListener('DOMContentLoaded', function () {
         color: rgb(var(--color-button-text));
     }
 
+    .csm-image-carousel-{{ section.id }} .flickity-prev-next-button .flickity-button-icon{
+        left: 50%;
+        top: 50%;
+        width: 40%;
+        height: 40%;
+        transform: translate(-50%, -50%);
+    }
+
     @media (min-width: 769px) {
         .csm-image-carousel-{{ section.id }} .csm-image-carousel__cell {
             width: calc(100% / var(--desktop-columns));
