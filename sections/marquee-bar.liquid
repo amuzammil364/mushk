@@ -20,6 +20,8 @@
           <a href="{{ block.settings.link }}" class="marquee-link {% if section.settings.subtitle_uppercase %}uppercase{% endif %} size-{{ section.settings.text_size }}">
             {{ block.settings.heading }}
           </a>
+        {% else %}
+          <span class="marquee-link {% if section.settings.subtitle_uppercase %}uppercase{% endif %} size-{{ section.settings.text_size }}">{{ block.settings.heading }}</span>
         {% endif %}
       </li>
     {% endfor %}
