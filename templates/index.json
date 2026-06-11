@@ -134,15 +134,15 @@
         "desktop_columns": 4,
         "mobile_columns": 2,
         "cell_gap": 10,
-        "title": "Tile",
-        "heading_size": "h1",
+        "title": "Endorsed by Famous Influencers",
+        "heading_size": "h2",
         "heading_alignment": "center",
-        "heading_letter_spacing": 0,
+        "heading_letter_spacing": 1,
         "heading_top_spacing": 0,
-        "heading_bottom_spacing": 0,
-        "heading_uppercase": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading_bottom_spacing": 60,
+        "heading_uppercase": true,
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "featured_collection": {
