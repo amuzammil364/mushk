@@ -378,7 +378,7 @@ quick-add-modal .product-form__buttons {
 .quick-add__submit .btn-icon {
   position: absolute;
   inset: 0;
-  transform: translateY(100%) scale(.5);
+  transform: translateY(100%) scale(1);
   opacity: 0;
   color: #000;
 }
