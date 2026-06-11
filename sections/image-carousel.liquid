@@ -82,6 +82,10 @@ document.addEventListener('DOMContentLoaded', function () {
         border-radius: {{ section.settings.border_radius }}px;
     }
 
+    .csm-image-carousel-{{ section.id }} .csm-image-carousel__cell:last-child{
+        padding-right: 0 !important;
+    }
+
     .csm-image-carousel-{{ section.id }} .csm-image-carousel__cell img {
         width: 100%;
         max-width: 100%;
