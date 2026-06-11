@@ -105,20 +105,12 @@
             "image": "shopify://shop_images/mobile-banner-1-wo-content.webp",
             "link": ""
           }
-        },
-        "image_VfnHg3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-ocean-mall-branch.webp",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "image_nUxeei",
         "image_tjNdCX",
-        "image_cjhKBC",
-        "image_VfnHg3"
+        "image_cjhKBC"
       ],
       "name": "CSM Image Carousel",
       "settings": {
