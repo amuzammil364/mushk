@@ -82,122 +82,6 @@
         "section_mobile_alignment": "center"
       }
     },
-    "multicolumn_Gj6Tm8": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_EU6BWp": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icons8-box-100.png",
-            "layout_direction": "row",
-            "bg_color": "",
-            "multicolumn_gap": 22,
-            "title": "Free Shipping",
-            "text": "<p>Free shipping on all orders above PKR 12000</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 0,
-            "multicolumn_left_spacing": 0,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 0,
-            "multicolumn_mobile_top_spacing": 0,
-            "multicolumn_mobile_left_spacing": 0,
-            "multicolumn_mobile_right_spacing": 0,
-            "multicolumn_mobile_bottom_spacing": 20
-          }
-        },
-        "column_ia88t8": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icons8-diamond-100.png",
-            "layout_direction": "row",
-            "bg_color": "",
-            "multicolumn_gap": 22,
-            "title": "Promising Quality",
-            "text": "<p>All our products assure the utmost quality</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 0,
-            "multicolumn_left_spacing": 0,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 0,
-            "multicolumn_mobile_top_spacing": 0,
-            "multicolumn_mobile_left_spacing": 0,
-            "multicolumn_mobile_right_spacing": 0,
-            "multicolumn_mobile_bottom_spacing": 20
-          }
-        },
-        "column_JpXTJL": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icons8-box-100.png",
-            "layout_direction": "row",
-            "bg_color": "",
-            "multicolumn_gap": 22,
-            "title": "Free Shipping",
-            "text": "<p>Free shipping on all orders above PKR 12000</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 0,
-            "multicolumn_left_spacing": 0,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 0,
-            "multicolumn_mobile_top_spacing": 0,
-            "multicolumn_mobile_left_spacing": 0,
-            "multicolumn_mobile_right_spacing": 0,
-            "multicolumn_mobile_bottom_spacing": 20
-          }
-        },
-        "column_XhrcCM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icons8-diamond-100.png",
-            "layout_direction": "row",
-            "bg_color": "",
-            "multicolumn_gap": 22,
-            "title": "Promising Quality",
-            "text": "<p>All our products assure the utmost quality</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 0,
-            "multicolumn_left_spacing": 0,
-            "multicolumn_right_spacing": 0,
-            "multicolumn_bottom_spacing": 0,
-            "multicolumn_mobile_top_spacing": 0,
-            "multicolumn_mobile_left_spacing": 0,
-            "multicolumn_mobile_right_spacing": 0,
-            "multicolumn_mobile_bottom_spacing": 0
-          }
-        }
-      },
-      "block_order": [
-        "column_EU6BWp",
-        "column_ia88t8",
-        "column_JpXTJL",
-        "column_XhrcCM"
-      ],
-      "disabled": true,
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "custom",
-        "custom_image_width": 56,
-        "custom_mobile_image_width": 40,
-        "title_size": 16,
-        "text_size": 13,
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 44
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -1024,7 +908,6 @@
   },
   "order": [
     "csm_slideshow_k4QcWk",
-    "multicolumn_Gj6Tm8",
     "featured_collection",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
