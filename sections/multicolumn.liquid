@@ -154,6 +154,10 @@
                 flex-direction: {{ block.settings.layout_direction }};
                 align-items: center;
               }
+
+              #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card .media img{
+                width: 180px;
+              }
             </style>
           </li>
         {%- endfor -%}
