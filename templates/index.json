@@ -102,15 +102,49 @@
             "multicolumn_bottom_spacing": 0
           }
         },
-        "column_9TXzhh": {
+        "column_ia88t8": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/icons8-box-100.png",
             "layout_direction": "row",
             "bg_color": "",
             "multicolumn_gap": 22,
-            "title": "2 Days Exchange Policy",
-            "text": "<p>Easy exchange within 2 days</p>",
+            "title": "Free Shipping",
+            "text": "<p>Free shipping on all orders above PKR 12000</p>",
+            "link_label": "",
+            "link": "",
+            "multicolumn_top_spacing": 0,
+            "multicolumn_left_spacing": 0,
+            "multicolumn_right_spacing": 20,
+            "multicolumn_bottom_spacing": 0
+          }
+        },
+        "column_qNRAKm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-box-100.png",
+            "layout_direction": "row",
+            "bg_color": "",
+            "multicolumn_gap": 22,
+            "title": "Free Shipping",
+            "text": "<p>Free shipping on all orders above PKR 12000</p>",
+            "link_label": "",
+            "link": "",
+            "multicolumn_top_spacing": 0,
+            "multicolumn_left_spacing": 0,
+            "multicolumn_right_spacing": 20,
+            "multicolumn_bottom_spacing": 0
+          }
+        },
+        "column_kPLCdf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-box-100.png",
+            "layout_direction": "row",
+            "bg_color": "",
+            "multicolumn_gap": 22,
+            "title": "Free Shipping",
+            "text": "<p>Free shipping on all orders above PKR 12000</p>",
             "link_label": "",
             "link": "",
             "multicolumn_top_spacing": 0,
@@ -122,7 +156,9 @@
       },
       "block_order": [
         "column_EU6BWp",
-        "column_9TXzhh"
+        "column_ia88t8",
+        "column_qNRAKm",
+        "column_kPLCdf"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
