@@ -135,9 +135,6 @@
                 display: flex;
                 flex-direction: {{ block.settings.layout_direction }};
                 gap: {{ block.settings.multicolumn_gap }}px;
-              }
-
-              #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card{
                 padding-top: {{ block.settings.multicolumn_top_spacing }}px; 
                 padding-left: {{ block.settings.multicolumn_left_spacing }}px;
                 padding-right: {{ block.settings.multicolumn_right_spacing }}px;
@@ -192,6 +189,13 @@
                 #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card__image-wrapper{
                   {% if section.settings.image_width == 'custom' %} max-width: {{ section.settings.custom_mobile_image_width }}px; {% endif %}
                   {% if section.settings.image_width == 'custom' %} height: {{ section.settings.custom_mobile_image_width }}px; {% endif %}
+                }
+
+                #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card{
+                  padding-top: {{ block.settings.multicolumn_mobile_top_spacing }}px; 
+                  padding-left: {{ block.settings.multicolumn_mobile_left_spacing }}px;
+                  padding-right: {{ block.settings.multicolumn_mobile_right_spacing }}px;
+                  padding-bottom: {{ block.settings.multicolumn_mobile_bottom_spacing }}px; 
                 }
               }
             </style>
