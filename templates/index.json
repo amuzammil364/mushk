@@ -124,7 +124,7 @@
         "padding_bottom": 36
       }
     },
-    "image_comparison_slider_7FUxPr": {
+    "image_comparison_slider_NydCnV": {
       "type": "image-comparison-slider",
       "name": "Image Comparison Slider",
       "settings": {
@@ -923,7 +923,7 @@
   "order": [
     "csm_slideshow_k4QcWk",
     "featured_collection",
-    "image_comparison_slider_7FUxPr",
+    "image_comparison_slider_NydCnV",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
     "featured_collection_jmU4wd",
