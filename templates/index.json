@@ -815,15 +815,15 @@
     "multicolumn_Dt76KF": {
       "type": "multicolumn",
       "blocks": {
-        "column_chXaRe": {
+        "column_LYbWUf": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-gulshan-e-iqbal-kda-branch.webp",
+            "image": "shopify://shop_images/elyscents-best-luxury-perfumes-in-pakistan-north-walk-kiosk.webp",
             "layout_direction": "column",
             "bg_color": "",
             "multicolumn_gap": 30,
-            "title": "Gulshan KDA Outlet",
-            "text": "<p>A219, Block 3, KDA Market (Near Flourish Salon), Karachi</p>",
+            "title": "NorthWalk Kiosk",
+            "text": "<p>Kiosk No.: FF, 01, Phase 1 North Nazimabad</p>",
             "link_label": "Get Direction",
             "link": "",
             "multicolumn_top_spacing": 20,
@@ -880,7 +880,7 @@
         }
       },
       "block_order": [
-        "column_chXaRe",
+        "column_LYbWUf",
         "column_hJEkbM",
         "column_zXrPeq"
       ],
