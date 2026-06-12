@@ -133,7 +133,7 @@
         "heading": "Blog posts",
         "heading_size": "h1",
         "columns_desktop": 3,
-        "show_view_all": true,
+        "show_view_all": false,
         "show_image": true,
         "show_date": true,
         "show_author": false,
