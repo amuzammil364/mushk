@@ -188,7 +188,7 @@
         {%- endfor -%}
       </ul>
 
-      {% comment %} {%- if show_mobile_slider -%}
+      {%- if show_mobile_slider -%}
         <div class="slider-buttons large-up-hide">
           <button
             type="button"
@@ -213,23 +213,7 @@
             <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
           </button>
         </div>
-      {%- endif -%} {% endcomment %}
-       {%- if show_mobile_slider -%}
-  <div class="slider-dots large-up-hide">
-    <ul class="slider-dots__list" role="tablist">
-      {% for block in section.blocks %}
-        <li class="slider-dots__item">
-          <button
-            class="slider-dots__button"
-            aria-label="Go to slide {{ forloop.index }}"
-            data-slide="{{ forloop.index0 }}"
-          >
-          </button>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-{%- endif -%}
+      {%- endif -%}
     </slider-component>
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
