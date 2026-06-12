@@ -128,6 +128,7 @@
                 display: flex;
                 flex-direction: {{ block.settings.layout_direction }};
                 align-items: center;
+                gap: {{ block.settings.multicolumn_gap }}px;
               }
             </style>
           </li>
@@ -420,6 +421,16 @@
               "label": "Image Right"
             }
           ]
+        },
+        {
+          "type": "range",
+          "id": "multicolumn_gap",
+          "label": "Gap",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "default": 30,
+          "unit": "px"
         },
         {
           "type": "inline_richtext",
