@@ -57,15 +57,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "whatsapp_button_cVqVyR": {
-          "type": "whatsapp_button",
-          "settings": {
-            "icon": "shopify://shop_images/whatsapp-icon.png",
-            "label": "Order on WhatsApp",
-            "phone": "923032157357",
-            "message": "Hello, I want to know more about this product."
-          }
-        },
         "wishlist_plus_wishlist_pdp_button_FXnbTL": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
@@ -90,6 +81,15 @@
             "swym_hover_atw_border_thickness": 0,
             "swym_hover_atw_button_border_radius": 0,
             "swym_custom_css": ""
+          }
+        },
+        "whatsapp_button_cVqVyR": {
+          "type": "whatsapp_button",
+          "settings": {
+            "icon": "shopify://shop_images/whatsapp-icon.png",
+            "label": "Order on WhatsApp",
+            "phone": "923032157357",
+            "message": "Hello, I want to know more about this product."
           }
         },
         "description": {
@@ -118,8 +118,8 @@
         "usp_cAEDBG",
         "inventory_7zFFkD",
         "buy_buttons",
-        "whatsapp_button_cVqVyR",
         "wishlist_plus_wishlist_pdp_button_FXnbTL",
+        "whatsapp_button_cVqVyR",
         "description",
         "shipping_info_QPdw3k"
       ],
