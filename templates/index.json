@@ -166,57 +166,6 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_w3iMTC": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_KwrkYJ": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>DOn't Know Where to start?</strong>",
-            "heading_size": "h1",
-            "heading_uppercase": true,
-            "heading_letter_spacing": 1,
-            "heading_top_spacing": 0,
-            "heading_bottom_spacing": 10
-          }
-        },
-        "button_hb48mw": {
-          "type": "button",
-          "settings": {
-            "button_label": "Try Sample Set",
-            "button_link": "shopify://collections",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_KwrkYJ",
-        "button_hb48mw"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Scent_Quiz_Web_Banner_2_1.webp",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "container_border_radius": 20,
-        "section_border_color": "#e5e5e5",
-        "border_top_width": 0,
-        "border_right_width": 0,
-        "border_bottom_width": 0,
-        "border_left_width": 0,
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-5",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner_KRhtLg": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -967,7 +916,6 @@
     "csm_slideshow_k4QcWk",
     "featured_collection",
     "featured_collection_6VwdaL",
-    "image_with_text_w3iMTC",
     "image_banner_KRhtLg",
     "featured_collection_jmU4wd",
     "image_banner_iLQpHQ",
