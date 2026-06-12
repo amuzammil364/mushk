@@ -188,7 +188,7 @@
               @media (max-width: 768px){
                 #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card__image-wrapper{
                   {% if section.settings.image_width == 'custom' %} max-width: {{ section.settings.custom_mobile_image_width }}px; {% endif %}
-                  {% if section.settings.image_width == 'custom' %} height: {{ section.settings.custom_mobile_image_width }}; {% endif %}
+                  {% if section.settings.image_width == 'custom' %} height: {{ section.settings.custom_mobile_image_width }}px; {% endif %}
                 }
               }
             </style>
