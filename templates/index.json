@@ -99,7 +99,11 @@
             "multicolumn_top_spacing": 0,
             "multicolumn_left_spacing": 0,
             "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 0
+            "multicolumn_bottom_spacing": 0,
+            "multicolumn_mobile_top_spacing": 0,
+            "multicolumn_mobile_left_spacing": 0,
+            "multicolumn_mobile_right_spacing": 0,
+            "multicolumn_mobile_bottom_spacing": 20
           }
         },
         "column_ia88t8": {
@@ -116,7 +120,11 @@
             "multicolumn_top_spacing": 0,
             "multicolumn_left_spacing": 0,
             "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 0
+            "multicolumn_bottom_spacing": 0,
+            "multicolumn_mobile_top_spacing": 0,
+            "multicolumn_mobile_left_spacing": 0,
+            "multicolumn_mobile_right_spacing": 0,
+            "multicolumn_mobile_bottom_spacing": 20
           }
         },
         "column_JpXTJL": {
@@ -133,7 +141,11 @@
             "multicolumn_top_spacing": 0,
             "multicolumn_left_spacing": 0,
             "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 0
+            "multicolumn_bottom_spacing": 0,
+            "multicolumn_mobile_top_spacing": 0,
+            "multicolumn_mobile_left_spacing": 0,
+            "multicolumn_mobile_right_spacing": 0,
+            "multicolumn_mobile_bottom_spacing": 20
           }
         },
         "column_XhrcCM": {
@@ -150,7 +162,11 @@
             "multicolumn_top_spacing": 0,
             "multicolumn_left_spacing": 0,
             "multicolumn_right_spacing": 0,
-            "multicolumn_bottom_spacing": 0
+            "multicolumn_bottom_spacing": 0,
+            "multicolumn_mobile_top_spacing": 0,
+            "multicolumn_mobile_left_spacing": 0,
+            "multicolumn_mobile_right_spacing": 0,
+            "multicolumn_mobile_bottom_spacing": 0
           }
         }
       },
@@ -928,7 +944,11 @@
             "multicolumn_top_spacing": 20,
             "multicolumn_left_spacing": 20,
             "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20
+            "multicolumn_bottom_spacing": 20,
+            "multicolumn_mobile_top_spacing": 20,
+            "multicolumn_mobile_left_spacing": 20,
+            "multicolumn_mobile_right_spacing": 20,
+            "multicolumn_mobile_bottom_spacing": 20
           }
         },
         "column_hJEkbM": {
@@ -945,7 +965,11 @@
             "multicolumn_top_spacing": 20,
             "multicolumn_left_spacing": 20,
             "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20
+            "multicolumn_bottom_spacing": 20,
+            "multicolumn_mobile_top_spacing": 20,
+            "multicolumn_mobile_left_spacing": 20,
+            "multicolumn_mobile_right_spacing": 20,
+            "multicolumn_mobile_bottom_spacing": 20
           }
         },
         "column_zXrPeq": {
@@ -962,7 +986,11 @@
             "multicolumn_top_spacing": 20,
             "multicolumn_left_spacing": 20,
             "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20
+            "multicolumn_bottom_spacing": 20,
+            "multicolumn_mobile_top_spacing": 20,
+            "multicolumn_mobile_left_spacing": 20,
+            "multicolumn_mobile_right_spacing": 20,
+            "multicolumn_mobile_bottom_spacing": 20
           }
         }
       },
