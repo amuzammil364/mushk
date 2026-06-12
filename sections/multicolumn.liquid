@@ -92,10 +92,6 @@
                 {% endif %}
                 <div
                   class="multicolumn-card__image-wrapper"
-                  style="
-                    max-width: {{ image_width }};
-                    height: {{ image_width }};
-                  "
                 >
                   {% assign image_class = 'multicolumn-card__image' %}
 
@@ -143,6 +139,11 @@
                 display: flex;
                 flex-direction: {{ block.settings.layout_direction }};
                 gap: {{ block.settings.multicolumn_gap }}px;
+              }
+
+              #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card__image-wrapper{
+                max-width: {{ image_width }};
+                height: {{ image_width }};
               }
 
               #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card__image{
