@@ -118,7 +118,6 @@
                       | image_url: width: 3200
                       | image_tag:
                         widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                        sizes: sizes,
                         class: 'multicolumn-card__image'
                     }}
                   </div>
@@ -155,9 +154,9 @@
                 align-items: center;
               }
 
-              #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card .media img{
+              {% comment %} #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card .media img{
                 width: 180px;
-              }
+              } {% endcomment %}
             </style>
           </li>
         {%- endfor -%}
