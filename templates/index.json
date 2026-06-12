@@ -128,6 +128,7 @@
       "type": "image-comparison-slider",
       "name": "Image Comparison Slider",
       "settings": {
+        "section_height": "small",
         "before_image": "shopify://shop_images/Kiosk_SNS.webp",
         "after_image": "shopify://shop_images/Tariq_Rd_Outlet.webp"
       }
