@@ -90,6 +90,7 @@
           "settings": {
             "image": "shopify://shop_images/icons8-box-100.png",
             "layout_direction": "row",
+            "bg_color": "#000000",
             "multicolumn_gap": 30,
             "title": "Free Shipping",
             "text": "<p>Free shipping on all orders above PKR 12000</p>",
@@ -105,6 +106,7 @@
           "type": "column",
           "settings": {
             "layout_direction": "column",
+            "bg_color": "",
             "multicolumn_gap": 30,
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
@@ -120,6 +122,7 @@
           "type": "column",
           "settings": {
             "layout_direction": "column",
+            "bg_color": "",
             "multicolumn_gap": 30,
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
@@ -135,6 +138,7 @@
           "type": "column",
           "settings": {
             "layout_direction": "column",
+            "bg_color": "",
             "multicolumn_gap": 30,
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
@@ -910,6 +914,7 @@
           "settings": {
             "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-gulshan-e-iqbal-kda-branch.webp",
             "layout_direction": "column",
+            "bg_color": "",
             "multicolumn_gap": 30,
             "title": "Gulshan KDA Outlet",
             "text": "<p>A219, Block 3, KDA Market (Near Flourish Salon), Karachi</p>",
@@ -926,6 +931,7 @@
           "settings": {
             "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-ocean-mall-branch.webp",
             "layout_direction": "column",
+            "bg_color": "",
             "multicolumn_gap": 30,
             "title": "Ocean Mall outlet",
             "text": "<p>Shop A219, 2nd Floor, Karachi</p>",
@@ -942,6 +948,7 @@
           "settings": {
             "image": "shopify://shop_images/elyscents-best-luxury-perfumes-in-pakistan-north-walk-kiosk.webp",
             "layout_direction": "column",
+            "bg_color": "",
             "multicolumn_gap": 30,
             "title": "NorthWalk Kiosk",
             "text": "<p>Kiosk No.: FF, 01, Phase 1 North Nazimabad</p>",
