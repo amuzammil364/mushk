@@ -82,11 +82,18 @@
               padding-bottom: {{ block.settings.multicolumn_bottom_spacing }}px;
               ">
               {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
+                {% if section.settings.image_width == 'custom' %}
+                  {% assign image_width = section.settings.custom_image_width | append: 'px' %}
+                {% else %}
+                  {% assign image_width = '100%' %}
                 {% endif %}
                 <div
-                  class="multicolumn-card__image-wrapper">
+                  class="multicolumn-card__image-wrapper"
+                  style="
+                    max-width: {{ image_width }}px;
+                    height: {{ image_width }}px;
+                  "
+                >
                   <div
                     class="media media--transparent"
                   >
@@ -229,22 +236,28 @@
     {
       "type": "select",
       "id": "image_width",
+      "label": "Image Width",
+      "default": "full",
       "options": [
         {
-          "value": "third",
-          "label": "t:sections.multicolumn.settings.image_width.options__1.label"
-        },
-        {
-          "value": "half",
-          "label": "t:sections.multicolumn.settings.image_width.options__2.label"
-        },
-        {
           "value": "full",
-          "label": "t:sections.multicolumn.settings.image_width.options__3.label"
+          "label": "Full"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
         }
-      ],
-      "default": "full",
-      "label": "t:sections.multicolumn.settings.image_width.label"
+      ]
+    },
+    {
+      "type": "range",
+      "id": "custom_image_width",
+      "label": "Custom Image Width",
+      "min": 20,
+      "max": 500,
+      "step": 10,
+      "default": 150,
+      "unit": "px"
     },
     {
       "type": "select",
