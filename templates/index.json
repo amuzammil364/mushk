@@ -124,6 +124,47 @@
         "padding_bottom": 36
       }
     },
+    "image_banner_nAwAjH": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_AGdHBb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_ExTX7r": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AGdHBb",
+        "buttons_ExTX7r"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "banner_link": "",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-right",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "featured_collection_6VwdaL": {
       "type": "featured-collection",
       "settings": {
@@ -909,6 +950,7 @@
   "order": [
     "csm_slideshow_k4QcWk",
     "featured_collection",
+    "image_banner_nAwAjH",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
     "featured_collection_jmU4wd",
