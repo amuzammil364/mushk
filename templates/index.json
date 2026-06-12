@@ -124,6 +124,14 @@
         "padding_bottom": 36
       }
     },
+    "image_comparison_slider_7FUxPr": {
+      "type": "image-comparison-slider",
+      "name": "Image Comparison Slider",
+      "settings": {
+        "before_image": "shopify://shop_images/Kiosk_SNS.webp",
+        "after_image": "shopify://shop_images/Tariq_Rd_Outlet.webp"
+      }
+    },
     "featured_collection_6VwdaL": {
       "type": "featured-collection",
       "settings": {
@@ -915,6 +923,7 @@
   "order": [
     "csm_slideshow_k4QcWk",
     "featured_collection",
+    "image_comparison_slider_7FUxPr",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
     "featured_collection_jmU4wd",
