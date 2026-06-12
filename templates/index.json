@@ -90,8 +90,8 @@
           "settings": {
             "image": "shopify://shop_images/icons8-box-100.png",
             "layout_direction": "row",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Free Shipping",
+            "text": "<p>Free shipping on all orders above PKR 12000</p>",
             "link_label": "",
             "link": "",
             "multicolumn_top_spacing": 20,
