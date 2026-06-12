@@ -89,7 +89,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/icons8-box-100.png",
-            "layout_direction": "row",
+            "layout_direction": "column",
             "bg_color": "",
             "multicolumn_gap": 20,
             "title": "Free Shipping",
@@ -128,7 +128,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "custom",
+        "image_width": "full",
         "custom_image_width": 50,
         "image_ratio": "adapt",
         "title_size": 16,
