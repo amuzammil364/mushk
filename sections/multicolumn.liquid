@@ -143,6 +143,19 @@
               #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card__image{
                 position: relative;
               }
+
+              #Slide-{{ section.id }}-{{ forloop.index }}:hover .multicolumn-card__image{
+                animation: bounceIn forwards;
+                animation-duration: 1s;
+              }
+
+              @keyframes bounceIn{
+                0%, 20%, 40%, 60%, 80%, 100% {
+                    opacity: 1;
+                    -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                }
+              }
             </style>
           </li>
         {%- endfor -%}
