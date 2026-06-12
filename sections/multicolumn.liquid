@@ -191,12 +191,6 @@
                   {% if section.settings.image_width == 'custom' %} height: {{ section.settings.custom_mobile_image_width }}; {% endif %}
                 }
               }
-
-              @media (max-width: 465px){
-                .multicolumn-list .grid--2-col-tablet-down .grid__item{
-                  width: 100% !important;
-                }
-              }
             </style>
           </li>
         {%- endfor -%}
