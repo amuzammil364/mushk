@@ -422,6 +422,30 @@
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         },
         {
+          "type": "select",
+          "id": "layout_direction",
+          "label": "Layout Direction",
+          "default": "column",
+          "options": [
+            {
+              "value": "column",
+              "label": "Image Top"
+            },
+            {
+              "value": "column-reverse",
+              "label": "Image Bottom"
+            },
+            {
+              "value": "row",
+              "label": "Image Left"
+            },
+            {
+              "value": "row-reverse",
+              "label": "Image Right"
+            }
+          ]
+        },
+        {
           "type": "inline_richtext",
           "id": "title",
           "default": "t:sections.multicolumn.blocks.column.settings.title.default",
