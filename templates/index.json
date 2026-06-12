@@ -96,10 +96,10 @@
             "text": "<p>Free shipping on all orders above PKR 12000</p>",
             "link_label": "",
             "link": "",
-            "multicolumn_top_spacing": 20,
-            "multicolumn_left_spacing": 20,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20
+            "multicolumn_top_spacing": 0,
+            "multicolumn_left_spacing": 0,
+            "multicolumn_right_spacing": 0,
+            "multicolumn_bottom_spacing": 0
           }
         },
         "column_9TXzhh": {
@@ -113,10 +113,10 @@
             "text": "<p>Free shipping on all orders above PKR 12000</p>",
             "link_label": "",
             "link": "",
-            "multicolumn_top_spacing": 20,
-            "multicolumn_left_spacing": 20,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20
+            "multicolumn_top_spacing": 0,
+            "multicolumn_left_spacing": 0,
+            "multicolumn_right_spacing": 0,
+            "multicolumn_bottom_spacing": 0
           }
         }
       },
