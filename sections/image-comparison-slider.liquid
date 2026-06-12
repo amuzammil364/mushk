@@ -67,6 +67,25 @@
     }
 </style>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector(".csm-compare-slider");
+  const after = document.querySelector(".csm-compare-after");
+  const handle = document.querySelector(".csm-handle");
+
+  function update(value) {
+    after.style.width = value + "%";
+    handle.style.left = value + "%";
+  }
+
+  slider.addEventListener("input", function () {
+    update(this.value);
+  });
+
+  update(slider.value);
+});
+</script>
+
 {% schema %}
 
 {
