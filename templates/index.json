@@ -131,7 +131,7 @@
         "blog": "news",
         "post_limit": 3,
         "heading": "Blog posts",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "columns_desktop": 3,
         "show_view_all": false,
         "show_image": true,
