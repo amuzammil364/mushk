@@ -176,6 +176,7 @@
         "column_JpXTJL",
         "column_XhrcCM"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
