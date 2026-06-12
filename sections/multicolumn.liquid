@@ -184,6 +184,13 @@
                     transform: scaleZ(1);
                 }
               }
+
+              @media (max-width: 768px){
+                #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card__image-wrapper{
+                  {% if section.settings.image_width == 'custom' %} max-width: {{ section.settings.custom_mobile_image_width }}px; {% endif %}
+                  {% if section.settings.image_width == 'custom' %} height: {{ section.settings.custom_mobile_image_width }}; {% endif %}
+                }
+              }
             </style>
           </li>
         {%- endfor -%}
@@ -300,6 +307,16 @@
       "type": "range",
       "id": "custom_image_width",
       "label": "Custom Image Width",
+      "min": 10,
+      "max": 200,
+      "step": 2,
+      "default": 150,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "custom_mobile_image_width",
+      "label": "Mobile Custom Image Width",
       "min": 10,
       "max": 200,
       "step": 2,
