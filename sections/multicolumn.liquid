@@ -97,6 +97,7 @@
                     height: {{ image_width }};
                   "
                 >
+                  {% assign image_class = 'multicolumn-card__image {{ image_width }}' %}
                   <div
                     class="media media--transparent"
                   >
@@ -104,7 +105,7 @@
                       block.settings.image
                       | image_url: width: 3200
                       | image_tag:
-                        class: 'multicolumn-card__image'
+                        class: image_class
                     }}
                   </div>
                 </div>
@@ -144,7 +145,7 @@
                 position: relative;
               }
 
-              #Slide-{{ section.id }}-{{ forloop.index }}:hover .multicolumn-card__image{
+              #Slide-{{ section.id }}-{{ forloop.index }}:hover .multicolumn-card__image.custom{
                 animation: bounceIn forwards;
                 animation-duration: 1s;
               }
