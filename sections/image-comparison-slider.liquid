@@ -141,14 +141,25 @@ document.addEventListener("DOMContentLoaded", function () {
   "name": "Image Comparison Slider",
   "settings": [
     {
-      "type": "image_picker",
-      "id": "before_image",
-      "label": "Before Image"
+        "type": "select",
+        "id": "section_height",
+        "label": "Section Height",
+        "default": "medium",
+        "options": [
+            { "value": "small", "label": "Small" },
+            { "value": "medium", "label": "Medium" },
+            { "value": "large", "label": "Large" }
+        ]
     },
     {
-      "type": "image_picker",
-      "id": "after_image",
-      "label": "After Image"
+        "type": "image_picker",
+        "id": "before_image",
+        "label": "Before Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "after_image",
+        "label": "After Image"
     }
   ],
   "presets": [
