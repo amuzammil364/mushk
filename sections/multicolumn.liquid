@@ -75,7 +75,12 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container" style="padding-top: {{ block.settings.multicolumn_top_spacing }}px;">
+            <div class="multicolumn-card content-container" style="
+              padding-top: {{ block.settings.multicolumn_top_spacing }}px; 
+              padding-left: {{ block.settings.multicolumn_left_spacing }}px;
+              padding-right: {{ block.settings.multicolumn_right_spacing }}px;
+              padding-bottom: {{ block.settings.multicolumn_bottom_spacing }}px;
+              ">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
