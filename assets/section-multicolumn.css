@@ -241,9 +241,3 @@
     display: list-item;
   }
 }
-
-@media (max-width: 465px){
-  .multicolumn-list .grid--2-col-tablet-down{
-    display: none !important;
-  }
-}
