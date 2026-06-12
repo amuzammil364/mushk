@@ -102,46 +102,15 @@
             "multicolumn_bottom_spacing": 20
           }
         },
-        "column_Rwb7Rn": {
+        "column_9TXzhh": {
           "type": "column",
           "settings": {
-            "layout_direction": "column",
+            "image": "shopify://shop_images/icons8-box-100.png",
+            "layout_direction": "row",
             "bg_color": "",
             "multicolumn_gap": 30,
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 20,
-            "multicolumn_left_spacing": 20,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20
-          }
-        },
-        "column_YwqxUQ": {
-          "type": "column",
-          "settings": {
-            "layout_direction": "column",
-            "bg_color": "",
-            "multicolumn_gap": 30,
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 20,
-            "multicolumn_left_spacing": 20,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20
-          }
-        },
-        "column_JDcey6": {
-          "type": "column",
-          "settings": {
-            "layout_direction": "column",
-            "bg_color": "",
-            "multicolumn_gap": 30,
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Free Shipping",
+            "text": "<p>Free shipping on all orders above PKR 12000</p>",
             "link_label": "",
             "link": "",
             "multicolumn_top_spacing": 20,
@@ -153,9 +122,7 @@
       },
       "block_order": [
         "column_EU6BWp",
-        "column_Rwb7Rn",
-        "column_YwqxUQ",
-        "column_JDcey6"
+        "column_9TXzhh"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
