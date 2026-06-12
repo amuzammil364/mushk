@@ -80,6 +80,7 @@
               padding-left: {{ block.settings.multicolumn_left_spacing }}px;
               padding-right: {{ block.settings.multicolumn_right_spacing }}px;
               padding-bottom: {{ block.settings.multicolumn_bottom_spacing }}px;
+              background-color: {{ block.settings.bg_color }};
               ">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_width == 'custom' %}
@@ -434,6 +435,11 @@
               "label": "Image Right"
             }
           ]
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
         },
         {
           "type": "range",
