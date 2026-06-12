@@ -82,77 +82,6 @@
         "section_mobile_alignment": "center"
       }
     },
-    "multicolumn_NfaBeH": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_jB8aGU": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icons8-diamond-100.png",
-            "layout_direction": "row",
-            "bg_color": "",
-            "multicolumn_gap": 14,
-            "title": "Free Shipping",
-            "text": "<p>Offering Free Delivery on Orders above Rs. 3000</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 20,
-            "multicolumn_left_spacing": 20,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20,
-            "multicolumn_mobile_top_spacing": 20,
-            "multicolumn_mobile_left_spacing": 20,
-            "multicolumn_mobile_right_spacing": 20,
-            "multicolumn_mobile_bottom_spacing": 20
-          }
-        },
-        "column_iCeBzh": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icons8-diamond-100.png",
-            "layout_direction": "row",
-            "bg_color": "",
-            "multicolumn_gap": 14,
-            "title": "Free Shipping",
-            "text": "<p>Offering Free Delivery on Orders above Rs. 3000</p>",
-            "link_label": "",
-            "link": "",
-            "multicolumn_top_spacing": 20,
-            "multicolumn_left_spacing": 20,
-            "multicolumn_right_spacing": 20,
-            "multicolumn_bottom_spacing": 20,
-            "multicolumn_mobile_top_spacing": 20,
-            "multicolumn_mobile_left_spacing": 20,
-            "multicolumn_mobile_right_spacing": 20,
-            "multicolumn_mobile_bottom_spacing": 20
-          }
-        }
-      },
-      "block_order": [
-        "column_jB8aGU",
-        "column_iCeBzh"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "custom",
-        "custom_image_width": 56,
-        "custom_mobile_image_width": 46,
-        "title_size": 16,
-        "text_size": 14,
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -979,7 +908,6 @@
   },
   "order": [
     "csm_slideshow_k4QcWk",
-    "multicolumn_NfaBeH",
     "featured_collection",
     "featured_collection_6VwdaL",
     "image_banner_KRhtLg",
