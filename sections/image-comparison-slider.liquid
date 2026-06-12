@@ -37,6 +37,7 @@
         max-width: var(--page-width);
         padding: 0 5rem;
         margin: 0 auto;
+        border-radius: {{section.settings.border_radius }}px;
     }
 
     .height-small .csm-compare-wrapper {
@@ -180,6 +181,16 @@ document.addEventListener("DOMContentLoaded", function () {
         "type": "image_picker",
         "id": "after_image",
         "label": "After Image"
+    },
+    {
+        "type": "range",
+        "id": "border_radius",
+        "label": "Border Radius",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "default": 20,
+        "unit": "px"
     },
     {
       "type": "header",
