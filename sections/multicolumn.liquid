@@ -76,10 +76,6 @@
             {% endif %}
           >
             <div class="multicolumn-card content-container" style="
-              padding-top: {{ block.settings.multicolumn_top_spacing }}px; 
-              padding-left: {{ block.settings.multicolumn_left_spacing }}px;
-              padding-right: {{ block.settings.multicolumn_right_spacing }}px;
-              padding-bottom: {{ block.settings.multicolumn_bottom_spacing }}px;
               {% if block.settings.bg_color != blank %}
                 background: {{ block.settings.bg_color }};
               {% endif %}
@@ -139,6 +135,13 @@
                 display: flex;
                 flex-direction: {{ block.settings.layout_direction }};
                 gap: {{ block.settings.multicolumn_gap }}px;
+              }
+
+              #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card{
+                padding-top: {{ block.settings.multicolumn_top_spacing }}px; 
+                padding-left: {{ block.settings.multicolumn_left_spacing }}px;
+                padding-right: {{ block.settings.multicolumn_right_spacing }}px;
+                padding-bottom: {{ block.settings.multicolumn_bottom_spacing }}px; 
               }
 
               #Slide-{{ section.id }}-{{ forloop.index }} .multicolumn-card__image-wrapper{
