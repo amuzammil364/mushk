@@ -1,5 +1,5 @@
 <div class="csm-compare csm-compare-{{ section.id }}">
-  <div class="csm-compare-wrapper">
+  <div class="csm-compare-wrapper height-{{ section.settings.section_height }}">
 
     <div class="csm-base">
       {% if section.settings.before_image != blank %}
@@ -26,9 +26,20 @@
     .csm-compare-wrapper {
         position: relative;
         width: 100%;
-        height: 450px;
         overflow: hidden;
         user-select: none;
+    }
+
+    .height-small .csm-compare-wrapper {
+        height: 300px;
+    }
+
+    .height-medium .csm-compare-wrapper {
+        height: 450px;
+    }
+
+    .height-large .csm-compare-wrapper {
+        height: 650px;
     }
 
     .csm-base img,
