@@ -93,7 +93,7 @@
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 0 }}%;"
                     {% endif %}
                   >
-                    {%- liquid
+                    {% comment %} {%- liquid
                       assign number_of_columns = section.settings.columns_desktop
                       assign number_of_columns_mobile = section.settings.columns_mobile
                       assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
@@ -106,7 +106,7 @@
                       else
                         assign image_width = 1
                       endif
-                    -%}
+                    -%} {% endcomment %}
                     {% comment %} {% capture sizes %}
                       (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
                       (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
