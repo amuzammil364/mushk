@@ -40,6 +40,10 @@
   width: 100%;
 }
 
+.blog__posts .card__content{
+  margin-top: 16px;
+}
+
 .blog__button {
   margin-top: 3rem;
 }
