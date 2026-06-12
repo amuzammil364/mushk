@@ -181,7 +181,7 @@
         "button_hb48mw": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Try Sample Set",
             "button_link": "shopify://collections",
             "button_style_secondary": false
           }
