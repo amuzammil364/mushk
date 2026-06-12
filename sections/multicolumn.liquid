@@ -74,6 +74,9 @@
               data-cascade
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
+            style="
+            padding-top: {{ block.settings.multicolumn_top_spacing }}px;
+            "
           >
             <div class="multicolumn-card content-container">
               {%- if block.settings.image != blank -%}
