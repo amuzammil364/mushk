@@ -105,7 +105,7 @@
         "column_ia88t8": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/icons8-box-100.png",
+            "image": "shopify://shop_images/icons8-diamond-100.png",
             "layout_direction": "row",
             "bg_color": "",
             "multicolumn_gap": 22,
