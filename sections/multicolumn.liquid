@@ -97,7 +97,11 @@
                     height: {{ image_width }};
                   "
                 >
-                  {% assign image_class = 'multicolumn-card__image {{ image_width }}' %}
+                  {% assign image_class = 'multicolumn-card__image' %}
+
+                  {% if section.settings.image_width == 'custom' %}
+                    {% assign image_class = image_class | append: ' custom' %}
+                  {% endif %}
                   <div
                     class="media media--transparent"
                   >
