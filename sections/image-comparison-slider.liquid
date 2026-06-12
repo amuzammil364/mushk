@@ -19,6 +19,54 @@
   </div>
 </div>
 
+<style>
+    .csm-compare-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .csm-compare-before,
+    .csm-compare-after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .csm-compare-before img,
+    .csm-compare-after img {
+        width: 100%;
+        display: block;
+    }
+
+    .csm-compare-after {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .csm-compare-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .csm-handle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: #fff;
+        transform: translateX(-50%);
+        pointer-events: none;
+    }
+</style>
+
 {% schema %}
 
 {
