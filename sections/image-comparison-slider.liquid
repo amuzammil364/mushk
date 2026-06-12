@@ -13,75 +13,78 @@
       {% endif %}
     </div>
 
-    <div class="csm-handle">
-        <span class="csm-handle-icon">↔</span>
+    <div class="csm-handle-container">
+        <div class="csm-handle">
+            <span class="csm-handle-icon"></span>
+            <span class="csm-handle-icon"></span>
+        </div>
     </div>
   </div>
 </div>
 
 <style>
     .csm-compare-wrapper {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    user-select: none;
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        user-select: none;
     }
 
     .csm-base img,
     .csm-overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .csm-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: inset(0 50% 0 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: inset(0 50% 0 0);
+    }
+
+    .csm-handle-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 3px;
+        height: 100%;
+        background: #fff;
+        transform: translateX(-50%);
+        cursor: ew-resize;
+        z-index: 10;
+    }
+
+    .csm-handle-container:active {
+        cursor: ew-resize;
     }
 
     .csm-handle {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 3px;
-    height: 100%;
-    background: #fff;
-    transform: translateX(-50%);
-    cursor: ew-resize;
-    z-index: 10;
-    }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        
+        background: #fff;
+        color: #000;
 
-    .csm-handle:active {
-    cursor: ew-resize;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    .csm-handle-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    
-    background: #fff;
-    color: #000;
+        font-size: 18px;
+        font-weight: bold;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 18px;
-    font-weight: bold;
-
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
 </style>
 
@@ -92,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const wrapper = section.querySelector(".csm-compare-wrapper");
     const overlay = section.querySelector(".csm-overlay");
-    const handle = section.querySelector(".csm-handle");
+    const handle = section.querySelector(".csm-handle-container");
 
     let isDragging = false;
 
