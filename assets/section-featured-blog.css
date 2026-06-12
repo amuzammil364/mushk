@@ -44,6 +44,12 @@
   margin-top: 16px;
 }
 
+.blog__posts .article-card__info{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 .blog__button {
   margin-top: 3rem;
 }
