@@ -76,7 +76,8 @@ style="
                 {%- when 'heading' -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
-                    style="letter-spacing: {{ block.settings.heading_letter_spacing }}px;{% if block.settings.heading_uppercase %}text-transform: uppercase;{% endif %}"
+                    style="letter-spacing: {{ block.settings.heading_letter_spacing }}px;{% if block.settings.heading_uppercase %}text-transform: uppercase;{% endif %}  margin-top: {{ section.settings.heading_top_spacing }}px;
+                    margin-bottom: {{ section.settings.heading_bottom_spacing }}px;"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading }}
@@ -428,6 +429,26 @@ style="
           "min": 0,
           "max": 10,
           "step": 1,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "heading_top_spacing",
+          "label": "Heading Top Spacing",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "heading_bottom_spacing",
+          "label": "Heading Bottom Spacing",
+          "min": 0,
+          "max": 100,
+          "step": 2,
           "default": 0,
           "unit": "px"
         },
