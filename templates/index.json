@@ -98,7 +98,7 @@
             "link": "",
             "multicolumn_top_spacing": 0,
             "multicolumn_left_spacing": 0,
-            "multicolumn_right_spacing": 0,
+            "multicolumn_right_spacing": 20,
             "multicolumn_bottom_spacing": 0
           }
         },
