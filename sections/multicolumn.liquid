@@ -114,7 +114,7 @@
                   <h3 class="inline-richtext" style="font-size: {{ section.settings.title_size }}px;">{{ block.settings.title }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
+                  <div class="rte" style="font-size: {{ section.settings.text_size }}px;">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
@@ -297,6 +297,16 @@
       "max": 100,
       "step": 2,
       "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text Size",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "default": 14,
       "unit": "px"
     },
     {
