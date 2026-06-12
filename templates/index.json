@@ -844,7 +844,7 @@
           "settings": {
             "image": "shopify://shop_images/elyscents-best-luxury-perfumes-in-pakistan-north-walk-kiosk.webp",
             "layout_direction": "column",
-            "bg_color": "",
+            "bg_color": "#f5f5f5",
             "multicolumn_gap": 30,
             "title": "NorthWalk Kiosk",
             "text": "<p>Kiosk No.: FF, 01, Phase 1 North Nazimabad</p>",
