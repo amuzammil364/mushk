@@ -113,6 +113,29 @@
     ]
   },
   {
+    "name": "Reward Bar Settings",
+    "settings": [
+      {
+        "type": "number",
+        "id": "free_shipping_qty",
+        "label": "Free Shipping (Items)",
+        "default": 2
+      },
+      {
+        "type": "number",
+        "id": "discount_qty",
+        "label": "10% Off (Items)",
+        "default": 3
+      },
+      {
+        "type": "number",
+        "id": "gift_qty",
+        "label": "Free Gift (Items)",
+        "default": 5
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {
