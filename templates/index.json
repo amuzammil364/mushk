@@ -297,7 +297,7 @@
     "featured_collection_inH7xM": {
       "type": "featured-collection",
       "settings": {
-        "collection": "perfume-brands-for-men",
+        "collection": "best-sellers",
         "heading_alignment": "center",
         "heading_letter_spacing": 1,
         "heading_top_spacing": 0,
@@ -341,7 +341,7 @@
     "featured_collection_kKGq3w": {
       "type": "featured-collection",
       "settings": {
-        "collection": "unisex-perfumes",
+        "collection": "best-sellers",
         "heading_alignment": "center",
         "heading_letter_spacing": 1,
         "heading_top_spacing": 0,
@@ -385,7 +385,7 @@
     "featured_collection_im8fRb": {
       "type": "featured-collection",
       "settings": {
-        "collection": "oud",
+        "collection": "best-sellers",
         "heading_alignment": "center",
         "heading_letter_spacing": 1,
         "heading_top_spacing": 0,
