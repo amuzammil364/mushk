@@ -662,7 +662,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/salsa-spirit-bottle-with-box.webp",
+        "image": "shopify://shop_images/mushk-charisma.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
