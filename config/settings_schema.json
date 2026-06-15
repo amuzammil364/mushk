@@ -116,6 +116,12 @@
     "name": "Reward Bar Settings",
     "settings": [
       {
+        "type": "checkbox",
+        "id": "reward_bar_enable",
+        "label": "Enable Reward Bar",
+        "default": true
+      },
+      {
         "type": "number",
         "id": "free_shipping_qty",
         "label": "Free Shipping (Items)",
