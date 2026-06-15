@@ -110,6 +110,8 @@
         "view_all_button_url": "shopify://collections/oud",
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
+        "image_bottom_spacing": 10,
+        "info_bottom_spacing": 10,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -127,7 +129,7 @@
     "featured_collection_6VwdaL": {
       "type": "featured-collection",
       "settings": {
-        "collection": "new-arrivals",
+        "collection": "best-sellers",
         "heading_alignment": "center",
         "heading_letter_spacing": 1,
         "heading_top_spacing": 0,
@@ -152,6 +154,8 @@
         "view_all_button_url": "shopify://collections/new-arrivals",
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
+        "image_bottom_spacing": 10,
+        "info_bottom_spacing": 10,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -212,6 +216,8 @@
         "view_all_button_url": "shopify://collections/best-sellers",
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
+        "image_bottom_spacing": 10,
+        "info_bottom_spacing": 10,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -247,7 +253,7 @@
     "featured_collection_CYbaiM": {
       "type": "featured-collection",
       "settings": {
-        "collection": "best-perfumes-for-women",
+        "collection": "best-sellers",
         "heading_alignment": "center",
         "heading_letter_spacing": 1,
         "heading_top_spacing": 0,
@@ -272,6 +278,8 @@
         "view_all_button_url": "shopify://collections/best-perfumes-for-women",
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
+        "image_bottom_spacing": 10,
+        "info_bottom_spacing": 10,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -314,6 +322,8 @@
         "view_all_button_url": "shopify://collections/perfume-brands-for-men",
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
+        "image_bottom_spacing": 10,
+        "info_bottom_spacing": 10,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -356,6 +366,8 @@
         "view_all_button_url": "shopify://collections/unisex-perfumes",
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
+        "image_bottom_spacing": 10,
+        "info_bottom_spacing": 10,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -398,6 +410,8 @@
         "view_all_button_url": "shopify://collections/oud",
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
+        "image_bottom_spacing": 10,
+        "info_bottom_spacing": 10,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -418,25 +432,29 @@
         "featured_collection_FXCgXQ": {
           "type": "featured_collection",
           "settings": {
-            "collection": "best-perfumes-for-women"
+            "collection": "best-perfumes-for-women",
+            "image_bottom_spacing": 10
           }
         },
         "featured_collection_tVG8qK": {
           "type": "featured_collection",
           "settings": {
-            "collection": "perfume-brands-for-men"
+            "collection": "perfume-brands-for-men",
+            "image_bottom_spacing": 10
           }
         },
         "featured_collection_CdDU4B": {
           "type": "featured_collection",
           "settings": {
-            "collection": "new-arrivals"
+            "collection": "new-arrivals",
+            "image_bottom_spacing": 10
           }
         },
         "featured_collection_ULtUat": {
           "type": "featured_collection",
           "settings": {
-            "collection": "unisex-perfumes"
+            "collection": "unisex-perfumes",
+            "image_bottom_spacing": 10
           }
         }
       },
