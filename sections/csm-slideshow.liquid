@@ -200,6 +200,12 @@
           #carousel-cell-{{ block.id }} p{
             font-size: 2rem;
           }
+
+          #carousel-cell-{{ block.id }} .csm-slide__content__wrapper{
+            {% if section.settings.container_width == "page" %}
+              padding: 0 1.5rem;
+            {% endif %}
+          }
         }
       </style>
     </div>
