@@ -213,7 +213,7 @@
           }
 
           #carousel-cell-{{ block.id }} {
-            padding-top: 0;
+            padding-top: {{block.settings.mobile_padding_top }}px;
             {% if section.settings.container_width == "full" %}
             padding-right: {{block.settings.mobile_padding_right }}px;
             padding-left: {{block.settings.mobile_padding_left }}px;
