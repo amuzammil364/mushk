@@ -20,6 +20,7 @@
             "max_width": 480,
             "overlay_gradient": "",
             "image": "shopify://shop_images/banner-1-wo-content.webp",
+            "mobile_image": "shopify://shop_images/mushk-black-noir.webp",
             "heading": "Black Noir",
             "text": "A Bold and mysterious fragrance that exudes confidence and sophistication",
             "button_label": "Shop Now",
