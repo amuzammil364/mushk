@@ -114,8 +114,10 @@
       <style>
         #carousel-cell-{{ block.id }}{
           padding-top: {{block.settings.desktop_padding_top }}px;
+          {% if section.settings.container_width == "full" %}
           padding-right: {{block.settings.desktop_padding_right }}px;
           padding-left: {{block.settings.desktop_padding_left }}px;
+          {% endif %}
           padding-bottom: {{block.settings.desktop_padding_bottom }}px;
         }
 
@@ -167,8 +169,10 @@
         @media screen and (max-width: 768px) {
           #carousel-cell-{{ block.id }} {
             padding-top: {{ block.settings.mobile_padding_top }}px;
+            {% if section.settings.container_width == "full" %}
             padding-right: {{block.settings.mobile_padding_right }}px;
             padding-left: {{block.settings.mobile_padding_left }}px;
+            {% endif %}
             padding-bottom: {{ block.settings.mobile_padding_bottom }}px;
           }
 
