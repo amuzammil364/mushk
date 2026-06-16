@@ -211,6 +211,16 @@
         }
 
         @media (max-width: 465px){
+
+          #carousel-cell-{{ block.id }} {
+            padding-top: 0;
+            {% if section.settings.container_width == "full" %}
+            padding-right: {{block.settings.mobile_padding_right }}px;
+            padding-left: {{block.settings.mobile_padding_left }}px;
+            {% endif %}
+            padding-bottom: 0;
+          }
+
           #carousel-cell-{{ block.id }} .csm-slide__content{
             {% if block.settings.block_mobile_alignment == 'left' %}
               align-items: flex-start;
