@@ -174,8 +174,8 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "banner_link": "shopify://collections/oud",
-        "image": "shopify://shop_images/mushk-best-luxury-perfumes-in-pakistan-best-of-three-banner.webp",
+        "banner_link": "shopify://collections",
+        "image": "shopify://shop_images/mushk-deal-banner.webp",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
