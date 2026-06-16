@@ -87,7 +87,7 @@
   {% for block in section.blocks %}
     <div class="carousel-cell" id="carousel-cell-{{ block.id }}"
     >
-      <div>
+      <div class="carousel-cell-mobile-image">
         <img src="{{ block.settings.mobile_image | image_url: width: 1000 }}" />
       </div>
       <div class="csm-slide__content__wrapper">
@@ -124,6 +124,10 @@
           background-position:center;
           background-size:cover;
           background-repeat:no-repeat;
+        }
+
+        #carousel-cell-{{ block.id }} .carousel-cell-mobile-image{
+          display: none;
         }
 
         #carousel-cell-{{ block.id }} .csm-slide__content__wrapper{
@@ -217,6 +221,10 @@
 
           #carousel-cell-{{ block.id }}{
             background-image: none;
+          }
+
+          #carousel-cell-{{ block.id }} .carousel-cell-mobile-image{
+            display: block;
           }
         }
       </style>
