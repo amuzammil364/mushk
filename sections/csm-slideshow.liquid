@@ -87,6 +87,9 @@
   {% for block in section.blocks %}
     <div class="carousel-cell" id="carousel-cell-{{ block.id }}"
     >
+      <div>
+        <img src="{{ block.settings.mobile_image | image_url: width: 1000 }}" />
+      </div>
       <div class="csm-slide__content__wrapper">
         <div class="csm-slide__content">
           {% if block.settings.heading != blank %}
@@ -213,17 +216,7 @@
           }
 
           #carousel-cell-{{ block.id }}{
-            background-image:
-            linear-gradient(
-              to top,
-              rgba(0,0,0,.85) 0%,
-              rgba(0,0,0,.55) 25%,
-              rgba(0,0,0,0) 60%
-            ),
-            url('{% if block.settings.mobile_image != blank %}{{ block.settings.mobile_image | image_url: width: 1000 }}{% else %}{{ block.settings.image | image_url: width: 1000 }}{% endif %}');
-
-            background-position:center;
-            background-size:cover;
+            background-image: none;
           }
         }
       </style>
