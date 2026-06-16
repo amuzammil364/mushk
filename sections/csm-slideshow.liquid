@@ -197,12 +197,12 @@
 
         @media screen and (max-width: 768px) {
           #carousel-cell-{{ block.id }} {
-            padding-top: 120px;
+            padding-top: {{block.settings.tablet_padding_top }}px;
             {% if section.settings.container_width == "full" %}
-            padding-right: {{block.settings.mobile_padding_right }}px;
-            padding-left: {{block.settings.mobile_padding_left }}px;
+            padding-right: {{block.settings.tablet_padding_right }}px;
+            padding-left: {{block.settings.tablet_padding_left }}px;
             {% endif %}
-            padding-bottom: 120px;
+            padding-bottom: {{block.settings.tablet_padding_bottom }}px;
           }
         }
 
