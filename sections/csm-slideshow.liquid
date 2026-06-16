@@ -119,6 +119,16 @@
           padding-bottom: {{block.settings.desktop_padding_bottom }}px;
         }
 
+        #carousel-cell-{{ block.id }} .csm-slide__content__wrapper{
+           
+          {% if section.settings.container_width == "page" %}
+            max-width: var(--page-width);
+            padding: 0 5rem;
+          {% else %}
+            max-width: 100%;
+          {% endif %}
+        }
+
         #carousel-cell-{{ block.id }} h2{
           letter-spacing: {{block.settings.heading_letter_spacing }}px;
           {% if block.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
