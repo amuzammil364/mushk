@@ -86,13 +86,6 @@
 <div class="csm-flickity-slider color-{{ section.settings.color_scheme }}">
   {% for block in section.blocks %}
     <div class="carousel-cell" id="carousel-cell-{{ block.id }}"
-    style="
-      background-image:
-      {% if block.settings.overlay_gradient != blank %}
-        {{ block.settings.overlay_gradient }},
-      {% endif %}
-        url('{{ block.settings.image | image_url: width: 2000 }}');
-    "
     >
       <div class="csm-slide__content__wrapper">
         <div class="csm-slide__content">
@@ -119,6 +112,15 @@
           padding-left: {{block.settings.desktop_padding_left }}px;
           {% endif %}
           padding-bottom: {{block.settings.desktop_padding_bottom }}px;
+          background-image:
+          {% if block.settings.overlay_gradient != blank %}
+            {{ block.settings.overlay_gradient }},
+          {% endif %}
+          url('{{ block.settings.image | image_url: width: 2000 }}');
+
+          background-position:center;
+          background-size:cover;
+          background-repeat:no-repeat;
         }
 
         #carousel-cell-{{ block.id }} .csm-slide__content__wrapper{
