@@ -36,10 +36,10 @@
             "desktop_padding_left": 50,
             "desktop_padding_right": 50,
             "desktop_padding_bottom": 250,
-            "mobile_padding_top": 100,
-            "mobile_padding_left": 20,
-            "mobile_padding_right": 20,
-            "mobile_padding_bottom": 100
+            "mobile_padding_top": 0,
+            "mobile_padding_left": 0,
+            "mobile_padding_right": 0,
+            "mobile_padding_bottom": 0
           }
         },
         "slide_kDfVGb": {
@@ -66,10 +66,10 @@
             "desktop_padding_left": 50,
             "desktop_padding_right": 50,
             "desktop_padding_bottom": 250,
-            "mobile_padding_top": 100,
-            "mobile_padding_left": 20,
-            "mobile_padding_right": 20,
-            "mobile_padding_bottom": 100
+            "mobile_padding_top": 0,
+            "mobile_padding_left": 0,
+            "mobile_padding_right": 0,
+            "mobile_padding_bottom": 0
           }
         }
       },
