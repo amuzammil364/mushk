@@ -197,12 +197,12 @@
 
         @media screen and (max-width: 768px) {
           #carousel-cell-{{ block.id }} {
-            padding-top: {{ block.settings.mobile_padding_top }}px;
+            padding-top: 120px;
             {% if section.settings.container_width == "full" %}
             padding-right: {{block.settings.mobile_padding_right }}px;
             padding-left: {{block.settings.mobile_padding_left }}px;
             {% endif %}
-            padding-bottom: {{ block.settings.mobile_padding_bottom }}px;
+            padding-bottom: 120px;
           }
 
           #carousel-cell-{{ block.id }} .csm-slide__content{
