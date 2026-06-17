@@ -104,7 +104,7 @@
         const cart = await res.json();
         const qty = cart.item_count;
 
-        const bar = document.querySelector('.reward-bar');
+        const bar = document.querySelector('[data-reward-bar-{{ section.id }}]');
 
         if (!bar) return;
 
