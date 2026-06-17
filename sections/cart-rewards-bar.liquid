@@ -24,6 +24,10 @@
 </div>
 
 <style>
+.reward-bar.show {
+  display: block;
+}
+
 .reward-bar.hidden {
   display: none;
 }
@@ -34,6 +38,7 @@
   border-radius:12px;
   margin:10px 0;
   font-family: Arial, sans-serif;
+  display: none;
 }
 
 .reward-message{
@@ -99,12 +104,17 @@
 
       const bar = document.querySelector('.reward-bar');
 
-      if (qty === 0) {
-        if (bar) bar.classList.add('hidden');
-        return;
-        } else {
-        if (bar) bar.classList.remove('hidden');
-        }
+      if (!bar) return;
+
+        bar.classList.add('show');
+
+        if (qty === 0) {
+      bar.classList.remove('show');
+      bar.classList.add('hidden');
+      return;
+    }
+
+    bar.classList.remove('hidden');
 
       let percent = 0;
       let message = '';
