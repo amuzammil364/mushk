@@ -73,53 +73,108 @@
 </style>
 
 <script>
-async function updateRewardBar() {
+(function () {
 
-  const res = await fetch('/cart.js');
-  const cart = await res.json();
+  const REWARD_BAR_SELECTOR = {
+    message: '.reward-message',
+    fill: '.reward-progress-fill'
+  };
 
-  const qty = cart.item_count;
+  // MAIN FUNCTION
+  async function updateRewardBar() {
 
-  let percent = 0;
-  let message = '';
+    try {
+      const res = await fetch('/cart.js', {
+        headers: {
+          'Cache-Control': 'no-cache'
+        }
+      });
 
-  console.log("Called");
+      const cart = await res.json();
+      const qty = cart.item_count;
 
-  // 0 - 1 items
-  if (qty < 2) {
-    percent = (qty / 2) * 25;
-    message = `Add ${2 - qty} more item(s) → Free Shipping 🚚`;
+      let percent = 0;
+      let message = '';
+
+      console.log("Reward Bar Updated | Qty:", qty);
+
+      // 0 - 1 items
+      if (qty < 2) {
+        percent = (qty / 2) * 25;
+        message = `Add ${2 - qty} more item(s) → Free Shipping 🚚`;
+      }
+
+      // 2 - 4 items
+      else if (qty < 5) {
+        percent = 25 + ((qty - 2) / 3) * 25;
+        message = `🎉 Free Shipping unlocked! Add ${5 - qty} more → 5% OFF`;
+      }
+
+      // 5 - 7 items
+      else if (qty < 8) {
+        percent = 50 + ((qty - 5) / 3) * 25;
+        message = `🔥 5% OFF unlocked! Add ${8 - qty} more → 10% OFF`;
+      }
+
+      // 8+ items
+      else {
+        percent = 100;
+        message = `🏆 Amazing! 10% OFF unlocked`;
+      }
+
+      const msgEl = document.querySelector(REWARD_BAR_SELECTOR.message);
+      const fillEl = document.querySelector(REWARD_BAR_SELECTOR.fill);
+
+      if (msgEl) msgEl.innerHTML = message;
+      if (fillEl) fillEl.style.width = percent + '%';
+
+    } catch (err) {
+      console.error('Reward Bar Error:', err);
+    }
   }
 
-  // 2 - 4 items
-  else if (qty < 5) {
-    percent = 25 + ((qty - 2) / 3) * 25;
-    message = `🎉 Free Shipping unlocked! Add ${5 - qty} more → 5% OFF`;
+  // DEBOUNCE (prevents spam updates)
+  let timeout;
+  function debounceUpdate() {
+    clearTimeout(timeout);
+    timeout = setTimeout(updateRewardBar, 300);
   }
 
-  // 5 - 7 items
-  else if (qty < 8) {
-    percent = 50 + ((qty - 5) / 3) * 25;
-    message = `🔥 5% OFF unlocked! Add ${8 - qty} more → 10% OFF`;
-  }
+  // 1. Initial load
+  document.addEventListener('DOMContentLoaded', updateRewardBar);
 
-  // 8+ items
-  else {
-    percent = 100;
-    message = `🏆 Amazing! 10% OFF unlocked`;
-  }
+  // 2. Fallback polling (works in ALL themes)
+  setInterval(updateRewardBar, 3000);
 
-  document.querySelector('.reward-message').innerHTML = message;
-  document.querySelector('.reward-progress-fill').style.width = percent + '%';
-}
+  // 3. Shopify AJAX interception (BEST method)
+  const originalFetch = window.fetch;
 
-// initial load
-updateRewardBar();
+  window.fetch = async function () {
 
-// update on cart changes (theme dependent)
-document.addEventListener('DOMContentLoaded', updateRewardBar);
-document.addEventListener('cart:updated', updateRewardBar);
-document.addEventListener('cart:change', updateRewardBar);
+    const response = await originalFetch.apply(this, arguments);
+
+    const url = arguments[0];
+
+    if (typeof url === 'string' && (
+      url.includes('/cart/add') ||
+      url.includes('/cart/change') ||
+      url.includes('/cart/update') ||
+      url.includes('/cart/clear')
+    )) {
+      debounceUpdate();
+    }
+
+    return response;
+  };
+
+  // 4. Quantity input change detection (product/cart pages)
+  document.addEventListener('change', function (e) {
+    if (e.target && e.target.name && e.target.name.includes('quantity')) {
+      debounceUpdate();
+    }
+  });
+
+})();
 </script>
 
 {% schema %}
