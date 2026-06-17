@@ -142,6 +142,8 @@
             message = `🏆 Amazing! 10% OFF unlocked`;
         }
 
+        percent = Math.max(0, Math.min(100, percent));
+
         const msgEl = document.querySelector(REWARD_BAR_SELECTOR.message);
         const fillEl = document.querySelector(REWARD_BAR_SELECTOR.fill);
 
