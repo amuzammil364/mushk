@@ -2814,7 +2814,7 @@ details[open] > .header__submenu {
   left: 0;
   width: 0%;
   height: 1px;
-  background-color: #000;
+  background-color: rgb(var(--color-foreground));
   transition: 0.4s;
 }
 
