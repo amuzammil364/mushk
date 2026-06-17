@@ -38,6 +38,14 @@
   display: none;
 }
 
+.reward-bar-container{
+    {% if section.settings.full_width %}
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 5rem;
+    {% endif %}
+}
+
 .reward-message{
   font-size:14px;
   font-weight:600;
