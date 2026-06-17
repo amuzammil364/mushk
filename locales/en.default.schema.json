@@ -162,6 +162,14 @@
         }
       }
     },
+    "smooth_scroll": {
+      "name": "Smooth Scroll",
+      "settings": {
+        "scroll": {
+          "label": "Enable smooth scroll"
+        },
+      }
+    },
     "brand_information": {
       "name": "Brand information",
       "settings": {
