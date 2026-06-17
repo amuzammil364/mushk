@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "cart_rewards_bar_MnzeAL": {
+      "type": "cart-rewards-bar",
+      "name": "Reward Progress Bar",
+      "settings": {}
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
@@ -19,30 +24,29 @@
     },
     "cart-footer": {
       "type": "main-cart-footer",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 40
-      },
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "settings": {}
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "subtotal",
         "buttons"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
+    "cart_rewards_bar_MnzeAL",
     "cart-items",
     "cart-footer"
   ]
