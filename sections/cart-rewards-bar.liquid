@@ -93,67 +93,67 @@
   async function updateRewardBar() {
 
     try {
-      const res = await fetch('/cart.js', {
-        headers: {
-          'Cache-Control': 'no-cache'
-        }
-      });
+        const res = await fetch('/cart.js', {
+            headers: {
+            'Cache-Control': 'no-cache'
+            }
+        });
 
-      const cart = await res.json();
-      const qty = cart.item_count;
+        const cart = await res.json();
+        const qty = cart.item_count;
 
-      const bar = document.querySelector('.reward-bar');
+        const bar = document.querySelector('.reward-bar');
 
-      if (!bar) return;
+        if (!bar) return;
 
         bar.classList.add('show');
 
         if (qty === 0) {
-      bar.classList.remove('show');
-      bar.classList.add('hidden');
-      return;
-    }
+            bar.classList.remove('show');
+            bar.classList.add('hidden');
+            return;
+        }
 
-    bar.classList.remove('hidden');
+        bar.classList.remove('hidden');
 
-      let percent = 0;
-      let message = '';
+        let percent = 0;
+        let message = '';
 
-      console.log("Reward Bar Updated | Qty:", qty);
+        console.log("Reward Bar Updated | Qty:", qty);
 
-      // 0 - 1 items
-      if (qty < 2) {
-        percent = (qty / 2) * 25;
-        message = `Buy ${2 - qty} more to get Free Shipping`;
-      }
+        // 0 - 1 items
+        if (qty < 2) {
+            percent = (qty / 2) * 25;
+            message = `Buy ${2 - qty} more to get Free Shipping`;
+        }
 
-      // 2 - 4 items
-      else if (qty < 5) {
-        percent = 25 + ((qty - 2) / 3) * 25;
-        message = `Buy ${5 - qty} more to get 5% OFF🤩`;
-      }
+        // 2 - 4 items
+        else if (qty < 5) {
+            percent = 25 + ((qty - 2) / 3) * 25;
+            message = `Buy ${5 - qty} more to get 5% OFF🤩`;
+        }
 
-      // 5 - 7 items
-      else if (qty < 8) {
-        percent = 50 + ((qty - 5) / 3) * 25;
-        message = `Buy ${8 - qty} more to get 10% OFF🤩`;
-      }
+        // 5 - 7 items
+        else if (qty < 8) {
+            percent = 50 + ((qty - 5) / 3) * 25;
+            message = `Buy ${8 - qty} more to get 10% OFF🤩`;
+        }
 
-      // 8+ items
-      else {
-        percent = 100;
-        message = `🏆 Amazing! 10% OFF unlocked`;
-      }
+        // 8+ items
+        else {
+            percent = 100;
+            message = `🏆 Amazing! 10% OFF unlocked`;
+        }
 
-      const msgEl = document.querySelector(REWARD_BAR_SELECTOR.message);
-      const fillEl = document.querySelector(REWARD_BAR_SELECTOR.fill);
+        const msgEl = document.querySelector(REWARD_BAR_SELECTOR.message);
+        const fillEl = document.querySelector(REWARD_BAR_SELECTOR.fill);
 
-      if (msgEl) msgEl.innerHTML = message;
-      if (fillEl) fillEl.style.width = percent + '%';
+        if (msgEl) msgEl.innerHTML = message;
+        if (fillEl) fillEl.style.width = percent + '%';
 
-    } catch (err) {
-      console.error('Reward Bar Error:', err);
-    }
+        } catch (err) {
+        console.error('Reward Bar Error:', err);
+        }
   }
 
   // DEBOUNCE (prevents spam updates)
