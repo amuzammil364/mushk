@@ -97,6 +97,15 @@
       const cart = await res.json();
       const qty = cart.item_count;
 
+      const bar = document.querySelector('.reward-bar');
+
+      if (qty === 0) {
+        if (bar) bar.classList.add('hidden');
+        return;
+        } else {
+        if (bar) bar.classList.remove('hidden');
+        }
+
       let percent = 0;
       let message = '';
 
