@@ -135,7 +135,7 @@
 // 🟢 STEP 2: 2 - 4 items
 else if (qty < step2) {
 
-  percent = 33 + ((qty - step1) / (step2 - step1)) * 33;
+  percent = 20 + ((qty - step1) / (step2 - step1)) * 40;
 
   message = `🎉 Free Shipping unlocked! Buy ${step2 - qty} more → 5% OFF`;
 }
@@ -143,7 +143,7 @@ else if (qty < step2) {
 // 🔵 STEP 3: 5 - 7 items
 else if (qty < step3) {
 
-  percent = 66 + ((qty - step2) / (step3 - step2)) * 34;
+  percent = 60 + ((qty - step2) / (step3 - step2)) * 40;
 
   message = `🔥 5% OFF unlocked! Buy ${step3 - qty} more → 10% OFF`;
 }
