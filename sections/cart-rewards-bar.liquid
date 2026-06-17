@@ -1,84 +1,132 @@
 <div class="reward-bar">
-  <div class="reward-message"></div>
+  <div class="reward-message">Loading rewards...</div>
 
   <div class="reward-progress">
     <div class="reward-progress-fill"></div>
   </div>
 
-  <div class="reward-icons">
-    <div class="reward-step">
-      <span>🎁</span>
-      <p>5% OFF<br>Rs. 5,000</p>
+  <div class="reward-steps">
+    <div class="step">
+      <span>🚚</span>
+      <p>2+ Items<br>Free Shipping</p>
     </div>
 
-    <div class="reward-step">
+    <div class="step">
+      <span>🎁</span>
+      <p>5+ Items<br>5% OFF</p>
+    </div>
+
+    <div class="step">
       <span>🏆</span>
-      <p>10% OFF<br>Rs. 10,000</p>
+      <p>8+ Items<br>10% OFF</p>
     </div>
   </div>
 </div>
 
 <style>
+.reward-bar{
+  padding:15px;
+  border:1px solid #eee;
+  border-radius:12px;
+  margin:10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.reward-message{
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
 .reward-progress{
-  background:#eee;
+  width:100%;
   height:10px;
-  border-radius:30px;
+  background:#eee;
+  border-radius:50px;
   overflow:hidden;
 }
 
 .reward-progress-fill{
   width:0%;
   height:100%;
-  background:#000;
-  transition:.3s;
+  background:linear-gradient(90deg,#000,#444);
+  transition:0.3s ease;
 }
 
-.reward-icons{
+.reward-steps{
   display:flex;
   justify-content:space-between;
-  margin-top:15px;
+  margin-top:12px;
+  text-align:center;
+}
+
+.reward-steps .step{
+  font-size:12px;
+  width:33%;
+}
+
+.reward-steps span{
+  font-size:18px;
+  display:block;
+  margin-bottom:5px;
 }
 </style>
 
 <script>
 async function updateRewardBar() {
 
-  const response = await fetch('/cart.js');
-  const cart = await response.json();
+  const res = await fetch('/cart.js');
+  const cart = await res.json();
 
-  const total = cart.total_price / 100;
+  const qty = cart.item_count;
 
   let percent = 0;
   let message = '';
 
-  if (total < 5000) {
-    percent = total / 5000 * 50;
-    message = `Spend Rs. ${5000-total} more to unlock 5% OFF 🎁`;
+  // 0 - 1 items
+  if (qty < 2) {
+    percent = (qty / 2) * 25;
+    message = `Add ${2 - qty} more item(s) → Free Shipping 🚚`;
   }
-  else if (total < 10000) {
-    percent = 50 + ((total-5000)/5000)*50;
-    message = `🎉 5% OFF unlocked! Spend Rs. ${10000-total} more to unlock 10% OFF`;
+
+  // 2 - 4 items
+  else if (qty < 5) {
+    percent = 25 + ((qty - 2) / 3) * 25;
+    message = `🎉 Free Shipping unlocked! Add ${5 - qty} more → 5% OFF`;
   }
+
+  // 5 - 7 items
+  else if (qty < 8) {
+    percent = 50 + ((qty - 5) / 3) * 25;
+    message = `🔥 5% OFF unlocked! Add ${8 - qty} more → 10% OFF`;
+  }
+
+  // 8+ items
   else {
     percent = 100;
-    message = '🏆 Congratulations! 10% OFF unlocked!';
+    message = `🏆 Amazing! 10% OFF unlocked`;
   }
 
   document.querySelector('.reward-message').innerHTML = message;
   document.querySelector('.reward-progress-fill').style.width = percent + '%';
 }
 
+// initial load
 updateRewardBar();
 
+// update on cart changes (theme dependent)
+document.addEventListener('DOMContentLoaded', updateRewardBar);
 document.addEventListener('cart:updated', updateRewardBar);
+document.addEventListener('cart:change', updateRewardBar);
 </script>
 
 {% schema %}
 {
-  "name":"Cart Reward Bar",
-  "presets":[
+  "name": "Reward Progress Bar",
+  "settings": [],
+  "presets": [
     {
-      "name":"Cart Reward Bar"
+      "name": "Reward Progress Bar"
     }
   ]
 }
