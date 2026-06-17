@@ -102,12 +102,12 @@
     ]
   },
   {
-    "name": "Smooth Scroll",
+    "name": "t:settings_schema.smooth_scroll.name",
     "settings": [
       {
         "type": "checkbox",
         "id": "enable_smooth_scroll",
-        "label": "Enable smooth scroll",
+        "label": "t:settings_schema.smooth_scroll.settings.scroll.label",
         "default": true
       }
     ]
