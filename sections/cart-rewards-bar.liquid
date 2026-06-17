@@ -40,9 +40,12 @@
 
 .reward-bar-container{
     {% if section.settings.full_width %}
-    max-width: var(--page-width);
-    margin: 0 auto;
-    padding: 0 5rem;
+        width: 100%;
+        max-width: 100%;
+    {% else %}
+        max-width: var(--page-width);
+        margin: 0 auto;
+        padding: 0 5rem;
     {% endif %}
 }
 
