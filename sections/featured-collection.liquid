@@ -217,7 +217,7 @@
       <div class="center collection__view-all">
         <a
           href="{% if section.settings.view_all_button_url != blank %}{{ section.settings.view_all_button_url }}{% else %}{{ section.settings.collection.url }}{% endif %}"
-          class="button {% if section.settings.view_all_style == 'link' %}link underlined-link{% endif %}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
         >
           {{ section.settings.view_all_button_text }}
         </a>
