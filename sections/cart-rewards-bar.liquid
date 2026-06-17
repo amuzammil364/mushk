@@ -68,7 +68,7 @@
 .reward-steps{
   display:flex;
   justify-content:space-between;
-  text-align:center;
+  text-align:right;
 }
 
 .reward-steps .step{
@@ -124,34 +124,31 @@
 
         if (qty < step1) {
 
-  percent = (qty / step1) * 33;
+          percent = (qty / step1) * 33;
 
-  message = `Buy ${step1 - qty} more to get Free Shipping`;
-}
+          message = `Buy ${step1 - qty} more to get Free Shipping`;
+        }
 
-// 🟢 STEP 2: 2 - 4 items
-else if (qty < step2) {
+        else if (qty < step2) {
 
-  percent = 33 + ((qty - step1) / (step2 - step1)) * 33;
+          percent = 33 + ((qty - step1) / (step2 - step1)) * 33;
 
-  message = `🎉 Free Shipping unlocked! Buy ${step2 - qty} more → 5% OFF`;
-}
+          message = `🎉 Free Shipping unlocked! Buy ${step2 - qty} more → 5% OFF`;
+        }
 
-// 🔵 STEP 3: 5 - 7 items
-else if (qty < step3) {
+        else if (qty < step3) {
 
-  percent = 66 + ((qty - step2) / (step3 - step2)) * 34;
+          percent = 66 + ((qty - step2) / (step3 - step2)) * 34;
 
-  message = `🔥 5% OFF unlocked! Buy ${step3 - qty} more → 10% OFF`;
-}
+          message = `🔥 5% OFF unlocked! Buy ${step3 - qty} more → 10% OFF`;
+        }
 
-// 🏆 FINAL
-else {
+        else {
 
-  percent = 100;
+          percent = 100;
 
-  message = `🏆 10% OFF unlocked`;
-}
+          message = `🏆 10% OFF unlocked`;
+        }
 
         percent = Math.max(0, Math.min(100, percent));
 
