@@ -143,7 +143,8 @@
                   show_save_amount: section.settings.show_save_amount,
                   quick_add_style: section.settings.quick_add_style,
                   image_bottom_spacing: section.settings.image_bottom_spacing,
-                  info_bottom_spacing: section.settings.info_bottom_spacing
+                  info_bottom_spacing: section.settings.info_bottom_spacing,
+                  product_button_style: section.settings.product_button_style
                 %}
               </li>
               {%- assign skip_card_product_styles = true -%}
@@ -631,6 +632,22 @@
           "label": "Text + Icon"
         }
       ]
+    },
+    {
+      "type": "select",
+      "id": "product_button_style",
+      "label": "Button Style",
+      "options": [
+        {
+          "value": "outline",
+          "label": "Outline Button"
+        },
+        {
+          "value": "solid",
+          "label": "Solid Button"
+        }
+      ],
+      "default": "solid"
     },
     {
       "type": "checkbox",
