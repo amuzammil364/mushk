@@ -119,7 +119,7 @@
         "show_custom_view_all": true,
         "view_all_button_text": "Shop All Bundle Deals",
         "view_all_button_url": "shopify://collections/oud",
-        "view_all_style": "link",
+        "view_all_style": "solid",
         "color_scheme": "scheme-1",
         "image_bottom_spacing": 10,
         "info_bottom_spacing": 10,
