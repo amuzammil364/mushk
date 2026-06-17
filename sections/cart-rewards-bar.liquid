@@ -1,0 +1,85 @@
+<div class="reward-bar">
+  <div class="reward-message"></div>
+
+  <div class="reward-progress">
+    <div class="reward-progress-fill"></div>
+  </div>
+
+  <div class="reward-icons">
+    <div class="reward-step">
+      <span>🎁</span>
+      <p>5% OFF<br>Rs. 5,000</p>
+    </div>
+
+    <div class="reward-step">
+      <span>🏆</span>
+      <p>10% OFF<br>Rs. 10,000</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.reward-progress{
+  background:#eee;
+  height:10px;
+  border-radius:30px;
+  overflow:hidden;
+}
+
+.reward-progress-fill{
+  width:0%;
+  height:100%;
+  background:#000;
+  transition:.3s;
+}
+
+.reward-icons{
+  display:flex;
+  justify-content:space-between;
+  margin-top:15px;
+}
+</style>
+
+<script>
+async function updateRewardBar() {
+
+  const response = await fetch('/cart.js');
+  const cart = await response.json();
+
+  const total = cart.total_price / 100;
+
+  let percent = 0;
+  let message = '';
+
+  if (total < 5000) {
+    percent = total / 5000 * 50;
+    message = `Spend Rs. ${5000-total} more to unlock 5% OFF 🎁`;
+  }
+  else if (total < 10000) {
+    percent = 50 + ((total-5000)/5000)*50;
+    message = `🎉 5% OFF unlocked! Spend Rs. ${10000-total} more to unlock 10% OFF`;
+  }
+  else {
+    percent = 100;
+    message = '🏆 Congratulations! 10% OFF unlocked!';
+  }
+
+  document.querySelector('.reward-message').innerHTML = message;
+  document.querySelector('.reward-progress-fill').style.width = percent + '%';
+}
+
+updateRewardBar();
+
+document.addEventListener('cart:updated', updateRewardBar);
+</script>
+
+{% schema %}
+{
+  "name":"Cart Reward Bar",
+  "presets":[
+    {
+      "name":"Cart Reward Bar"
+    }
+  ]
+}
+{% endschema %}
