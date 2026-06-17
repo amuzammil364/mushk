@@ -86,12 +86,6 @@
 
 <script>
 (function () {
-
-  const REWARD_BAR_SELECTOR = {
-    message: '.reward-message',
-    fill: '.reward-progress-fill'
-  };
-
   async function updateRewardBar() {
 
     try {
@@ -105,6 +99,8 @@
         const qty = cart.item_count;
 
         const bar = document.querySelector('[data-reward-bar-{{ section.id }}]');
+        const msgEl = bar.querySelector('.reward-message');
+        const fillEl = bar.querySelector('.reward-progress-fill');
 
         if (!bar) return;
 
@@ -158,9 +154,6 @@ else {
 }
 
         percent = Math.max(0, Math.min(100, percent));
-
-        const msgEl = document.querySelector(REWARD_BAR_SELECTOR.message);
-        const fillEl = document.querySelector(REWARD_BAR_SELECTOR.fill);
 
         if (msgEl) msgEl.innerHTML = message;
         if (fillEl) fillEl.style.width = percent + '%';
