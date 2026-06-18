@@ -246,6 +246,8 @@
 
                   <span>{{ block.settings.text }}</span>
                 </div>
+              {% when 'reward_bar' %}
+                {%  render "reward-progress-bar" %}
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   {% if block.settings.display_style == 'simple' %}
@@ -880,6 +882,11 @@
           "default": "14 Days Easy Return"
         }
       ]
+    },
+    {
+      "type": "reward_bar",
+      "name": "Reward Bar",
+      "settings": []
     },
     {
       "type": "shipping_info",
