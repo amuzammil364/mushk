@@ -113,6 +113,102 @@
     ]
   },
   {
+    "name": "Reward Progress Bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_reward_bar",
+        "label": "Enable Reward Bar",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "reward_type",
+        "label": "Reward Type",
+        "options": [
+          {
+            "value": "quantity",
+            "label": "Quantity Based"
+          },
+          {
+            "value": "amount",
+            "label": "Amount Based"
+          }
+        ],
+        "default": "quantity"
+      },
+
+      {
+        "type": "header",
+        "content": "Step 1"
+      },
+      {
+        "type": "text",
+        "id": "reward_step1_icon",
+        "label": "Icon",
+        "default": "🚚"
+      },
+      {
+        "type": "text",
+        "id": "reward_step1_label",
+        "label": "Label",
+        "default": "Free Shipping"
+      },
+      {
+        "type": "number",
+        "id": "reward_step1_value",
+        "label": "Target Value",
+        "default": 2
+      },
+
+      {
+        "type": "header",
+        "content": "Step 2"
+      },
+      {
+        "type": "text",
+        "id": "reward_step2_icon",
+        "label": "Icon",
+        "default": "🎁"
+      },
+      {
+        "type": "text",
+        "id": "reward_step2_label",
+        "label": "Label",
+        "default": "5% OFF"
+      },
+      {
+        "type": "number",
+        "id": "reward_step2_value",
+        "label": "Target Value",
+        "default": 5
+      },
+
+      {
+        "type": "header",
+        "content": "Step 3"
+      },
+      {
+        "type": "text",
+        "id": "reward_step3_icon",
+        "label": "Icon",
+        "default": "🏆"
+      },
+      {
+        "type": "text",
+        "id": "reward_step3_label",
+        "label": "Label",
+        "default": "10% OFF"
+      },
+      {
+        "type": "number",
+        "id": "reward_step3_value",
+        "label": "Target Value",
+        "default": 8
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {
