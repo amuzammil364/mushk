@@ -216,6 +216,14 @@
 
       if (cart.item_count === 0) {
         bar.classList.add('show');
+
+        fillEl.style.width = '0%';
+        msgEl.innerHTML = `Buy ${step1 - value} more to unlock Free Shipping`;
+
+        // reset active steps
+        bar.querySelectorAll('.step').forEach(step => {
+          step.classList.remove('active');
+        });
         return;
       }
 
