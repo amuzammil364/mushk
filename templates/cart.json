@@ -15,6 +15,7 @@
       "settings": {
         "full_width": false,
         "color_scheme": "scheme-1",
+        "message_alignment": "center",
         "message_font_size": 16,
         "spacing_top": 0,
         "spacing_bottom": 60,
