@@ -75,7 +75,7 @@
 
 .reward-message{
   width: 100%;
-  text-align: center;
+  text-align: {{section.settings.message_alignment}};
   margin-bottom: {{section.settings.spacing_bottom}}px;
   margin-top: {{section.settings.spacing_top}}px;
   color: rgba(var(--color-foreground));
@@ -293,6 +293,26 @@
     {
       "type": "header",
       "content": "Reward Message"
+    },
+    {
+      "type": "select",
+      "id": "message_alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
     },
     {
       "type": "range",
