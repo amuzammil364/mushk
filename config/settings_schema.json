@@ -143,10 +143,9 @@
         "content": "Step 1"
       },
       {
-        "type": "text",
+        "type": "image_picker",
         "id": "reward_step1_icon",
         "label": "Icon",
-        "default": "🚚"
       },
       {
         "type": "text",
@@ -166,10 +165,9 @@
         "content": "Step 2"
       },
       {
-        "type": "text",
+        "type": "image_picker",
         "id": "reward_step2_icon",
         "label": "Icon",
-        "default": "🎁"
       },
       {
         "type": "text",
@@ -189,10 +187,9 @@
         "content": "Step 3"
       },
       {
-        "type": "text",
+        "type": "image_picker",
         "id": "reward_step3_icon",
         "label": "Icon",
-        "default": "🏆"
       },
       {
         "type": "text",
