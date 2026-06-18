@@ -155,15 +155,15 @@
       let message = '';
 
       if (value < step1) {
-        percent = (value / step1) * 33;
+        percent = (value / step1) * 32;
         message = `Buy ${step1 - value} more to unlock Free Shipping`;
       }
       else if (value < step2) {
-        percent = 33 + ((value - step1) / (step2 - step1)) * 33;
+        percent = 32 + ((value - step1) / (step2 - step1)) * 20;
         message = `🎉 Free Shipping unlocked! Buy ${step2 - value} more for 5% OFF`;
       }
       else if (value < step3) {
-        percent = 66 + ((value - step2) / (step3 - step2)) * 34;
+        percent = 52 + ((value - step2) / (step3 - step2)) * 48;
         message = `🔥 5% OFF unlocked! Buy ${step3 - value} more for 10% OFF`;
       }
       else {
