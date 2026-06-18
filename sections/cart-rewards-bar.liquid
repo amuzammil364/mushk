@@ -108,7 +108,9 @@ width: 20%;
         });
 
         const cart = await res.json();
-        const qty = cart.item_count;
+        const value = rewardType === 'quantity'
+        ? cart.item_count
+        : cart.total_price / 100;
 
         const bar = document.querySelector('[data-reward-bar-{{ section.id }}]');
         const msgEl = bar.querySelector('.reward-message');
@@ -128,9 +130,11 @@ width: 20%;
 
         let percent = 0;
         let message = '';
-        const step1 = 2;
-        const step2 = 5;
-        const step3 = 8;
+        const rewardType = "{{ settings.reward_type }}";
+
+        const step1 = {{ settings.reward_step1_value }};
+        const step2 = {{ settings.reward_step2_value }};
+        const step3 = {{ settings.reward_step3_value }};
 
         console.log("Reward Bar Updated | Qty:", qty);
 
