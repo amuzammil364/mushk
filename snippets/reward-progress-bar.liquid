@@ -1,5 +1,5 @@
 {% if settings.enable_reward_bar %}
-<div class="reward-bar hidden color-{{ settings.color_scheme }}" data-reward-bar-{{ section.id }}>
+<div class="reward-bar hidden color-{{ color_scheme }}" data-reward-bar-{{ section.id }}>
   <div class="reward-bar-container">
 
     <div class="reward-message">Loading rewards...</div>
@@ -11,47 +11,47 @@
     <div class="reward-steps">
 
       <!-- STEP 1 -->
-      <div class="step" data-step="{{ settings.reward_step1_value }}">
+      <div class="step" data-step="{{ reward_step1_value }}">
         <div class="circle-step">
-          <span class="trigger">{{ settings.reward_step1_value }}</span>
+          <span class="trigger">{{ reward_step1_value }}</span>
           <span class="icon">
-            {% if settings.reward_step1_icon %}
-              <img src="{{ settings.reward_step1_icon | image_url: width: 100 }}" />
+            {% if reward_step1_icon %}
+              <img src="{{ reward_step1_icon | image_url: width: 100 }}" />
             {% endif %}
           </span>
         </div>
         <p>
-          {{ settings.reward_step1_label }}
+          {{ reward_step1_label }}
         </p>
       </div>
 
       <!-- STEP 2 -->
-      <div class="step" data-step="{{ settings.reward_step2_value }}">
+      <div class="step" data-step="{{ reward_step2_value }}">
         <div class="circle-step">
-          <span class="trigger">{{ settings.reward_step2_value }}</span>
+          <span class="trigger">{{ reward_step2_value }}</span>
           <span class="icon">
-            {% if settings.reward_step2_icon %}
-              <img src="{{ settings.reward_step2_icon | image_url: width: 100 }}" />
+            {% if reward_step2_icon %}
+              <img src="{{ reward_step2_icon | image_url: width: 100 }}" />
             {% endif %}
           </span>
         </div>
         <p>
-          {{ settings.reward_step2_label }}
+          {{ reward_step2_label }}
         </p>
       </div>
 
       <!-- STEP 3 -->
-      <div class="step" data-step="{{ settings.reward_step3_value }}">
+      <div class="step" data-step="{{ reward_step3_value }}">
         <div class="circle-step">
-          <span class="trigger">{{ settings.reward_step3_value }}</span>
+          <span class="trigger">{{ reward_step3_value }}</span>
           <span class="icon">
-            {% if settings.reward_step3_icon %}
-              <img src="{{ settings.reward_step3_icon | image_url: width: 100 }}" />
+            {% if reward_step3_icon %}
+              <img src="{{ reward_step3_icon | image_url: width: 100 }}" />
             {% endif %}
           </span>
         </div>
         <p>
-          {{ settings.reward_step3_label }}
+          {{ reward_step3_label }}
         </p>
       </div>
 
@@ -68,30 +68,24 @@
   }
   .reward-bar{
     display: none;
-    padding-top: {{ settings.padding_top }}px;
-    padding-bottom: {{ settings.padding_bottom }}px;
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
   }
 
   .reward-message{
     width: 100%;
-    text-align: {{settings.message_alignment}};
-    margin-bottom: {{settings.spacing_bottom}}px;
-    margin-top: {{settings.spacing_top}}px;
+    text-align: {{message_alignment}};
+    margin-bottom: {{spacing_bottom}}px;
+    margin-top: {{spacing_top}}px;
     color: rgba(var(--color-foreground));
-    font-size: {{ settings.message_font_size }}px !important;
+    font-size: {{ message_font_size }}px !important;
   }
 
   .reward-bar-container{
-    {% if settings.full_width %}
     width: 100%;
     max-width: 100%;
-    padding-left: {{ settings.padding_left }}px;
-    padding-right: {{ settings.padding_right }}px;
-    {% else %}
-    max-width: var(--page-width);
-    margin: 0 auto;
-    padding: 0 5rem;
-    {% endif %}
+    padding-left: {{ padding_left }}px;
+    padding-right: {{ padding_right }}px;
   }
 
   .reward-progress{
@@ -204,11 +198,11 @@
       const msgEl = bar.querySelector('.reward-message');
       const fillEl = bar.querySelector('.reward-progress-fill');
 
-      const rewardType = "{{ settings.reward_type }}";
+      const rewardType = "{{ reward_type }}";
 
-      const step1 = {{ settings.reward_step1_value }};
-      const step2 = {{ settings.reward_step2_value }};
-      const step3 = {{ settings.reward_step3_value }};
+      const step1 = {{ reward_step1_value }};
+      const step2 = {{ reward_step2_value }};
+      const step3 = {{ reward_step3_value }};
 
       const value = rewardType === 'quantity'
         ? cart.item_count
