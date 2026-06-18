@@ -53,7 +53,7 @@
         "reward_bar_GbjMDq": {
           "type": "reward_bar",
           "settings": {
-            "color_scheme": "",
+            "color_scheme": "scheme-4",
             "message_alignment": "center",
             "message_font_size": 16,
             "spacing_top": 0,
