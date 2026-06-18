@@ -13,6 +13,8 @@
     "logo_width": 50,
     "favicon": "shopify://shop_images/2d30cad1-4fa1-44b7-ab01-ddcb10524fbf_removalai_preview.png",
     "enable_smooth_scroll": true,
+    "reward_type": "quantity",
+    "reward_step1_icon": "shopify://shop_images/icons8-free-shipping-100_1.png",
     "type_header_font": "lato_n4",
     "heading_scale": 150,
     "type_body_font": "outfit_n3",
