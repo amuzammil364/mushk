@@ -2,7 +2,7 @@
 <div class="reward-bar color-{{ settings.color_scheme }}" data-reward-bar-{{ section.id }}>
   <div class="reward-bar-container">
 
-    <div class="reward-message">Loading rewards...</div>
+    <div class="reward-message">Buy {{settings.reward_step1_value }} more to unlock Free Shipping</div>
 
     <div class="reward-progress">
       <div class="reward-progress-fill"></div>
@@ -223,7 +223,7 @@
       bar.classList.add('show');
 
       let percent = 0;
-      let message = 'Buy ${step1 - value} more to unlock Free Shipping';
+      let message = '';
 
       if (value < step1) {
         percent = (value / step1) * 32;
