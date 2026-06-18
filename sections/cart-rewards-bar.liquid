@@ -58,50 +58,65 @@
   </div>
 </div>
 
-<style>
-.reward-bar.hidden { display: none; }
-.reward-bar.show { display: block; }
-
-.reward-bar-container{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+<style> 
+  
+.reward-bar.show {
+  display: block;
 }
-
+.reward-bar.hidden {
+  display: none;
+}
+.reward-bar{
+  display: none;
+}
+.reward-bar-container{
+  {% if section.settings.full_width %}
+  width: 100%;
+  max-width: 100%;
+  {% else %}
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 5rem;
+  {% endif %}
+}
 .reward-progress{
   width: 100%;
   height: 10px;
   background: #eee;
   border-radius: 50px;
   overflow: hidden;
-  margin: 10px 0;
 }
-
 .reward-progress-fill{
   width: 0%;
   height: 100%;
   background: #000;
   transition: 0.3s ease;
+  display: block !important;
 }
-
 .reward-steps{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  font-size: 12px;
+    display:flex;
+    justify-content:space-between;
+    text-align:right;
 }
-
+.reward-steps .step:nth-child(1){
+    width: 32%;
+}
+.reward-steps .step:nth-child(2){
+    width: 20%;
+}
+.reward-steps .step:nth-child(3){
+    width: 48%;
+}
 .reward-steps .step{
-  width: 33%;
+    font-size: 12px;
+    width: 33.33%;
 }
-
-.reward-steps img{
-  width: 22px;
-  height: 22px;
-  margin-bottom: 5px;
+.reward-steps span{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
 }
-</style>
+ </style>
 
 <script>
 (function () {
