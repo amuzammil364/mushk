@@ -1,52 +1,72 @@
-<div class="reward-bar" data-reward-bar-{{ section.id }}>
-    <div class="reward-bar-container">
-        <div class="reward-message">Loading rewards...</div>
+<div class="reward-bar hidden" data-reward-bar-{{ section.id }}>
+  <div class="reward-bar-container">
 
-        <div class="reward-progress">
-            <div class="reward-progress-fill"></div>
-        </div>
+    <div class="reward-message">Loading rewards...</div>
 
-        <div class="reward-steps">
-            <div class="step">
-                <span>🚚</span>
-                <p>2+ Items<br>Free Shipping</p>
-            </div>
-
-            <div class="step">
-                <span>🎁</span>
-                <p>5+ Items<br>5% OFF</p>
-            </div>
-
-            <div class="step">
-                <span>🏆</span>
-                <p>8+ Items<br>10% OFF</p>
-            </div>
-        </div>
+    <div class="reward-progress">
+      <div class="reward-progress-fill"></div>
     </div>
+
+    <div class="reward-steps">
+
+      <!-- STEP 1 -->
+      <div class="step">
+        <span>
+          {% if settings.reward_step1_icon %}
+            <img src="{{ settings.reward_step1_icon | image_url: width: 40 }}" />
+          {% endif %}
+        </span>
+        <p>
+          {{ settings.reward_step1_value }}+
+          {% if settings.reward_type == 'quantity' %} Items {% else %} Rs {% endif %}
+          <br>
+          {{ settings.reward_step1_label }}
+        </p>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="step">
+        <span>
+          {% if settings.reward_step2_icon %}
+            <img src="{{ settings.reward_step2_icon | image_url: width: 40 }}" />
+          {% endif %}
+        </span>
+        <p>
+          {{ settings.reward_step2_value }}+
+          {% if settings.reward_type == 'quantity' %} Items {% else %} Rs {% endif %}
+          <br>
+          {{ settings.reward_step2_label }}
+        </p>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="step">
+        <span>
+          {% if settings.reward_step3_icon %}
+            <img src="{{ settings.reward_step3_icon | image_url: width: 40 }}" />
+          {% endif %}
+        </span>
+        <p>
+          {{ settings.reward_step3_value }}+
+          {% if settings.reward_type == 'quantity' %} Items {% else %} Rs {% endif %}
+          <br>
+          {{ settings.reward_step3_label }}
+        </p>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <style>
-.reward-bar.show {
-  display: block;
-}
-
-.reward-bar.hidden {
-  display: none;
-}
-
-.reward-bar{
-  display: none;
-}
+.reward-bar.hidden { display: none; }
+.reward-bar.show { display: block; }
 
 .reward-bar-container{
-    {% if section.settings.full_width %}
-        width: 100%;
-        max-width: 100%;
-    {% else %}
-        max-width: var(--page-width);
-        margin: 0 auto;
-        padding: 0 5rem;
-    {% endif %}
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .reward-progress{
@@ -55,6 +75,7 @@
   background: #eee;
   border-radius: 50px;
   overflow: hidden;
+  margin: 10px 0;
 }
 
 .reward-progress-fill{
@@ -62,155 +83,104 @@
   height: 100%;
   background: #000;
   transition: 0.3s ease;
-  display: block !important;
 }
 
 .reward-steps{
-  display:flex;
-  justify-content:space-between;
-  text-align:right;
-}
-
-.reward-steps .step:nth-child(1){
-  width: 32%;
-}
-
-.reward-steps .step:nth-child(2){
-width: 20%;
-}
-
-.reward-steps .step:nth-child(3){
- width: 48%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 12px;
 }
 
 .reward-steps .step{
-  font-size: 12px;
-  width: 33.33%;
-
+  width: 33%;
 }
 
-.reward-steps span{
-  font-size: 18px;
-  display: block;
+.reward-steps img{
+  width: 22px;
+  height: 22px;
   margin-bottom: 5px;
 }
 </style>
 
 <script>
 (function () {
+
   async function updateRewardBar() {
 
     try {
-        const res = await fetch('/cart.js', {
-            headers: {
-            'Cache-Control': 'no-cache'
-            }
-        });
+      const res = await fetch('/cart.js');
+      const cart = await res.json();
 
-        const cart = await res.json();
-        const value = rewardType === 'quantity'
+      const bar = document.querySelector('[data-reward-bar-{{ section.id }}]');
+      if (!bar) return;
+
+      const msgEl = bar.querySelector('.reward-message');
+      const fillEl = bar.querySelector('.reward-progress-fill');
+
+      const rewardType = "{{ settings.reward_type }}";
+
+      const step1 = {{ settings.reward_step1_value }};
+      const step2 = {{ settings.reward_step2_value }};
+      const step3 = {{ settings.reward_step3_value }};
+
+      const value = rewardType === 'quantity'
         ? cart.item_count
         : cart.total_price / 100;
 
-        const bar = document.querySelector('[data-reward-bar-{{ section.id }}]');
-        const msgEl = bar.querySelector('.reward-message');
-        const fillEl = bar.querySelector('.reward-progress-fill');
+      if (cart.item_count === 0) {
+        bar.classList.add('hidden');
+        return;
+      }
 
-        if (!bar) return;
+      bar.classList.remove('hidden');
+      bar.classList.add('show');
 
-        bar.classList.add('show');
+      let percent = 0;
+      let message = '';
 
-        if (qty === 0) {
-            bar.classList.remove('show');
-            bar.classList.add('hidden');
-            return;
-        }
+      if (value < step1) {
+        percent = (value / step1) * 33;
+        message = `Buy ${step1 - value} more to unlock Free Shipping`;
+      }
+      else if (value < step2) {
+        percent = 33 + ((value - step1) / (step2 - step1)) * 33;
+        message = `🎉 Free Shipping unlocked! Buy ${step2 - value} more for 5% OFF`;
+      }
+      else if (value < step3) {
+        percent = 66 + ((value - step2) / (step3 - step2)) * 34;
+        message = `🔥 5% OFF unlocked! Buy ${step3 - value} more for 10% OFF`;
+      }
+      else {
+        percent = 100;
+        message = `🏆 You unlocked all rewards!`;
+      }
 
-        bar.classList.remove('hidden');
+      fillEl.style.width = Math.min(100, Math.max(0, percent)) + '%';
+      msgEl.innerHTML = message;
 
-        let percent = 0;
-        let message = '';
-        const rewardType = "{{ settings.reward_type }}";
-
-        const step1 = {{ settings.reward_step1_value }};
-        const step2 = {{ settings.reward_step2_value }};
-        const step3 = {{ settings.reward_step3_value }};
-
-        console.log("Reward Bar Updated | Qty:", qty);
-
-        if (qty < step1) {
-
-          percent = (qty / step1) * 32;
-
-          message = `Buy ${step1 - qty} more to get Free Shipping`;
-        }
-
-        else if (qty < step2) {
-
-          percent = 32 + ((qty - step1) / (step2 - step1)) * 20;
-
-          message = `🎉 Free Shipping unlocked! Buy ${step2 - qty} more → 5% OFF`;
-        }
-
-        else if (qty < step3) {
-
-          percent = 52 + ((qty - step2) / (step3 - step2)) * 48;
-
-          message = `🔥 5% OFF unlocked! Buy ${step3 - qty} more → 10% OFF`;
-        }
-
-        else {
-
-          percent = 100;
-
-          message = `🏆 10% OFF unlocked`;
-        }
-
-        percent = Math.max(0, Math.min(100, percent));
-
-        if (msgEl) msgEl.innerHTML = message;
-        if (fillEl) fillEl.style.width = percent + '%';
-
-        } catch (err) {
-          console.error('Reward Bar Error:', err);
-        }
-  }
-
-  let timeout;
-  function debounceUpdate() {
-    clearTimeout(timeout);
-    timeout = setTimeout(updateRewardBar, 300);
+    } catch (err) {
+      console.error('Reward Bar Error:', err);
+    }
   }
 
   document.addEventListener('DOMContentLoaded', updateRewardBar);
 
-  setInterval(updateRewardBar, 3000);
+  setInterval(updateRewardBar, 5000);
 
   const originalFetch = window.fetch;
 
   window.fetch = async function () {
-
     const response = await originalFetch.apply(this, arguments);
 
     const url = arguments[0];
 
-    if (typeof url === 'string' && (
-      url.includes('/cart/add') ||
-      url.includes('/cart/change') ||
-      url.includes('/cart/update') ||
-      url.includes('/cart/clear')
-    )) {
-      debounceUpdate();
+    if (typeof url === 'string' && url.includes('/cart')) {
+      setTimeout(updateRewardBar, 300);
     }
 
     return response;
   };
-
-  document.addEventListener('change', function (e) {
-    if (e.target && e.target.name && e.target.name.includes('quantity')) {
-      debounceUpdate();
-    }
-  });
 
 })();
 </script>
