@@ -1,5 +1,5 @@
 {% if settings.enable_reward_bar %}
-<div class="reward-bar hidden color-{{ section.settings.color_scheme }}" data-reward-bar-{{ section.id }}>
+<div class="reward-bar hidden color-{{ settings.color_scheme }}" data-reward-bar-{{ section.id }}>
   <div class="reward-bar-container">
 
     <div class="reward-message">Loading rewards...</div>
@@ -68,25 +68,25 @@
   }
   .reward-bar{
     display: none;
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
+    padding-top: {{ settings.padding_top }}px;
+    padding-bottom: {{ settings.padding_bottom }}px;
   }
 
   .reward-message{
     width: 100%;
-    text-align: {{section.settings.message_alignment}};
-    margin-bottom: {{section.settings.spacing_bottom}}px;
-    margin-top: {{section.settings.spacing_top}}px;
+    text-align: {{settings.message_alignment}};
+    margin-bottom: {{settings.spacing_bottom}}px;
+    margin-top: {{settings.spacing_top}}px;
     color: rgba(var(--color-foreground));
-    font-size: {{ section.settings.message_font_size }}px !important;
+    font-size: {{ settings.message_font_size }}px !important;
   }
 
   .reward-bar-container{
-    {% if section.settings.full_width %}
+    {% if settings.full_width %}
     width: 100%;
     max-width: 100%;
-    padding-left: {{ section.settings.padding_left }}px;
-    padding-right: {{ section.settings.padding_right }}px;
+    padding-left: {{ settings.padding_left }}px;
+    padding-right: {{ settings.padding_right }}px;
     {% else %}
     max-width: var(--page-width);
     margin: 0 auto;
@@ -126,7 +126,7 @@
   .reward-steps .step:nth-child(3){
     width: 48%;
   }
-  
+
   .reward-steps .step{
     font-size: 12px;
     width: 33.33%;
@@ -284,127 +284,3 @@
 </script>
 
 {% endif %}
-
-{% schema %}
-{
-  "name": "Reward Progress Bar",
-  "settings": [
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "default": true,
-      "label": "t:sections.rich-text.settings.full_width.label"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.all.colors.has_cards_info",
-      "default": "scheme-1"
-    },
-    {
-      "type": "header",
-      "content": "Reward Message"
-    },
-    {
-      "type": "select",
-      "id": "message_alignment",
-      "label": "Alignment",
-      "options": [
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "center"
-    },
-    {
-      "type": "range",
-      "id": "message_font_size",
-      "min": 10,
-      "max": 100,
-      "step": 2,
-      "unit": "px",
-      "label": "Font Size",
-      "default": 16
-    },
-    {
-      "type": "range",
-      "id": "spacing_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Spacing Top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "spacing_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Spacing Bottom",
-      "default": 36
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_left",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Left",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "padding_right",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Right",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    }
-  ],
-  "presets": [
-    {
-      "name": "Reward Progress Bar"
-    }
-  ]
-}
-{% endschema %}
