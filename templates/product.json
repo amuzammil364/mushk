@@ -53,14 +53,14 @@
         "reward_bar_GbjMDq": {
           "type": "reward_bar",
           "settings": {
-            "color_scheme": "scheme-4",
+            "color_scheme": "scheme-1",
             "message_alignment": "center",
             "message_font_size": 16,
             "spacing_top": 0,
             "spacing_bottom": 52,
             "padding_top": 20,
-            "padding_left": 0,
-            "padding_right": 0,
+            "padding_left": 20,
+            "padding_right": 20,
             "padding_bottom": 20
           }
         },
