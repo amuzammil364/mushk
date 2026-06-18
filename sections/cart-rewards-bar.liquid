@@ -83,6 +83,8 @@
   {% if section.settings.full_width %}
   width: 100%;
   max-width: 100%;
+  padding-left: {{ section.settings.padding_left }}px;
+  padding-right: {{ section.settings.padding_right }}px;
   {% else %}
   max-width: var(--page-width);
   margin: 0 auto;
@@ -305,7 +307,7 @@
       "step": 4,
       "unit": "px",
       "label": "Left",
-      "default": 36
+      "default": 20
     },
     {
       "type": "range",
@@ -315,7 +317,7 @@
       "step": 4,
       "unit": "px",
       "label": "Right",
-      "default": 36
+      "default": 20
     },
     {
       "type": "range",
