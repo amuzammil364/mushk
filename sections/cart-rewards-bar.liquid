@@ -78,6 +78,7 @@
   text-align: center;
   margin-bottom: 60px;
   color: rgba(var(--color-foreground));
+  font-size: {{ section.settings.message_font_size }}px !important;
 }
 
 .reward-bar-container{
@@ -287,6 +288,20 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Reward Message"
+    },
+    {
+      "type": "range",
+      "id": "message_font_size",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Font Size",
+      "default": 16
     },
     {
       "type": "header",
