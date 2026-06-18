@@ -26,28 +26,30 @@
 
       <!-- STEP 2 -->
       <div class="step">
-        <span>
-          {% if settings.reward_step2_icon %}
-            <img src="{{ settings.reward_step2_icon | image_url: width: 100 }}" />
-          {% endif %}
-        </span>
+        <div class="circle-step">
+          <span class="trigger">{{ settings.reward_step2_value }}</span>
+          <span class="icon">
+            {% if settings.reward_step2_icon %}
+              <img src="{{ settings.reward_step2_icon | image_url: width: 100 }}" />
+            {% endif %}
+          </span>
+        </div>
         <p>
-          {{ settings.reward_step2_value }}
-          <br>
           {{ settings.reward_step2_label }}
         </p>
       </div>
 
       <!-- STEP 3 -->
       <div class="step">
-        <span>
-          {% if settings.reward_step3_icon %}
-            <img src="{{ settings.reward_step3_icon | image_url: width: 100 }}" />
-          {% endif %}
-        </span>
+        <div class="circle-step">
+          <span class="trigger">{{ settings.reward_step3_value }}</span>
+          <span class="icon">
+            {% if settings.reward_step3_icon %}
+              <img src="{{ settings.reward_step3_icon | image_url: width: 100 }}" />
+            {% endif %}
+          </span>
+        </div>
         <p>
-          {{ settings.reward_step3_value }}
-          <br>
           {{ settings.reward_step3_label }}
         </p>
       </div>
