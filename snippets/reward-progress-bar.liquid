@@ -209,11 +209,11 @@
         : cart.total_price / 100;
 
       if (cart.item_count === 0) {
-        bar.classList.add('hidden');
+        bar.classList.add('show');
         return;
       }
 
-      bar.classList.remove('hidden');
+      bar.classList.remove('show');
       bar.classList.add('show');
 
       let percent = 0;
