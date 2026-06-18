@@ -60,75 +60,74 @@
 </div>
 
 <style> 
-  
-.reward-bar.show {
-  display: block;
-}
-.reward-bar.hidden {
-  display: none;
-}
-.reward-bar{
-  display: none;
-  padding-top: {{ section.settings.padding_top }}px;
-  padding-bottom: {{ section.settings.padding_bottom }}px;
-}
+  .reward-bar.show {
+    display: block;
+  }
+  .reward-bar.hidden {
+    display: none;
+  }
+  .reward-bar{
+    display: none;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 
-.reward-message{
-  width: 100%;
-  text-align: {{section.settings.message_alignment}};
-  margin-bottom: {{section.settings.spacing_bottom}}px;
-  margin-top: {{section.settings.spacing_top}}px;
-  color: rgba(var(--color-foreground));
-  font-size: {{ section.settings.message_font_size }}px !important;
-}
+  .reward-message{
+    width: 100%;
+    text-align: {{section.settings.message_alignment}};
+    margin-bottom: {{section.settings.spacing_bottom}}px;
+    margin-top: {{section.settings.spacing_top}}px;
+    color: rgba(var(--color-foreground));
+    font-size: {{ section.settings.message_font_size }}px !important;
+  }
 
-.reward-bar-container{
-  {% if section.settings.full_width %}
-  width: 100%;
-  max-width: 100%;
-  padding-left: {{ section.settings.padding_left }}px;
-  padding-right: {{ section.settings.padding_right }}px;
-  {% else %}
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 0 5rem;
-  {% endif %}
-}
+  .reward-bar-container{
+    {% if section.settings.full_width %}
+    width: 100%;
+    max-width: 100%;
+    padding-left: {{ section.settings.padding_left }}px;
+    padding-right: {{ section.settings.padding_right }}px;
+    {% else %}
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 5rem;
+    {% endif %}
+  }
 
-@media screen and (max-width: 750px) {
-    .reward-bar-container {
-        padding: 0 1.5rem;
-    }
-}
+  .reward-progress{
+    width: 100%;
+    height: 10px;
+    background: #eee;
+    border-radius: 50px;
+    overflow: hidden;
+  }
 
-.reward-progress{
-  width: 100%;
-  height: 10px;
-  background: #eee;
-  border-radius: 50px;
-  overflow: hidden;
-}
-.reward-progress-fill{
-  width: 0%;
-  height: 100%;
-  background: rgba(var(--color-foreground));
-  transition: 0.3s ease;
-  display: block !important;
-}
-.reward-steps{
+  .reward-progress-fill{
+    width: 0%;
+    height: 100%;
+    background: rgba(var(--color-foreground));
+    transition: 0.3s ease;
+    display: block !important;
+  }
+
+  .reward-steps{
     display:flex;
     justify-content:space-between;
-}
-.reward-steps .step:nth-child(1){
+  }
+
+  .reward-steps .step:nth-child(1){
     width: 32%;
-}
-.reward-steps .step:nth-child(2){
+  }
+
+  .reward-steps .step:nth-child(2){
     width: 20%;
-}
-.reward-steps .step:nth-child(3){
+  }
+
+  .reward-steps .step:nth-child(3){
     width: 48%;
-}
-.reward-steps .step{
+  }
+  
+  .reward-steps .step{
     font-size: 12px;
     width: 33.33%;
     display: flex;
@@ -136,53 +135,59 @@
     align-items: end;
     margin-top: -46px;
     transition:  0.3s;
-}
+  }
 
-.reward-steps .step .circle-step .trigger{
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  display: block;
-  color: rgba(var(--color-foreground));
-}
+  .reward-steps .step .circle-step .trigger{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    color: rgba(var(--color-foreground));
+  }
 
-.reward-steps .step .circle-step .icon{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: rgb(var(--color-background));
-  padding: 5px;
-  border: 2px solid rgb(221, 221, 221);
-  width: 41px;
-  height: 41px;
-}
+  .reward-steps .step .circle-step .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(var(--color-background));
+    padding: 5px;
+    border: 2px solid rgb(221, 221, 221);
+    width: 41px;
+    height: 41px;
+  }
 
-.reward-steps .step.active .circle-step .icon{
-  border: 2px solid rgba(var(--color-foreground));
-}
+  .reward-steps .step.active .circle-step .icon{
+    border: 2px solid rgba(var(--color-foreground));
+  }
 
-.reward-steps .step .circle-step .icon img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+  .reward-steps .step .circle-step .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-.reward-steps .step p{
-  font-size: 11px;
-  margin-top: 4px !important;
-  margin-bottom: 0 !important;
-  color: rgba(var(--color-foreground));
-}
+  .reward-steps .step p{
+    font-size: 11px;
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+    color: rgba(var(--color-foreground));
+  }
 
-.reward-steps .step:nth-child(1) p{
-  margin-right: -14px;
-}
+  .reward-steps .step:nth-child(1) p{
+    margin-right: -14px;
+  }
 
-.reward-steps .step:nth-child(3) p{
-  margin-right: -4px;
-}
- </style>
+  .reward-steps .step:nth-child(3) p{
+    margin-right: -4px;
+  }
+
+  @media screen and (max-width: 750px) {
+    .reward-bar-container {
+        padding: 0 1.5rem;
+    }
+  }
+</style>
 
 <script>
 (function () {
