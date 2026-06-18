@@ -15,6 +15,8 @@
     "enable_smooth_scroll": true,
     "reward_type": "quantity",
     "reward_step1_icon": "shopify://shop_images/icons8-free-shipping-100_2.png",
+    "reward_step2_icon": "shopify://shop_images/icons8-discount-100.png",
+    "reward_step3_icon": "shopify://shop_images/icons8-discount-100.png",
     "type_header_font": "lato_n4",
     "heading_scale": 150,
     "type_body_font": "outfit_n3",
