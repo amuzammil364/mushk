@@ -21,6 +21,8 @@
     "reward_step2_value": 5,
     "reward_step3_icon": "shopify://shop_images/icons8-discount-100.png",
     "reward_step3_value": 8,
+    "spacing_top": 0,
+    "spacing_bottom": 60,
     "type_header_font": "lato_n4",
     "heading_scale": 150,
     "type_body_font": "outfit_n3",
