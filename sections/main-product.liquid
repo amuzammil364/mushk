@@ -247,7 +247,17 @@
                   <span>{{ block.settings.text }}</span>
                 </div>
               {% when 'reward_bar' %}
-                {%  render "reward-progress-bar" %}
+                {%  render "reward-progress-bar"
+                    color_scheme: block.settings.color_scheme,
+                    message_alignment: block.settings.message_alignment,
+                    message_font_size: block.settings.message_font_size,
+                    spacing_top: block.settings.spacing_top,
+                    spacing_bottom: block.settings.spacing_bottom,
+                    padding_top: block.settings.padding_top,
+                    padding_left: block.settings.padding_left,
+                    padding_right: block.settings.padding_right,
+                    padding_bottom: block.settings.padding_bottom,
+                %}
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   {% if block.settings.display_style == 'simple' %}
