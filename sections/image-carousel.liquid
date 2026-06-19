@@ -82,6 +82,12 @@ document.addEventListener('DOMContentLoaded', function () {
         padding: 0 {{ section.settings.cell_gap }}px;
         box-sizing: border-box;
         border-radius: {{ section.settings.border_radius }}px;
+        text-align: {{ section.settings.alignment }};
+    }
+
+    .csm-image-carousel-{{ section.id }} .csm-image-carousel__cell a{
+      text-decoration: none;
+      color: rgb(var(--color-foreground)) !important;
     }
 
     .csm-image-carousel-{{ section.id }} .csm-image-carousel__cell img {
