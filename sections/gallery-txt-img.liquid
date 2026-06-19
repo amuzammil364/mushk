@@ -1,0 +1,402 @@
+{{ 'flickity.min.css' | asset_url | stylesheet_tag }}
+
+<div class="csm-gallery-text-img-{{ section.id }} color-{{ section.settings.color_scheme }}">
+    <div class="csm-gallery-text-img-container">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="
+            text-align: {{ section.settings.heading_alignment }};
+            letter-spacing: {{ section.settings.heading_letter_spacing }}px;
+            margin-top: {{ section.settings.heading_top_spacing }}px;
+            margin-bottom: {{ section.settings.heading_bottom_spacing }}px;
+            {% if section.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
+        ">
+            {{ section.settings.title }}
+        </h2>
+        <div class="csm-gallery-text-img-desktop">
+            <div class="csm-gallery-text-img-wrapper">
+                {% for block in section.blocks %}
+                    <div class="csm-gallery-text-img-col">
+                        {% if block.settings.overlay_color != blank %}
+                            <div class="overlay"
+                            style="
+                                background-color: {{ block.settings.overlay_color }};
+                                opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+                            ">
+                            </div>
+                        {% endif %}
+                        {% if block.settings.text != blank %}
+                        <span class="text">{{ block.settings.text }}</span>
+                        {% endif %}
+                        {% if block.settings.image != blank %}
+                            <img
+                                class="desktop-img"
+                                src="{{ block.settings.image | image_url: width: 2000 }}"
+                            >
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="csm-gallery-text-img-mobile">
+            {% comment %} <div class="csm-gallery-text-img-wrapper mobile-wrapper"> {% endcomment %}
+                {% for block in section.blocks %}
+                    <div class="csm-gallery-text-img-col carousel-cell">
+                        {% if block.settings.overlay_color != blank %}
+                            <div class="overlay"
+                            style="
+                                background-color: {{ block.settings.overlay_color }};
+                                opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+                            ">
+                            </div>
+                        {% endif %}
+                        {% if block.settings.text != blank %}
+                        <span class="text">{{ block.settings.text }}</span>
+                        {% endif %}
+                        {% if block.settings.image != blank %}
+                            <img
+                                class="desktop-img"
+                                src="{{ block.settings.image | image_url: width: 2000 }}"
+                            >
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            {% comment %} </div> {% endcomment %}
+        </div>
+    </div>
+</div>
+
+<script
+  src="{{ 'flickity.pkgd.min.js' | asset_url }}"
+  defer
+></script>
+<script>
+window.addEventListener('load', function () {
+  new Flickity(
+    '.csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile',
+    {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: false,
+      autoPlay: 3000,
+      pauseAutoPlayOnHover: true,
+      prevNextButtons: false,
+      pageDots: false,
+      draggable: true
+    }
+  );
+});
+</script>
+
+{%- style -%}
+    .csm-gallery-text-img-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-container{
+        width: 100%;
+        max-width: var(--page-width);
+        padding: 0 5rem;
+        margin: 0 auto;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop{
+        display: block;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile{
+        display: none;
+    }
+
+    /* DESKTOP */
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop .csm-gallery-text-img-wrapper{
+        width: 100%;
+        height: {{section.settings.desktop_height }}px;
+        display: flex;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop .csm-gallery-text-img-wrapper .csm-gallery-text-img-col{
+        flex: 1;
+        transition: 0.4s;
+        position: relative;
+    }
+    
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop .csm-gallery-text-img-wrapper .csm-gallery-text-img-col .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop .csm-gallery-text-img-wrapper .csm-gallery-text-img-col .text{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop .csm-gallery-text-img-wrapper:not(:hover) .csm-gallery-text-img-col:first-child {
+        flex: 3.3;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop .csm-gallery-text-img-wrapper .csm-gallery-text-img-col:hover{
+        flex: 3.3;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop .csm-gallery-text-img-wrapper .csm-gallery-text-img-col img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+    }
+
+
+    /* MOBILE */
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile{
+        width: 100%;
+        height: {{section.settings.mobile_height }}px;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile:focus-visible{
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile .csm-gallery-text-img-col{
+        width: 83.33%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile .csm-gallery-text-img-col .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile .csm-gallery-text-img-col .text{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile .csm-gallery-text-img-col img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+    }
+
+    @media screen and (max-width: 750px) {
+        .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-desktop{
+            display: none;
+        }
+
+        .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile{
+            display: block;
+        }
+
+        .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-container{
+            padding: 0 1.5rem;
+        }
+
+        .csm-gallery-text-img-{{ section.id }} .csm-gallery-text-img-mobile .csm-gallery-text-img-col .text{
+            top: 15px;
+            right: 15px;
+        }
+    }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Gallery Text",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },   
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading Alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing",
+      "label": "Heading Letter Spacing",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_top_spacing",
+      "label": "Heading Top Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_bottom_spacing",
+      "label": "Heading Bottom Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_uppercase",
+      "label": "Heading Uppercase Heading",
+      "default": false
+    },
+    {
+        "type": "range",
+        "id": "desktop_height",
+        "label": "Desktop Image Height",
+        "min": 200,
+        "max": 1600,
+        "step": 20,
+        "default": 800,
+        "unit": "px"
+    },
+    {
+        "type": "range",
+        "id": "mobile_height",
+        "label": "Mobile Image Height",
+        "min": 200,
+        "max": 800,
+        "step": 10,
+        "default": 350,
+        "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Gallery",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Desktop Image"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Your Text Here"
+        },
+        {
+            "type": "color",
+            "id": "overlay_color",
+            "label": "Overlay Color",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "overlay_opacity",
+            "label": "Overlay Opacity",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "%",
+            "default": 40
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Gallery Text"
+    }
+  ]
+}
+{% endschema %}
