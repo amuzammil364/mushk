@@ -13,10 +13,10 @@
       "type": "main-collection-banner",
       "settings": {
         "title_size": "h2",
-        "title_alignment": "left",
+        "title_alignment": "center",
         "title_letter_spacing": 2,
-        "title_top_spacing": 80,
-        "title_bottom_spacing": 30,
+        "title_top_spacing": 60,
+        "title_bottom_spacing": 60,
         "title_uppercase": true,
         "show_collection_description": false,
         "show_collection_image": false,
