@@ -26,6 +26,7 @@
             "button_label": "Shop Now",
             "button_link": "shopify://products/black-noir",
             "heading_size": "h0",
+            "heading_font_weight": "400",
             "heading_letter_spacing": 1,
             "heading_uppercase": true,
             "heading_top_spacing": 0,
@@ -60,6 +61,7 @@
             "button_label": "Shop Now",
             "button_link": "shopify://products/exotic-pulse",
             "heading_size": "h0",
+            "heading_font_weight": "400",
             "heading_letter_spacing": 1,
             "heading_uppercase": true,
             "heading_top_spacing": 0,
@@ -632,7 +634,8 @@
             "arrows_color": "#000000",
             "transition_speed": 5,
             "header_text": "",
-            "show_average_rating": true
+            "show_average_rating": true,
+            "rating_display": "default"
           }
         }
       },
