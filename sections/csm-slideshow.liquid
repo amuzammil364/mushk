@@ -173,7 +173,7 @@
         #carousel-cell-{{ block.id }} p{
           margin-top: {{block.settings.text_top_spacing }}px;
           margin-bottom: {{block.settings.text_bottom_spacing }}px;
-          font-size: 2.2rem;
+          font-size: {{block.settings.text_font_size}}px;
           line-height: 30px;
         }
 
@@ -503,6 +503,16 @@ document.addEventListener('DOMContentLoaded', function () {
         {
           "type": "header",
           "content": "Text",
+        },
+        {
+          "type": "range",
+          "id": "text_font_size",
+          "label": "Font Sizw",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
         },
         {
           "type": "range",
