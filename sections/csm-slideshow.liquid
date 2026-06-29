@@ -167,6 +167,7 @@
           margin-top: {{block.settings.heading_top_spacing }}px;
           margin-bottom: {{block.settings.heading_bottom_spacing }}px;
           margin-left: -4px;
+          font-weight: {{  block.settings.heading_font_weight }};
         }
 
         #carousel-cell-{{ block.id }} p{
@@ -438,6 +439,30 @@ document.addEventListener('DOMContentLoaded', function () {
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_font_weight",
+          "label": "Font Weight",
+          "default": "500",
+          "options": [
+            {
+              "value": "400",
+              "label": "Regular"
+            },
+            {
+              "value": "500",
+              "label": "Medium"
+            },
+            {
+              "value": "600",
+              "label": "Semi Bold"
+            },
+            {
+              "value": "700",
+              "label": "Bold"
+            }
+          ]
         },
         {
           "type": "range",
